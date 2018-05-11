@@ -4,8 +4,8 @@ const envBuild = {
   ],
   'client': [
     'NODE_ENV=DEVELOPMENT',
-    'REST_SERVER_URL=http://localhost:1990',
-    'REACT_APP_REST_SERVER_URL=http://localhost:1990'
+    'REST_SERVER_URL=http://localhost:3000',
+    'REACT_APP_REST_SERVER_URL=http://localhost:3000'
   ]
 };
 
