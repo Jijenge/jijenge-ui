@@ -1,5 +1,6 @@
 import React, { Component } from 'react'; 
 import { Route, Switch} from 'react-router-dom';
+import NavBar from './components/NavBar/navBar.jsx'; 
 
 class App extends Component {
   constructor() {
@@ -8,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        HELLO WORLD
+      <NavBar /> 
       </div>
     ); 
   }
