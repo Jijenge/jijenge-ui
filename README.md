@@ -10,5 +10,7 @@ yarn setup:server
 yarn setup:client
 
 ### Start the site 
+cd client
 yarn webpack
-yarn start:server
+cd server
+yarn start
