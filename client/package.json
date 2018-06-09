@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "compile:sass": "node-sass ../src/sass/main.scss ../css/style.css -w"
   },
   "dependencies": {
     "autoprefixer": "^7.2.4",
@@ -13,7 +14,8 @@
     "node-sass": "^4.9.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-router-dom": "^4.2.2"
+    "react-router-dom": "^4.2.2",
+    "webpack-cli": "^3.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

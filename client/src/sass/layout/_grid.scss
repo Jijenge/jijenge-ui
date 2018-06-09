@@ -1,0 +1,105 @@
+.navigation-bar {
+  max-width: $grid-width;
+  margin: 0 auto; 
+  height: 8vh; 
+  background-color: $color-purple;
+
+  @include clearfix; 
+  [class^="col-"] {
+    float: left; 
+  }
+
+  a {
+    color: white; 
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none; 
+    &:not(:last-child) {
+      margin-right: 2rem; 
+    }
+  }
+  .col-1-of-3 {
+    width: calc((100% - (#{$gutter-horizontal} * 2)) / 3);
+    
+  }
+  
+  .col-2-of-3 {
+    width: calc(2 * ((100% - (#{$gutter-horizontal} * 2)) / 3) + 2 * (#{$gutter-horizontal}));
+  }
+}
+
+[class^="nav-"]{
+  padding-top: 1rem;
+}
+
+.nav-logo {
+  color: greenyellow; 
+  padding-left: 10px;
+}
+
+.nav-links {
+  color: greenyellow; 
+  padding-left: 10px;
+}
+
+/*
+the standard this days is 1140px for a grid but in order to make the website dynamic 
+we will use rem. Also instead of just width we will use max-width: the difference been: 
+if the viewport is smaller than what we specify then it will fill 100% of the available 
+space. Making our website dynamic. 
+
+MARGIN 0 AUTO: is a TRICK to center block elements inside of another block element
+We say that the margin on top and bottom is 0 and left and rigth is auto 
+AUTO: When we say that we want the margin to be automatically it means that the browser 
+when rendering the page will automatically figure out the margin that we want on te left and 
+right side. Since both are set to auto it means that left and right will be the same. 
+So the element will be center
+*/
+
+/*
+When we float an element the height collapses and the heigth becomes 0 so what we do is 
+use the clearfix hack 
+*/
+
+// .row {
+//   max-width: $grid-width; 
+//   margin: 0 auto; 
+//   &:not(:last-child) {
+//     margin-bottom: $gutter-vertical; 
+//   }
+
+//   @include clearfix; 
+
+//   // We can do ^ start with, = contain or $ end with 
+//   [class^="col-"] {
+//     float: left; 
+
+//     &:not(:last-child) {
+//       margin-right: $gutter-horizontal; 
+//     }
+//   }
+
+//   .col-1-of-2 {
+//     width: calc((100% - #{$gutter-horizontal}) /2); 
+//   }
+
+//   .col-1-of-3 {
+//     width: calc((100% - (#{$gutter-horizontal} * 2)) / 3); 
+//   }
+  
+//   .col-2-of-3 {
+//     width: calc(2 * ((100% - (#{$gutter-horizontal} * 2)) / 3) + #{$gutter-horizontal});
+//   }
+
+//   .col-1-of-4 {
+//     width: calc((100% - (#{$gutter-horizontal} * 3)) / 4); 
+//   }
+
+//   .col-2-of-4 {
+//     width: calc(2 * ((100% - (#{$gutter-horizontal} * 3)) / 4) + #{$gutter-horizontal}); 
+//   }
+
+//   .col-3-of-4 {
+//     width: calc(3 * ((100% - (#{$gutter-horizontal} * 3)) / 4) + (2 * #{$gutter-horizontal}));
+//   }
+
+// }
