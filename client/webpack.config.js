@@ -39,6 +39,10 @@ module.exports = {
         loaders: ['style-loader', 'css-loader', 'sass-loader', 'postcss-loader'],
       },
       {
+        test: /\.(mp4|webm)$/,
+        use: 'file-loader'
+      },
+      {
         test: /\.(gif|png|jpe?g|svg)$/i,
         use: [
           'file-loader',
