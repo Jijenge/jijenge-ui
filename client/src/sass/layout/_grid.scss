@@ -14,7 +14,7 @@
     font-family: 'Ubuntu', sans-serif;
     text-decoration: none; 
     &:not(:last-child) {
-      margin-right: 2rem; 
+      margin-right: 4.5rem; 
     }
   }
   .col-1-of-3 {
@@ -28,17 +28,18 @@
 }
 
 [class^="nav-"]{
-  padding-top: 1rem;
+  padding-top: 1.5rem;
+  font-size: 1.1rem;
 }
 
-.nav-logo {
-  color: greenyellow; 
-  padding-left: 10px;
+.nav-logo { 
+  padding-left: 3rem;
 }
 
 .nav-links {
   color: greenyellow; 
-  padding-left: 10px;
+  float: right; 
+  padding-right: 4rem;
 }
 
 /*
