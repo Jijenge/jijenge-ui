@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "webpack": "webpack",
+    "webpack": "webpack -w",
     "compile:sass": "node-sass ../src/sass/main.scss ../css/style.css -w"
   },
   "dependencies": {
