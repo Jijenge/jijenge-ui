@@ -2,7 +2,6 @@
   max-width: $grid-width;
   margin: 0 auto; 
   height: 8vh; 
-  background-color: $color-purple;
 
   @include clearfix; 
   [class^="col-"] {
@@ -10,7 +9,7 @@
   }
 
   a {
-    color: white; 
+    color: $color-purple; 
     font-family: 'Ubuntu', sans-serif;
     text-decoration: none; 
     &:not(:last-child) {

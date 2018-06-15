@@ -19,7 +19,7 @@ class App extends Component {
       <div>
       <NavigationBar/> 
       </div>
-      <div>
+      <main>
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/MeetTheStudents' component={MeetTheStudents} />
@@ -29,7 +29,7 @@ class App extends Component {
         <Route exact path='/Subscribe' component={Subscribe} />
         <Route exact path='/Contact' component={Contact} />
       </Switch>
-      </div>
+      </main>
       </div>
     ); 
   }

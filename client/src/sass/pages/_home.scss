@@ -1,0 +1,15 @@
+.video-container {
+  // height: 80vh;
+  background-size: cover; 
+  position: relative;
+  // background-image: 
+  //   url(../multimedia/sunset.jpg); 
+  //   background-size: cover;
+
+  &__sunset {
+    position: absolute; 
+    left: 4rem; 
+    right: 4rem;
+    top: 1rem;
+  }
+}
