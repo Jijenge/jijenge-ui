@@ -9,7 +9,7 @@ class Home extends Component {
       <div>
         <div className="video-container">
           <div className="video-container__sunset">
-          <img src="https://source.unsplash.com/800x450/?africa" />
+          {/* <img src="https://source.unsplash.com/800x450/?africa" /> */}
           </div>
         </div>
       </div>
