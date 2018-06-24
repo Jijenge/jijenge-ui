@@ -18,7 +18,7 @@ class Donate extends Component {
 
   }
 
-  handleCheckout(token) {
+  handleCheckout = async(token) => {
   
       console.log('EMAIL =>', token.card.name)
       console.log('TOKENID=>', token.card.id)
@@ -28,20 +28,20 @@ class Donate extends Component {
         currency: '',
         amount: ''
       }
-      const data = axios.post('http://localhost:3000/api/stripe/checkout', body);
+      const data = await axios.post('http://localhost:3000/api/stripe/checkout', body);
       console.log('data from Donate =>', data); 
 
   }
 
-  // handleFormInputChage = (e) => {
-  //   e.preventDefault()
-  //   const { name, value } = e.target; 
-  //   const { amount } = this.state;
-  //   this.setState({
-  //     [name]: value
-  //   })
-  //   console.log(amount);
-  // }
+  handleFormInputChage = (e) => {
+    e.preventDefault()
+    const { name, value } = e.target; 
+    const { amount } = this.state;
+    this.setState({
+      [name]: value
+    })
+    console.log(amount);
+  }
 
   render() {
     return (
