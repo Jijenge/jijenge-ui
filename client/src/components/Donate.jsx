@@ -1,7 +1,7 @@
 import React, { Component } from 'react'; 
 import axios from 'axios'; 
 import Payment from './Stripe/Payment.jsx';
-import {Elements} from 'react-stripe-elements';
+import { Elements } from 'react-stripe-elements';
 import StripeCheckout from 'react-stripe-checkout';
 
 const currency = 'US'; 
@@ -18,8 +18,8 @@ class Donate extends Component {
 
   }
 
-  handleCheckout = async(token) => {
-    try {
+  handleCheckout(token) {
+  
       console.log('EMAIL =>', token.card.name)
       console.log('TOKENID=>', token.card.id)
       const body = {
@@ -28,22 +28,20 @@ class Donate extends Component {
         currency: '',
         amount: ''
       }
-      const data = await axios.post('http://localhost:3000/api/stripe/checkout', body);
+      const data = axios.post('http://localhost:3000/api/stripe/checkout', body);
       console.log('data from Donate =>', data); 
-    } catch (err) {
-      console.log('Error from Donate =>', err); 
-    } 
+
   }
 
-  handleFormInputChage = (e) => {
-    e.preventDefault()
-    const { name, value } = e.target; 
-    const { amount } = this.state;
-    this.setState({
-      [name]: value
-    })
-    console.log(amount);
-  }
+  // handleFormInputChage = (e) => {
+  //   e.preventDefault()
+  //   const { name, value } = e.target; 
+  //   const { amount } = this.state;
+  //   this.setState({
+  //     [name]: value
+  //   })
+  //   console.log(amount);
+  // }
 
   render() {
     return (

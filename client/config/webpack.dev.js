@@ -4,7 +4,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: "./src/index.js"
+    main: ["./src/index.js"]
   },
   mode: "development", 
   output: {
@@ -23,7 +23,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js/,
+        test: /\.(js|jsx)$/,
         use: [
           {
             loader: "babel-loader"
@@ -69,6 +69,17 @@ module.exports = {
             options: {
               //Images folder in the src directory 
               name: "images/[name].[ext]"
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: "url-loader", 
+            options: {
+              limit: 8192
             }
           }
         ]

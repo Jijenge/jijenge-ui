@@ -1,14 +1,14 @@
 import React, { Component } from 'react'; 
-// import { Route, Switch} from 'react-router-dom';
-// import {StripeProvider} from 'react-stripe-elements';
-// import NavigationBar from './components/NavigationBar.jsx'; 
-// import Home from './components/Home.jsx';
-// import MeetTheStudents from './components/MeetTheStudents.jsx';
-// import Donate from './components/Donate.jsx';
-// import OurWork from './components/OurWork.jsx';
-// import About from './components/About.jsx';
-// import Subscribe from './components/Subscribe.jsx';
-// import Contact from './components/Contact.jsx';
+import { Route, Switch} from 'react-router-dom';
+import {StripeProvider} from 'react-stripe-elements';
+import NavigationBar from './NavigationBar.jsx'; 
+import Home from './Home.jsx';
+import MeetTheStudents from './MeetTheStudents.jsx';
+import Donate from './Donate.jsx';
+import OurWork from './OurWork.jsx';
+import About from './About.jsx';
+import Subscribe from './Subscribe.jsx';
+import Contact from './Contact.jsx';
 
 export default class extends Component {
   constructor(props) {
@@ -17,8 +17,7 @@ export default class extends Component {
   render() {
     return (
       <div>
-        <h1>HELLO WORLDDDDDDDD!!!!! </h1>
-      {/* <div>
+      <div>
       <NavigationBar/> 
       </div>
       <main>
@@ -35,7 +34,8 @@ export default class extends Component {
         <Route exact path='/Subscribe' component={Subscribe} />
         <Route exact path='/Contact' component={Contact} />
       </Switch>
-      </main> */}
+      </main>
+
       </div>
     ); 
   }

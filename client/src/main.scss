@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
-@import "abstracts/mixins";
-@import "abstracts/variables";
-@import "layout/grid"; 
-@import "pages/home"; 
+@import "./sass/abstracts/mixins";
+@import "./sass/abstracts/variables";
+@import "./sass/layout/grid"; 
+@import "./sass/pages/home"; 
 
 *, 
 *::after, 
