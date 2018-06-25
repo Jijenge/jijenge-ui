@@ -2,6 +2,7 @@
 @import "./sass/abstracts/mixins";
 @import "./sass/abstracts/variables";
 @import "./sass/layout/grid"; 
+@import "./sass/layout/navigation"; 
 @import "./sass/pages/home"; 
 
 *, 
@@ -18,4 +19,6 @@ html {
 
 body {
   box-sizing: border-box; 
+  font-family: 'Ubuntu', sans-serif;
+  margin: 2rem;
 }

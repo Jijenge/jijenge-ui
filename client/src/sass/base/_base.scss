@@ -1,4 +1,24 @@
 
+*,
+*::after,
+*::before {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: inherit;
+}
+
+/* 100% will let the user change the fontsize to any size they need 
+THIS DEFINES WHAT 1 REM SHOULD BE */
+
+html {
+  font-size: 62.5%; 
+}
+/* 
+<--! power of inherentance --> */
+body {
+  box-sizing: border-box; 
+  font-family: 'Ubuntu', sans-serif;
+}
 
 
 

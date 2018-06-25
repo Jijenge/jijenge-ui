@@ -62,7 +62,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(jpg|gif|png)$/,
+        test: /\.(jpg|gif|png|jpeg)$/,
         use: [
           {
             loader: "file-loader",
@@ -72,7 +72,7 @@ module.exports = {
             }
           }
         ]
-      },
+      }
     ]
   },
   plugins: [
