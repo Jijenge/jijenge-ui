@@ -49,6 +49,12 @@ class Donate extends Component {
       //   <Payment />
       // </Elements>
       <div>
+        
+        <div className="donateHeader">
+          
+        </div>
+
+
         <div>
           {/* I can change state with donors information on submit 
           name, last name and amount 
