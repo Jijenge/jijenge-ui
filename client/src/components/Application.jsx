@@ -17,9 +17,6 @@ export default class extends Component {
   render() {
     return (
       <div>
-      {/* <div>
-      <NavigationBar/> 
-      </div> */}
       <main>
       <Switch>
         <Route exact path='/' component={Home} />

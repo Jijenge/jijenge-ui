@@ -1,11 +1,187 @@
-.donateHeader {
-  height: 70vh; 
-  background-image: url(./images/happyWindowKids.jpg);
-  background-size: cover;
-  position: relative;
-  background-position: center; 
-  background-repeat: no-repeat;
-  width: 50%; 
-  float: right; 
-    // background-size: 75% 50%;
+.donate {
+  background-color: $color-pink; 
+  padding: 0 1rem;
+  padding-top: 6rem;
+
+  &__subheader {
+    color: $color-white; 
+    margin: .5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: .5rem 0;
+  }
+
+  &__left {
+    // background-color: white;
+    // background-image: url(./images/imageTwo.jpg);
+    // height: 40rem;
+    // background-position: cover;
+    // margin: 1rem;
+    width: 40%; 
+    display: inline-block;
+    border: solid black thin;
+  }
+  
+  &__right {
+    // margin: 1rem;
+    border: solid black thin;
+    width: 60%; 
+    display: inline-block;
+  }
+}
+
+.frequency {
+  color: $color-white;
+  text-align: center;
+  margin: 2rem;
+  color: white; 
+  
+  &__onceBtn {
+    border: solid black thin;
+    display: inline-block;
+    width: 50%;
+    padding: 1rem 0;
+  }
+  &__monthlyBtn {
+    border: solid black thin;
+    display: inline-block;
+    width: 50%; 
+    padding: 1rem 0;
+  }
+}
+
+.amount {
+  border: solid black thin; 
+  margin: 2rem;
+  color: white; 
+  padding: .5rem 1rem;
+  &__btn {
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin-right: 1rem;
+    border: solid black thin;
+  }
+  &__input {
+    margin: .5rem;
+    border: none;
+    width: 15rem;
+    height: 2.5rem;
+    padding-left: .7rem;
+  }
+}
+
+.personalInformation {
+  border: solid black thin;
+  &__form {
+    padding: 1rem;
+  }
+  &__input {
+    margin: .5rem;
+    border: none;
+    width: 20rem;
+    height: 2.5rem;
+    padding-left: .7rem;
+
+  }
+
+  &__container {
+
+    &--input {
+      width: 41rem;
+      display: block;
+      margin: .5rem;
+      border: none;
+      height: 2.5rem;
+      padding-left: .7rem;
+    }
+  }
+}
+
+.paymentDetails {
+  border: solid black thin;
+  margin-top: 1rem; 
+  padding: 1rem;
+  margin-bottom: 5rem;
+
+  &__name {
+
+    &--input {
+      margin: .5rem;
+      border: none;
+      width: 20rem;
+      height: 2.5rem;
+      padding-left: .7rem;
+    }
+  }
+
+  &__expiration {
+
+    &--input {
+      margin: .5rem;
+      border: none;
+      width: 9.4rem;
+      height: 2.5rem;
+      padding-left: .7rem;
+    }
+  }
+
+  &__cardNumber {
+    margin: .5rem;
+    border: none;
+    width: 20rem;
+    height: 2.5rem;
+    padding-left: .7rem;
+  }
+
+  &__securityCode { 
+    display: block;
+    margin: .5rem;
+    border: none;
+    width: 20rem;
+    height: 2.5rem;
+    padding-left: .7rem;
+  }
+
+  &__country {
+    border: none;
+    margin: .5rem;
+    margin-left: .5rem;
+    width: 20rem;
+    height: 2.5rem;
+  }
+
+  &__address {
+    &--info {
+      display: block; 
+      margin: .5rem;
+      border: none;
+      width: 41rem;
+      height: 2.5rem;
+      padding-left: .7rem;
+    }
+    &--city { 
+      margin: .5rem;
+      border: none;
+      width: 9.5rem;
+      height: 2.5rem;
+      padding-left: .7rem;
+    }
+  }
+
+  &__check {
+    &--box {
+      margin: .5rem;
+      // border: none;
+      height: 2.5rem;
+      // background-color: white;
+
+    }
+    &--btn {
+      padding: 1rem 2rem;
+      border: none; 
+      font-family: 'Ubuntu', sans-serif;
+      color: $color-white; 
+      background-color: $color-blue;
+    }
+  }
 }

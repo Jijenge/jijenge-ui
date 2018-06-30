@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'; 
 var FontAwesome = require('react-fontawesome');
 import Navigation from './NavigationBar.jsx';
+import Subscribe from './Subscribe.jsx';
 import JijengeWord from '../images/try3.png';
 
 
@@ -23,36 +24,31 @@ class Home extends Component {
     return (
       <div>
         <div className="navigation">
-          <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
-          
-          <label htmlFor="navi-toggle" className="navigation__button">
-          <span className="navigation__icon">&nbsp;</span>
-          </label>
-
-          <div className="navigation__background">&nbsp;</div>
-
-            <nav className="navigation__nav">
-              <Navigation /> 
-            </nav>
-
+          <Navigation /> 
         </div>
-
-        <div className="header">
-        <div className="row">
-          <div className="col-1-of-2">
-            {/* <img className="logo" src="#"  /> */}
-            {/* <div className="jijenge-word">Jijenge Logo</div>  */}
+        <main>
+          <div className="header">
           </div>
-          <div className="col-1-of-2">
-            <div className="donate-box">
-              <Link className="donate-box__word" to='/Donate'>Donate</Link>
+          <div className="information">
+            <div className="info">
+              The Kenyan National Exams is a standardized test that decides
+              which university and field of study students can access. 
+            </div>
+            <div className="moreInfo">
+
+            </div>
+            <div className="subscription">
+              <Subscribe />
             </div>
           </div>
-        </div>
-        </div>
-      <main>
-        
-      </main>
+        </main>
+        <footer>
+          <div className="footer">
+            <div className="footer__socialMedia">
+            
+            </div>
+          </div>
+        </footer>
 
       </div>
     ); 

@@ -1,10 +1,11 @@
 .header {
-  height: 95vh; 
-  background-image: linear-gradient(to right bottom, rgba($color-yellow, 0.5), rgba($color-pink, 0.5)), url(./images/homeBackground.jpg);
+  height: 93vh; 
+  background-image: url(./images/homeBackground.jpg);
   background-size: cover; 
   background-position: bottom; 
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); 
+  opacity: .85;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%); 
   position: relative; 
 }
 
@@ -31,4 +32,59 @@
     color: $color-white;
     font-size: 1.2rem; 
   }
+}
+
+.information {
+  background: rgba(143, 103, 189, 0.3);
+  height: 85vh;
+  margin-top: 3rem;
+  padding: 3rem 1rem;
+  background-position: bottom;
+}
+
+.info {
+  padding: 0 4rem;
+  height: 7rem;
+  font-size: 2rem;
+  color: $color-white; 
+  text-align: center;
+}
+
+.moreInfo {
+  height: 30rem; 
+  width: 100%;
+  margin: 0 auto; 
+  background-color: $color-black;
+  opacity: .2;
+}
+
+
+.subscription {
+  padding: 2rem 0;
+  text-align: center;
+  
+  &__input {
+    border: none; 
+    font-family: Helvetica;
+    height: 3.8rem;
+    width: 25rem;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+  }
+
+  &__btn {
+    border: none; 
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1.3rem 4rem;
+    background-color: $color-blue;
+    color: $color-white; 
+    font-size: 1.5rem;
+
+  }
+}
+
+.footer {
+  height: 15rem;
+  // background-color: $color-purple;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'; 
-import student1 from '../images/andre-adjahoe-474307-unsplash.jpg'; 
+// import student1 from '../images/andre-adjahoe-474307-unsplash.jpg'; 
 
 class Student extends Component {
   constructor() {
@@ -16,7 +16,7 @@ class Student extends Component {
     return (
       <div>
         <div className="student">
-          <img className="student__picture" src={student1} />
+          {/* <img className="student__picture" src={student1} /> */}
           <div className="student__name">
             Anna 
           </div>
