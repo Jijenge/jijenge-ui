@@ -30,8 +30,21 @@ class Donate extends Component {
     }
   }
 
+  handleStatePaymentInformation(e) {
+    const { name, value } = e.target;
+    this.setState({
+      [name]: value
+    });
+    const {firstName, lastName, email, cardFirstName, cardLastName, cardNumber, monthExp, yearExp, cvv, address, address2, city, state, zip} = this.state; 
+    // console.log(firstName, lastName, email, cardFirstName, cardLastName, cardNumber, monthExp, yearExp, cvv, address, address2, city, state, zip);
+  }
 
-  handleAmount(amount){ 
+  /**
+   * Check frequency if it's only one time do not save on db 
+   * 
+   */
+
+  handleDonationAmount(amount) { 
     this.setState({
       amount
     });
@@ -47,7 +60,13 @@ class Donate extends Component {
         <main>
           <div className="donate">
             <div className="donate__left">
-            
+            <div className="donate__left--image">
+            </div>
+            <div className="thankyou">
+            <div className="thankyou__header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sunt.</div>
+            <div className="thankyou__subheader">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sunt.</div>
+            </div>
+
             </div>
             <div className="donate__right">
               <div className="donate__right--form">
@@ -60,20 +79,19 @@ class Donate extends Component {
 
                   <div className="amount">
                     <div className="donate__subheader">select amount</div>
-                    <div className="amount__btn" onClick={() => this.handleAmount(250)}>$250</div>
-                    <div className="amount__btn" onClick={() => this.handleAmount(100)}>$100</div>
-                    <div className="amount__btn" onClick={() => this.handleAmount(50)}>$50</div>
-                    <div className="amount__btn" onClick={() => this.handleAmount(25)}>$25</div>
-                    {/* <div className="amount__btn" onClick={() => this.handleAmount(250)}>Other</div> */}
+                    <div className="amount__btn" onClick={() => this.handleDonationAmount(250)}>$250</div>
+                    <div className="amount__btn" onClick={() => this.handleDonationAmount(100)}>$100</div>
+                    <div className="amount__btn" onClick={() => this.handleDonationAmount(50)}>$50</div>
+                    <div className="amount__btn" onClick={() => this.handleDonationAmount(25)}>$25</div>
                     <div className="donate__subheader">other amount</div>
-                    <input className="amount__input" placeholder="$ 0.00" />
+                    <input onChange={this.handleStatePaymentInformation.bind(this)} name="amount" className="amount__input" placeholder="$ 0.00" />
                   </div>
                   <div className="personalInformation">
                   <div className="donate__subheader">personal information</div>
-                    <input name="" placeholder="First name" className="personalInformation__input" />
-                    <input name="" placeholder="Last name" className="personalInformation__input" />
+                    <input onChange={this.handleStatePaymentInformation.bind(this)} name="firstName" placeholder="First name" className="personalInformation__input" />
+                    <input onChange={this.handleStatePaymentInformation.bind(this)} name="lastName" placeholder="Last name" className="personalInformation__input" />
                     <div className="personalInformation__container">
-                    <input name="" placeholder="Email" className="personalInformation__container--input" />  
+                    <input onChange={this.handleStatePaymentInformation.bind(this)} name="email" placeholder="Email" className="personalInformation__container--input" />  
                   </div>
                   </div>
 
@@ -81,19 +99,19 @@ class Donate extends Component {
                   <div className="donate__subheader">payment details</div>
 
                   <div className="paymentDetails__name">
-                    <input name="" placeholder="First name" className="paymentDetails__name--input"/>
-                    <input name="" placeholder="Last name" className="paymentDetails__name--input"/>
+                    <input onChange={this.handleStatePaymentInformation.bind(this)} name="cardFirstName" placeholder="First name" className="paymentDetails__name--input"/>
+                    <input onChange={this.handleStatePaymentInformation.bind(this)} name="cardLastName" placeholder="Last name" className="paymentDetails__name--input"/>
                   </div>
 
-                  <input name="" className="paymentDetails__cardNumber" placeholder="XXXX XXXX XXXX XXXX" />
+                  <input onChange={this.handleStatePaymentInformation.bind(this)} name="cardNumber" className="paymentDetails__cardNumber" placeholder="XXXX XXXX XXXX XXXX" />
 
                   <div className="paymentDetails__expiration">
-                    <input name="" className="paymentDetails__expiration--input" placeholder="month" />
+                    <input onChange={this.handleStatePaymentInformation.bind(this)} name="monthExp" className="paymentDetails__expiration--input" placeholder="month" />
                     /
-                    <input name="" className="paymentDetails__expiration--input" placeholder="year" />
+                    <input onChange={this.handleStatePaymentInformation.bind(this)} name="yearExp" className="paymentDetails__expiration--input" placeholder="year" />
                   </div>
 
-                  <input name="" className="paymentDetails__securityCode" placeholder="CVV"/>
+                  <input onChange={this.handleStatePaymentInformation.bind(this)} name="cvv" className="paymentDetails__securityCode" placeholder="CVV"/>
 
                   <select className="paymentDetails__country">
                         <option value="">Select option</option>
@@ -101,11 +119,11 @@ class Donate extends Component {
                       </select>
 
                 <div className="paymentDetails__address">
-                <input name="" className="paymentDetails__address--info" placeholder="address"/>
-                <input name="" className="paymentDetails__address--info" placeholder="address2"/>
-                <input name="" className="paymentDetails__address--info" placeholder="city"/>
-                <input name="" className="paymentDetails__address--city" placeholder="state"/>
-                <input name="" className="paymentDetails__address--city" placeholder="ZIP"/>
+                <input onChange={this.handleStatePaymentInformation.bind(this)} name="address" className="paymentDetails__address--info" placeholder="address"/>
+                <input onChange={this.handleStatePaymentInformation.bind(this)} name="address2" className="paymentDetails__address--info" placeholder="address2"/>
+                <input onChange={this.handleStatePaymentInformation.bind(this)} name="city" className="paymentDetails__address--info" placeholder="city"/>
+                <input onChange={this.handleStatePaymentInformation.bind(this)} name="state" className="paymentDetails__address--city" placeholder="state"/>
+                <input onChange={this.handleStatePaymentInformation.bind(this)} name="zip" className="paymentDetails__address--city" placeholder="ZIP"/>
                 </div>
                 <div className="paymentDetails__check">
                 <input className="paymentDetails__check--box" type="checkbox"/>

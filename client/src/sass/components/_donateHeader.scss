@@ -12,23 +12,29 @@
   }
 
   &__left {
-    // background-color: white;
-    // background-image: url(./images/imageTwo.jpg);
-    // height: 40rem;
-    // background-position: cover;
-    // margin: 1rem;
-    width: 40%; 
+    width: 50%; 
     display: inline-block;
     border: solid black thin;
+
+    &--image {
+      background-image: url(./images/happyKids.jpg);
+      height: 40rem;
+      background-position: center; 
+      background-size: cover; 
+      margin: .5rem;
+    }
   }
   
   &__right {
-    // margin: 1rem;
     border: solid black thin;
-    width: 60%; 
+    width: 50%; 
     display: inline-block;
   }
 }
+
+/*
+RIGHT SIDE 
+*/
 
 .frequency {
   color: $color-white;
@@ -183,5 +189,21 @@
       color: $color-white; 
       background-color: $color-blue;
     }
+  }
+}
+
+
+/*
+LEFT SIDE 
+*/
+
+.thankyou {
+  &__header {
+    color: $color-white; 
+    font-size: 1.5rem; 
+  }
+  &__subheader{
+    color: $color-white;
+    font-size: 1rem;  
   }
 }
