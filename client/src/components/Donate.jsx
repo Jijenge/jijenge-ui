@@ -60,11 +60,13 @@ class Donate extends Component {
         <main>
           <div className="donate">
             <div className="donate__left">
-            <div className="donate__left--image">
-            </div>
             <div className="thankyou">
             <div className="thankyou__header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sunt.</div>
-            <div className="thankyou__subheader">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sunt.</div>
+            <div className="donate__left--image">
+            </div>
+            <div className="thankyou__subheader">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sunt.
+            </div>
             </div>
 
             </div>
@@ -79,12 +81,16 @@ class Donate extends Component {
 
                   <div className="amount">
                     <div className="donate__subheader">select amount</div>
-                    <div className="amount__btn" onClick={() => this.handleDonationAmount(250)}>$250</div>
-                    <div className="amount__btn" onClick={() => this.handleDonationAmount(100)}>$100</div>
-                    <div className="amount__btn" onClick={() => this.handleDonationAmount(50)}>$50</div>
-                    <div className="amount__btn" onClick={() => this.handleDonationAmount(25)}>$25</div>
+                    <div className="amount__btn">
+                    <div className="amount__btn--num" onClick={() => this.handleDonationAmount(250)}>$250</div>
+                    <div className="amount__btn--num" onClick={() => this.handleDonationAmount(100)}>$100</div>
+                    <div className="amount__btn--num" onClick={() => this.handleDonationAmount(50)}>$50</div>
+                    <div className="amount__btn--num" onClick={() => this.handleDonationAmount(25)}>$25</div>
+                    </div>
+                    <div>
                     <div className="donate__subheader">other amount</div>
                     <input onChange={this.handleStatePaymentInformation.bind(this)} name="amount" className="amount__input" placeholder="$ 0.00" />
+                    </div>
                   </div>
                   <div className="personalInformation">
                   <div className="donate__subheader">personal information</div>
@@ -127,6 +133,7 @@ class Donate extends Component {
                 </div>
                 <div className="paymentDetails__check">
                 <input className="paymentDetails__check--box" type="checkbox"/>
+                <label className="paymentDetails__check--label">I'd like to cover the processing fee so 100% of my dontation goes to Jijenge</label>
                 </div>
                 <input className="paymentDetails__check--btn" type="submit" value="Donate"/>
                 </div>

@@ -1,34 +1,41 @@
 .donate {
   background-color: $color-pink; 
+  background: rgba(240,88,97, 0.8);
   padding: 0 1rem;
   padding-top: 6rem;
-
+  
   &__subheader {
     color: $color-white; 
-    margin: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
     font-size: 1.1rem;
-    text-align: center;
     padding: .5rem 0;
+    font-size: 1.3rem;
   }
-
+  
   &__left {
     width: 50%; 
+    vertical-align: top;
     display: inline-block;
-    border: solid black thin;
-
+    
     &--image {
       background-image: url(./images/happyKids.jpg);
-      height: 40rem;
+      height: 35rem;
       background-position: center; 
       background-size: cover; 
-      margin: .5rem;
+      margin: 1rem;
     }
   }
   
   &__right {
-    border: solid black thin;
     width: 50%; 
     display: inline-block;
+    border: solid white thin;
+    // border-radius: 4px;
+    margin-top: 5.7rem;
+    padding-top: 1rem;
+
   }
 }
 
@@ -37,47 +44,59 @@ RIGHT SIDE
 */
 
 .frequency {
-  color: $color-white;
+  color: $color-pink;
   text-align: center;
-  margin: 2rem;
-  color: white; 
+  // margin-top: 6rem;
+  text-align: center;
+  font-size: 1.3rem;
   
   &__onceBtn {
-    border: solid black thin;
+    background-color: white;
+    border: solid $color-pink thin;
     display: inline-block;
-    width: 50%;
+    width: 40%;
+    border-radius: 4px;
     padding: 1rem 0;
+    cursor: pointer;
   }
   &__monthlyBtn {
-    border: solid black thin;
+    background-color: white;
+    border: solid $color-pink thin;
     display: inline-block;
-    width: 50%; 
+    width: 40%; 
     padding: 1rem 0;
+    border-radius: 4px;
+    cursor: pointer;
   }
 }
 
 .amount {
-  border: solid black thin; 
-  margin: 2rem;
   color: white; 
-  padding: .5rem 1rem;
+  
   &__btn {
-    display: inline-block;
-    padding: .5rem 1rem;
-    margin-right: 1rem;
-    border: solid black thin;
+    padding-left: 3rem;
+    &--num {
+      display: inline-block;
+      padding: .7rem 2rem;
+      margin-right: 2rem;
+      background-color: white; 
+      color: $color-pink; 
+      border-radius: 4px;
+      cursor: pointer;
+    }
   }
   &__input {
     margin: .5rem;
     border: none;
+    border-radius: 4px;
     width: 15rem;
     height: 2.5rem;
     padding-left: .7rem;
+    margin-left: 3rem;
   }
 }
 
 .personalInformation {
-  border: solid black thin;
   &__form {
     padding: 1rem;
   }
@@ -104,9 +123,6 @@ RIGHT SIDE
 }
 
 .paymentDetails {
-  border: solid black thin;
-  margin-top: 1rem; 
-  padding: 1rem;
   margin-bottom: 5rem;
 
   &__name {
@@ -177,10 +193,12 @@ RIGHT SIDE
   &__check {
     &--box {
       margin: .5rem;
-      // border: none;
       height: 2.5rem;
-      // background-color: white;
-
+    }
+    &--label {
+      color: $color-white;
+      z-index: 100;
+      margin-top: -2rem;
     }
     &--btn {
       padding: 1rem 2rem;
@@ -201,9 +219,14 @@ LEFT SIDE
   &__header {
     color: $color-white; 
     font-size: 1.5rem; 
+    margin-top: 2rem;
+    margin-left: .7rem;
+    padding: .5rem;
+
   }
   &__subheader{
     color: $color-white;
     font-size: 1rem;  
+    padding: 1rem;
   }
 }
