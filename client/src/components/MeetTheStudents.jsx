@@ -9,7 +9,9 @@ class MeetTheStudents extends Component {
   render() {
     return (
       <div>
-
+        <div className="navigation">
+          <Navigation /> 
+        </div>
       </div>
     ); 
   }

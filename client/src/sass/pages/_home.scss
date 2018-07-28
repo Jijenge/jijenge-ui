@@ -7,6 +7,27 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%); 
   position: relative; 
+  &__box {
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    top: 17rem;
+    width: 30%;
+    left: 2rem;
+  }
+  &__action {
+    border: solid $color-purple thin;
+    border-radius: 4px;
+    color: $color-purple;
+    font-size: 2rem;
+    position: relative;
+    top: 4rem;
+    left: 2rem;
+    width: 22rem;
+    height: 4rem;
+    text-align: center;
+    padding-top: .7rem;
+  }
 }
 
 .jijenge-word {

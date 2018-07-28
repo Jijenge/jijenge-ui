@@ -1,4 +1,5 @@
 import React, { Component } from 'react'; 
+import Navigation from './NavigationBar.jsx';
 
 class OurWork extends Component {
   constructor() {
@@ -7,7 +8,9 @@ class OurWork extends Component {
   render() {
     return (
       <div>
-      Hello from OurWork
+        <div className="navigation">
+          <Navigation /> 
+        </div>
       </div>
     ); 
   }

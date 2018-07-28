@@ -10,13 +10,11 @@ class Home extends Component {
   constructor() {
     super();
     this.state = {
-      menuBtn: '-'
     }
   }
 
   handleMenuBtn() {
     this.setState({
-      menuBtn: "X"
     })
   }
 
@@ -28,6 +26,10 @@ class Home extends Component {
         </div>
         <main>
           <div className="header">
+            <div className="header__box">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet sapiente hic odio quas officia quam cupiditate provident enim totam, molestiae asperiores rerum atque. Itaque, voluptatem quibusdam! Ipsum optio sapiente eius.
+            <div className="header__action">action</div>
+            </div>
           </div>
           <div className="information">
             <div className="info">

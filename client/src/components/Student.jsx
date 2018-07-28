@@ -1,4 +1,5 @@
 import React, { Component } from 'react'; 
+import Navigation from './NavigationBar.jsx';
 // import student1 from '../images/andre-adjahoe-474307-unsplash.jpg'; 
 
 class Student extends Component {
@@ -15,6 +16,9 @@ class Student extends Component {
   render() {
     return (
       <div>
+        <div className="navigation">
+          <Navigation /> 
+        </div>
         <div className="student">
           {/* <img className="student__picture" src={student1} /> */}
           <div className="student__name">

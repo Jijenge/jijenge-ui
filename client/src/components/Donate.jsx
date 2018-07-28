@@ -1,9 +1,10 @@
 import React, { Component } from 'react'; 
 import axios from 'axios'; 
-// import Payment from './Stripe/Payment.jsx';
-// import { Elements } from 'react-stripe-elements';
-// import StripeCheckout from 'react-stripe-checkout';
+import { CardElement, injectStripe } from 'react-stripe-elements';
 import Navigation from './NavigationBar.jsx';
+
+// const stripe = Stripe('pk_test_tbFndORrRYzJjE2PVtiTnRRU'); 
+// const elements = stripe.elements(); 
 
 class Donate extends Component {
   constructor() {
@@ -36,19 +37,53 @@ class Donate extends Component {
       [name]: value
     });
     const {firstName, lastName, email, cardFirstName, cardLastName, cardNumber, monthExp, yearExp, cvv, address, address2, city, state, zip} = this.state; 
-    // console.log(firstName, lastName, email, cardFirstName, cardLastName, cardNumber, monthExp, yearExp, cvv, address, address2, city, state, zip);
+    console.log(firstName, lastName, email, cardFirstName, cardLastName, cardNumber, monthExp, yearExp, cvv, address, address2, city, state, zip);
   }
 
-  /**
-   * Check frequency if it's only one time do not save on db 
-   * 
-   */
-
-  handleDonationAmount(amount) { 
+  handleFrequencyOnce() {
     this.setState({
-      amount
-    });
-    console.log('I am clicking', this.state.amount);
+      frequency: 'one time'
+    })
+  }
+
+  handleFrequencyMonthly() {
+    this.setState({
+      frequency: 'monthly'
+    })
+  }
+
+  submitOneTimeDonation = async(ev) => {
+    const { firstName, lastName, email, amount } = this.state; 
+    try {
+      let { token } = await this.props.stripe.createToken(); 
+      const body = {
+        firstName,
+        lastName,
+        amount, 
+        token: token.id
+      }
+      const data = await axios.post('http://localhost:3000/api/stripe/checkout', body);
+      console.log('Data from one time donation', data);
+    } catch ( err ) {
+      console.log('Error completing donation', err);
+    }
+  }
+
+  submitMonthlyDonation = async(ev) => {
+    const { firstName, lastName, email, amount } = this.state; 
+    try {
+      let { token } = await this.props.stripe.createToken(); 
+      const body = {
+        firstName,
+        lastName,
+        amount, 
+        token: token.id
+      }
+      const data = await axios.post('http://localhost:3000/api/stripe/checkout', body);
+      console.log('Data from one time donation', data);
+    } catch ( err ) {
+      console.log('Error completing donation', err);
+    }
   }
 
   render() {
@@ -60,85 +95,65 @@ class Donate extends Component {
         <main>
           <div className="donate">
             <div className="donate__left">
-            <div className="thankyou">
-            <div className="thankyou__header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sunt.</div>
-            <div className="donate__left--image">
-            </div>
-            <div className="thankyou__subheader">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sunt.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sunt.
-            </div>
-            </div>
 
             </div>
             <div className="donate__right">
               <div className="donate__right--form">
-                <form className="formContainer">
-
-                  <div className="frequency">
-                    <div className="frequency__onceBtn">one time</div>
-                    <div className="frequency__monthlyBtn">monthly</div>
-                  </div>
-
-                  <div className="amount">
-                    <div className="donate__subheader">select amount</div>
-                    <div className="amount__btn">
-                    <div className="amount__btn--num" onClick={() => this.handleDonationAmount(250)}>$250</div>
-                    <div className="amount__btn--num" onClick={() => this.handleDonationAmount(100)}>$100</div>
-                    <div className="amount__btn--num" onClick={() => this.handleDonationAmount(50)}>$50</div>
-                    <div className="amount__btn--num" onClick={() => this.handleDonationAmount(25)}>$25</div>
+                  {
+                    this.state.frequency === '' ? 
+                    (
+                      <div className="amount">
+                      <div className="amount__label">thank you for your donation!</div>
+                        <div className="amountContainer">
+                        <span className="amountContainer__spanInput">$</span>
+                        <input className="amountContainer__input" name="amount" onChange={this.handleStatePaymentInformation.bind(this)}  />
+                        <span className="amountContainer__spanInput">USD</span>
+                        </div> 
+                        <div className="frequency">
+                          <div onClick={this.handleFrequencyOnce.bind(this)} className="frequency__onceBtn">one time</div>
+                          <div onClick={this.handleFrequencyMonthly.bind(this)} className="frequency__monthlyBtn">monthly</div>
+                        </div>
+                      </div>
+                    ) 
+                    :
+                    this.state.frequency === 'one time' ? 
+                    (
+                    <div className="checkout">
+                      <div className="personalInformation" >
+                        <div className="personalInformation__header">personal information</div>
+                        <input className="personalInformation__info" name="firstName" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="first name" />
+                        <input className="personalInformation__info" name="lastName" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="last name" />
+                        <input className="personalInformation__info" name="email" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="email" />
+                      </div>
+                      {/* <p>Would you like to complete the purchase?</p> */}
+                      <CardElement />
+                      <div className="checkout__btn" onClick={this.submitOneTimeDonation.bind(this)}>donate</div>
                     </div>
-                    <div>
-                    <div className="donate__subheader">other amount</div>
-                    <input onChange={this.handleStatePaymentInformation.bind(this)} name="amount" className="amount__input" placeholder="$ 0.00" />
+                    )
+                    :
+                    this.state.frequency === 'monthly' ? 
+                    (
+                    <div className="checkout">
+                      <div className="personalInformation" >
+                        <div className="personalInformation__header">Donate ${this.state.amount} monthly<a href="/donate">(change amount)</a></div>
+                        <input className="personalInformation__info" name="firstName" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="first name" />
+                        <input className="personalInformation__info" name="lastName" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="last name" />
+                        <input className="personalInformation__info" name="email" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="email" />
+                        <input className="personalInformation__info" name="lastName" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="address" />
+                        <input className="personalInformation__info" name="email" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="state" />
+                        <input className="personalInformation__info" name="lastName" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="city" />
+                        <input className="personalInformation__info" name="email" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="zip code" />
+                      </div>
+                      {/* <p>Would you like to complete the purchase?</p> */}
+                      <CardElement />
+                      <div className="checkout__btn" onClick={this.submitOneTimeDonation.bind(this)}>donate</div>
                     </div>
-                  </div>
-                  <div className="personalInformation">
-                  <div className="donate__subheader">personal information</div>
-                    <input onChange={this.handleStatePaymentInformation.bind(this)} name="firstName" placeholder="First name" className="personalInformation__input" />
-                    <input onChange={this.handleStatePaymentInformation.bind(this)} name="lastName" placeholder="Last name" className="personalInformation__input" />
-                    <div className="personalInformation__container">
-                    <input onChange={this.handleStatePaymentInformation.bind(this)} name="email" placeholder="Email" className="personalInformation__container--input" />  
-                  </div>
-                  </div>
-
-                  <div className="paymentDetails">
-                  <div className="donate__subheader">payment details</div>
-
-                  <div className="paymentDetails__name">
-                    <input onChange={this.handleStatePaymentInformation.bind(this)} name="cardFirstName" placeholder="First name" className="paymentDetails__name--input"/>
-                    <input onChange={this.handleStatePaymentInformation.bind(this)} name="cardLastName" placeholder="Last name" className="paymentDetails__name--input"/>
-                  </div>
-
-                  <input onChange={this.handleStatePaymentInformation.bind(this)} name="cardNumber" className="paymentDetails__cardNumber" placeholder="XXXX XXXX XXXX XXXX" />
-
-                  <div className="paymentDetails__expiration">
-                    <input onChange={this.handleStatePaymentInformation.bind(this)} name="monthExp" className="paymentDetails__expiration--input" placeholder="month" />
-                    /
-                    <input onChange={this.handleStatePaymentInformation.bind(this)} name="yearExp" className="paymentDetails__expiration--input" placeholder="year" />
-                  </div>
-
-                  <input onChange={this.handleStatePaymentInformation.bind(this)} name="cvv" className="paymentDetails__securityCode" placeholder="CVV"/>
-
-                  <select className="paymentDetails__country">
-                        <option value="">Select option</option>
-                        <option value="United States">United States</option>
-                      </select>
-
-                <div className="paymentDetails__address">
-                <input onChange={this.handleStatePaymentInformation.bind(this)} name="address" className="paymentDetails__address--info" placeholder="address"/>
-                <input onChange={this.handleStatePaymentInformation.bind(this)} name="address2" className="paymentDetails__address--info" placeholder="address2"/>
-                <input onChange={this.handleStatePaymentInformation.bind(this)} name="city" className="paymentDetails__address--info" placeholder="city"/>
-                <input onChange={this.handleStatePaymentInformation.bind(this)} name="state" className="paymentDetails__address--city" placeholder="state"/>
-                <input onChange={this.handleStatePaymentInformation.bind(this)} name="zip" className="paymentDetails__address--city" placeholder="ZIP"/>
-                </div>
-                <div className="paymentDetails__check">
-                <input className="paymentDetails__check--box" type="checkbox"/>
-                <label className="paymentDetails__check--label">I'd like to cover the processing fee so 100% of my dontation goes to Jijenge</label>
-                </div>
-                <input className="paymentDetails__check--btn" type="submit" value="Donate"/>
-                </div>
-
-                </form>
+                    )
+                    :
+                    (
+                      <h1>Rendering else statement</h1>
+                    )
+                  }
               </div>
             </div>
           </div>
@@ -148,96 +163,6 @@ class Donate extends Component {
   }
 }
 
-export default Donate; 
+export default injectStripe(Donate);
 
 
-
-
-
-// <div className="donate">
-// <div className="donate__left"><h1>Thank you for your donation</h1>
-// </div>
-
-// <div className="donate__right">
-// <div className="frequency">
-//   <div className="frequency__onceBtn">one time</div>
-//   <div className="frequency__monthlyBtn">monthly</div>
-// </div>
-// <div className="amount">
-//   <div className="donate__subheader">select amount</div>
-//     <div className="amount__btn">$250</div>
-//     <div className="amount__btn">$100</div>
-//     <div className="amount__btn">$50</div>
-//     <div className="amount__btn">$25</div>
-//     <div className="amount__btn">Other</div>
-//     <div className="donate__subheader">other amount</div>
-//     <form>
-//       <input className="amount__input" placeholder="$ 0.00" />
-//     </form>
-// </div>
-
-// <div className="personalInformation">
-//   <div className="donate__subheader">personal information</div>
-//   <form className="personalInformation__form">
-//     <input placeholder="First name" className="personalInformation__input" />
-//     <input placeholder="Last name" className="personalInformation__input" />
-//     <div className="personalInformation__container">
-//     <input placeholder="Email" className="personalInformation__container--input" />  
-//     </div>
-//   </form> 
-// </div>
-
-
-
-// <div className="paymentDetails">
-// <div className="donate__subheader">payment details</div>
-
-// <select className="paymentDetails__country">
-//       <option value="volvo">Select option</option>
-//       <option value="saab">Saab</option>
-//       <option value="fiat">Fiat</option>
-//       <option value="audi">Audi</option>
-//     </select>
-// </div>
-// </div>
-// </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      //     {/* I can change state with donors information on submit 
-      //     name, last name and amount 
-      //     */}
-      //     <form className="donors-information" >
-      //       <input name='name' placeholder="Name"onChange={this.handleFormInputChage.bind(this)} />
-      //       <input lastName='lastName' placeholder="Last name"onChange={this.handleFormInputChage.bind(this)} />
-      //       <input amount='amount' placeholder="Amount" onChange={this.handleFormInputChage.bind(this)} />
-      //       <input type='submit' value='Donate' />
-      //     </form>
-      //   </div>
-      //   <div>
-      //   <StripeCheckout
-      //   name="Jijenge" // the pop-in header title
-      //   description="Donate" // the pop-in header subtitle
-      //   amount={this.state.amount}
-      //   // image="https://www.vidhub.co/assets/logos/vidhub-icon-2e5c629f64ced5598a56387d4e3d0c7c.png"
-      //   token={this.handleCheckout}
-      //   stripeKey="pk_test_tbFndORrRYzJjE2PVtiTnRRU"
-      //   locale="auto"
-      //   panelLabel="Donate Now"
-      // />

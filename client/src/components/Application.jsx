@@ -1,6 +1,10 @@
 import React, { Component } from 'react'; 
 import { Route, Switch} from 'react-router-dom';
-import {StripeProvider} from 'react-stripe-elements';
+import { Elements, StripeProvider } from 'react-stripe-elements';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faCheckSquare, faSearch, faBars, faGithub, faVideo, faLinkedin, faEnvelope, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import NavigationBar from './NavigationBar.jsx'; 
 import Home from './Home.jsx';
 import MeetTheStudents from './MeetTheStudents.jsx';
@@ -9,6 +13,8 @@ import OurWork from './OurWork.jsx';
 import About from './About.jsx';
 import Subscribe from './Subscribe.jsx';
 import Contact from './Contact.jsx';
+
+library.add(fab, faCheckSquare, faSearch, faBars, faVideo, faEnvelope, faFileAlt);
 
 export default class extends Component {
   constructor(props) {
@@ -21,9 +27,12 @@ export default class extends Component {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/MeetTheStudents' component={MeetTheStudents} />
+        {/* <Route exact path='/Donate' component={Donate} /> */}
         <Route exact path='/Donate' component={(props) => (
-            <StripeProvider apiKey="pk_test_z4MoEuHo0RIJC8oV0K6xhsO1">
-              <Donate {...props} />
+            <StripeProvider stripe={this.props.stripe} apiKey="pk_test_tbFndORrRYzJjE2PVtiTnRRU">
+              <Elements>
+                <Donate {...props} />
+              </Elements>
             </StripeProvider>
             )}/> 
         <Route exact path='/OurWork' component={OurWork} />
