@@ -20,6 +20,10 @@ class Home extends Component {
     })
   }
 
+  handleTeam() {
+    this.props.history.push('/Team');
+  }
+
   render() {
     return (
       <div>
@@ -82,7 +86,7 @@ class Home extends Component {
             <div className="actionCall__subheader">Education improves community health and reduces needless human suffering</div>
             <div className="actionCall__container">
               <div className="actionCall__container--btn">Give Education</div>
-              <div className="actionCall__container--learn">Learn More &rarr;</div>
+              <div onClick={this.handleTeam.bind(this)} className="actionCall__container--learn">Learn More &rarr;</div>
             </div>
         </section>
         <footer>
