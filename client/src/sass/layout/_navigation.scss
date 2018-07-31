@@ -14,12 +14,6 @@
     margin: 0 auto; 
   }
 
-  &__mobileList {
-    display: none;
-    float: right;
-    margin-top: -1rem;
-  }
-
   &__logo {
     color: $color-purple; 
     display: inline-block;
@@ -38,38 +32,86 @@
   &__item {
     display: inline-block;
     &:not(:last-child) {
-      margin-right: 2.5rem; 
+      margin-right: 4rem; 
     }
   }
   &__linkMain {
     text-decoration: none;
     color: $color-purple; 
-    font-size: 2.7rem;
-    letter-spacing: 1.5px;
+    font-size: 3rem;
+    letter-spacing: .3rem;
   }
   &__link {
     text-decoration: none;
     color: $color-purple; 
     font-size: 1.5rem;
-    letter-spacing: 1.5px;
-    text-transform: lowercase;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+  }
+  &__linkDonate {
+    color: $color-purple;
+    border: solid $color-purple thin;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .8rem;
+    padding: 1.2rem 3rem;
+    text-decoration: none;
+    border-radius: 1rem;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .navigation{
-    &__mobileList {
-      display: inline-block;
-      color: $color-purple;
-      &:hover {
-        cursor: pointer;
-      }
-    }
-    &__link {
-      display: none; 
-    }
+.dropbtn {
+  display: none; 
+}
+
+
+@media screen and (max-width: 920px) {
+  .navigation {
     &__list {
-      position: relative;
+      display: none;
     }
+  }
+  .dropbtn {
+    position: relative; 
+    display: inline-block; 
+    float: right;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  
+  .dropbtnIcon {
+    color: $color-purple;
+  }
+  
+  .dropdownContent {
+    display: none; 
+    position: absolute;
+    min-width: 14rem;
+    background-color: $color-purple; 
+    z-index: 1;
+    right: 1.5rem;
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  
+  .dropdownContent a {
+    color: $color-white;
+    padding: 1.2rem 1.6rem;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  
+  .dropdownContent a:hover {
+    background-color: $color-white; 
+    color: $color-purple; 
+    
+  }
+  
+  .dropbtn:hover .dropdownContent {
+    display: block;
   }
 }

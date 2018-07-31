@@ -12,13 +12,24 @@ class NavigationBar extends Component {
         <div className="navigation__logo">
           <div className="navigation__item"><Link className="navigation__linkMain" to='/'>Jijenge</Link></div>
         </div>
+        {/* MOBILE */}
+        <div className="dropbtn">
+          <a className="dropbtnIcon"><FontAwesomeIcon icon='bars' size="4x" /></a>
+          <div className="dropdownContent">
+            <Link to='/OurWork'>Give monthly</Link>
+            <Link to='/About'>Our students</Link>
+            <Link to='/MeetTheStudents'>Team</Link>
+            <Link to=''>Visit Africa</Link>
+            <Link to='/Donate'>Donate</Link>
+          </div>
+        </div>
+        {/* WEB */}
         <div className="navigation__list">
-          <div className="navigation__mobileList"><FontAwesomeIcon icon='bars' size="4x" /></div>
-          <div className="navigation__item"><Link className="navigation__link" to='/OurWork'>Our work</Link></div>
-          <div className="navigation__item"><Link className="navigation__link" to='/About'>About us</Link></div>
-          <div className="navigation__item"><Link className="navigation__link" to='/MeetTheStudents'>Meet the Students</Link></div>
-          {/* <div className="navigation__item"><Link className="navigation__link" to='/Subscribe'>Subscribe</Link></div> */}
-          <div className="navigation__item"><Link className="navigation__link" to='/Donate'>Donate</Link></div>
+          <div className="navigation__item"><Link className="navigation__link" to='/OurWork'>Give monthly</Link></div>
+          <div className="navigation__item"><Link className="navigation__link" to='/MeetTheStudents'>Our students</Link></div>
+          <div className="navigation__item"><Link className="navigation__link" to='/Team'>Team</Link></div>
+          <div className="navigation__item"><Link className="navigation__link" to='/VisitAfrica'>Visit Africa</Link></div>
+          <div className="navigation__item"><Link className="navigation__linkDonate" to='/Donate'>Donate</Link></div>
         </div>  
       </div>
     )

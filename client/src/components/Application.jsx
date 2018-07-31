@@ -4,17 +4,18 @@ import { Elements, StripeProvider } from 'react-stripe-elements';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faCheckSquare, faSearch, faBars, faGithub, faVideo, faLinkedin, faEnvelope, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCheckSquare, faSearch, faBars, faYoutubeSquare, faEnvelope, faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
 import NavigationBar from './NavigationBar.jsx'; 
 import Home from './Home.jsx';
 import MeetTheStudents from './MeetTheStudents.jsx';
 import Donate from './Donate.jsx';
-import OurWork from './OurWork.jsx';
+import VisitAfrica from './VisitAfrica.jsx';
+import Team from './Team.jsx';
 import About from './About.jsx';
 import Subscribe from './Subscribe.jsx';
 import Contact from './Contact.jsx';
 
-library.add(fab, faCheckSquare, faSearch, faBars, faVideo, faEnvelope, faFileAlt);
+library.add(fab, faCheckSquare, faSearch, faBars, faEnvelope, faPhoneSquare );
 
 export default class extends Component {
   constructor(props) {
@@ -35,10 +36,10 @@ export default class extends Component {
               </Elements>
             </StripeProvider>
             )}/> 
-        <Route exact path='/OurWork' component={OurWork} />
+        <Route exact path='/Team' component={Team} />
         <Route exact path='/About' component={About} />
         <Route exact path='/Subscribe' component={Subscribe} />
-        <Route exact path='/Contact' component={Contact} />
+        <Route exact path='/VisitAfrica' component={VisitAfrica} />
       </Switch>
       </main>
 

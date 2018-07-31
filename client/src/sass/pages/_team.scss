@@ -1,0 +1,77 @@
+.team {
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+  opacity: .8;
+  background-image: url(./images/teamHeader.jpg);
+  &__header {
+    font-size: 3rem;
+    color: $color-pink;
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 9rem;
+  }
+}
+
+.teamDescription {
+  text-align: center;
+  letter-spacing: .7rem;
+  padding-bottom: 7rem;
+
+  &__header {
+    font-size: 3rem;
+    color: $color-blue;
+    margin-bottom: 7rem;
+  }
+}
+
+.member {
+  &__picture {
+    &--img {
+      width: 20rem;
+    }
+  }
+
+  &__information {
+    color: $color-blue;
+    &--name {
+      font-size: 1.5rem;
+      letter-spacing: 0;
+      margin-top: 1rem;
+    }
+    &--role {
+      font-size: 1.5rem;
+      letter-spacing: 0;
+    }
+    &--jijenge {
+      font-size: 1.5rem;
+      letter-spacing: 0;
+    }
+  }
+  &__bio {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    letter-spacing: 0; 
+    border: solid $color-pink thin; 
+    border-radius: .7rem;
+    padding: .5rem 2.5rem;
+    display: inline-block;
+    color: $color-pink;
+    text-transform: lowercase;
+  }
+}
+
+.contactUsBtn {
+  text-align: center; 
+  font-size: 2.5rem;
+  border-radius: 1rem;
+  border: solid $color-blue thin;
+  background-color: $color-pink;
+  color: $color-blue;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: .5rem 2rem;
+  margin-top: -2rem;
+  margin-bottom: 6rem;
+  cursor: pointer;
+}

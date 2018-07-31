@@ -72,6 +72,18 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.mp4$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              //Images folder in the src directory 
+              name: "videos/[name].[ext]"
+            }
+          }
+        ]
       }
     ]
   },

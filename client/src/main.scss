@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
 @import "./sass/abstracts/mixins";
 @import "./sass/abstracts/variables";
 @import "./sass/layout/grid"; 
 @import "./sass/layout/navigation"; 
 @import "./sass/pages/home"; 
+@import "./sass/pages/team"; 
+@import "./sass/pages/visit"; 
 @import "./sass/components/donateHeader"; 
 @import "./sass/components/students"; 
 

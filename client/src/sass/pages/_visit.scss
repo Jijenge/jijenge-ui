@@ -1,0 +1,190 @@
+.visitHeader {
+  height: 95%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/masai.jpg);
+  background-color: $color-yellow;
+}
+
+.visitBanner {
+  position: relative;
+  top: 10rem;
+  left: 3rem;
+  max-width: 90rem;
+
+  &__header {
+    color: $color-yellow;
+    font-size: 4rem;
+    letter-spacing: .5rem;
+  }
+
+  &__container {
+    position: relative;
+    top: 5rem;
+
+    &--text {
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+      color: $color-white;
+      letter-spacing: .1rem;
+    }
+
+    &--email {
+
+      &-input {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.3rem;
+        padding: 1rem 1rem;
+        width: 30rem;
+        border:  solid $color-yellow thin;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        vertical-align: top;
+      }
+      &-btn {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        border: solid $color-yellow thin;
+        background-color: $color-yellow;
+        opacity: .8;
+        color: $color-white;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        padding: 1rem 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.meet {
+  height: 100vh;
+  margin-top: 5%;
+  text-align: center;
+
+  &__header {
+    font-size: 3rem;
+    letter-spacing: .7rem;
+    text-transform: lowercase;
+    color: $color-yellow;
+    opacity: .8;
+  }
+}
+
+.experience {
+  margin-top: -4rem;
+  height: 90vh;
+  text-align: center;
+
+}
+
+.slideshow-container {
+  max-width: 110rem;
+  position: relative;
+  margin: 0 auto;
+  background-color: $purple;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.image {
+  width: 70%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  color: $color-yellow;
+  opacity: .8;
+  font-weight: bold;
+  font-size: 4rem;
+  transition: 0.6s ease;
+  padding: 3rem;
+  top: 35%; 
+  position: absolute;
+}
+
+.next {
+  right: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 .2rem;
+  margin-top: 1rem;
+  background-color: $color-yellow;
+  opacity: .8;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.experienceAction {
+  height: 100vh;
+  background-image: url(./images/relaxation.jpg);
+  background-size: cover;
+  background-position: bottom;
+  &__header {
+    color: $color-white;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 6rem;
+    letter-spacing: .7rem;
+  }
+  &__banner {
+    text-align: center;
+    margin-top: 2rem;
+
+    &--form {
+
+    }
+    &--input {
+      border: solid $color-purple thin;
+      opacity: .8;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.3rem;
+      padding: 1rem 1rem;
+      width: 25rem;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      vertical-align: top;
+    }
+    &--btn {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      border: solid $color-purple thin;
+      background-color: $color-purple;
+      opacity: .8;
+      color: $color-white;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      padding: 1rem 1rem;
+      cursor: pointer;
+    }
+  }
+}
