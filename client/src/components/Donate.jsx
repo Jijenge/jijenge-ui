@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios'; 
 import { CardElement, injectStripe } from 'react-stripe-elements';
 import Navigation from './NavigationBar.jsx';
+import Footer from './Footer.jsx';
 
 // const stripe = Stripe('pk_test_tbFndORrRYzJjE2PVtiTnRRU'); 
 // const elements = stripe.elements(); 
@@ -158,6 +159,9 @@ class Donate extends Component {
             </div>
           </div>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
     ); 
   }

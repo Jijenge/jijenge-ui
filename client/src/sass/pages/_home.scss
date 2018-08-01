@@ -256,10 +256,13 @@
 }
 
 .footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-color: $color-purple;
   opacity: .8;
   height: 20rem;
-  // margin-top: 14rem;
   text-align: center;
 
   &__logo {

@@ -64,7 +64,7 @@ class Team extends Component {
               </div>
           </div>
 
-          <div className="contactUsBtn">Contact us</div>
+          {/* <div className="contactUsBtn">Contact us</div> */}
 
           <div className="row">
 

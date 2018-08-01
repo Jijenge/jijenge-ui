@@ -38,9 +38,11 @@
     background-color: $color-blue;
     display: inline-block;
     width: 30rem;
+    height: 45rem;
     text-align: center;
     padding: 1rem;
     margin-bottom: 3rem;
+    vertical-align: top;
 
     &:not(:last-child) {
       margin-right: 3rem;
@@ -53,6 +55,7 @@
       &-title {
       font-size: 2rem;
       color: $color-white;
+      margin-top: 1rem;
       }
       &-subtitle {
         font-size: 1.5rem;
