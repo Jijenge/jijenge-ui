@@ -1,0 +1,74 @@
+.ourStudentsHeader {
+  background-image: url(./images/southAfrica.jpg);
+  background-size: cover;
+  background-position: center; 
+  height: 50%;
+  &__text {
+    padding-top: 12rem;
+    text-align: center;
+    color: $color-white;
+    font-size: 3rem;
+    letter-spacing: .3rem;
+  }
+  &__subtext {
+    text-align: center;
+    color: $color-white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding-top: 1rem;
+  }
+}
+
+.ourStudents {
+  &__header {
+    color: $color-purple;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.studentsContainer {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  text-align: center;
+
+  &__eachStudent {
+    background-color: $color-blue;
+    display: inline-block;
+    width: 30rem;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 3rem;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+
+    &--picture img {
+      height: 25rem;
+    }
+    &--info {
+      &-title {
+      font-size: 2rem;
+      color: $color-white;
+      }
+      &-subtitle {
+        font-size: 1.5rem;
+        color: $color-white;
+        font-weight: 300;
+        margin-top: 1rem;
+      }
+      &-subtitle div {
+        font-size: 1.5rem;
+        color: $color-purple;
+        font-weight: 300;
+        margin-top: 1rem;
+        cursor: pointer;
+        display: block;
+
+      }
+    }
+  }
+}

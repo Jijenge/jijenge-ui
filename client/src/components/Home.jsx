@@ -24,6 +24,10 @@ class Home extends Component {
     this.props.history.push('/Team');
   }
 
+  handleDonation() {
+    this.props.history.push('/Donate');
+  }
+
   render() {
     return (
       <div>
@@ -39,7 +43,7 @@ class Home extends Component {
           <div className="headerBanner">
             <div className="headerBanner__header">Building dreams for those without means</div>
             <div className="headerBanner__subheader">100% of donations educate student</div>
-            <div className="headerBanner__btn">Give Monthly</div>
+            <div onClick={this.handleDonation.bind(this)} className="headerBanner__btn">Give Monthly</div>
           </div>
           <section className="welcome">
             <div className="welcome__header">Welcome to Jijenge</div>
@@ -85,7 +89,7 @@ class Home extends Component {
             <div className="actionCall__subheader">Education has the power to democratize opportunity.</div>
             <div className="actionCall__subheader">Education improves community health and reduces needless human suffering</div>
             <div className="actionCall__container">
-              <div className="actionCall__container--btn">Give Education</div>
+              <div onClick={this.handleDonation.bind(this)}  className="actionCall__container--btn">Give Education</div>
               <div onClick={this.handleTeam.bind(this)} className="actionCall__container--learn">Learn More &rarr;</div>
             </div>
         </section>

@@ -41,7 +41,7 @@
     margin-top: 2rem;
     border-radius: 1rem;
     letter-spacing: .5rem;
-
+    cursor: pointer;
   }
 }
 
@@ -244,6 +244,7 @@
       padding: 1rem 4rem;
       border: solid $color-pink thin;
       border-radius: 1rem;
+      cursor: pointer;
     }
     &--learn {
       display: inline-block;
