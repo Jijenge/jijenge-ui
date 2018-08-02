@@ -15,13 +15,13 @@ const webpackDevMiddleware = require('webpack-dev-middleware')(
 const webpackHotMiddleware = require('webpack-hot-middleware')(compiler);
 server.use(webpackDevMiddleware); 
 server.use(webpackHotMiddleware);
+
 }
 
 const staticMiddleware = express.static('dist'); 
-
 server.use(staticMiddleware);
 
-server.get('*', (req, res) => res.sendFile(path.resolve(__dirname, '../index.html')));
+// server.get('*', (req, res) => res.sendFile(path.resolve(__dirname, '../index.html')));
 
 const PORT = process.env.PORT || 6060; 
 
