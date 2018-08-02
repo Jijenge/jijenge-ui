@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch config --watch src/server src/server/main.js"
+    "build": "webpack --config=config/webpack.dev.js",
+    "dev": "nodemon --watch config --watch src/server src/server/main.js",
+    "prod": "NODE_ENV=production node src/server/main.js"
   },
   "keywords": [],
   "author": "",
