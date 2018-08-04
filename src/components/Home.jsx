@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navigation from './NavigationBar.jsx';
 import Subscribe from './Subscribe.jsx';
 import Footer from './Footer.jsx';
-import JijengeWord from '../images/try3.png';
 import sunset from '../videos/Sunset-Lapse.mp4';
 
 
@@ -42,7 +41,7 @@ class Home extends Component {
           </div>
           <div className="headerBanner">
             <div className="headerBanner__header">Building dreams for those without means</div>
-            <div className="headerBanner__subheader">100% of donations educate student</div>
+            <div className="headerBanner__subheader">100% of donations educate students</div>
             <div onClick={this.handleDonation.bind(this)} className="headerBanner__btn">Give Monthly</div>
           </div>
           <section className="welcome">
@@ -90,7 +89,7 @@ class Home extends Component {
             <div className="actionCall__subheader">Education improves community health and reduces needless human suffering</div>
             <div className="actionCall__container">
               <div onClick={this.handleDonation.bind(this)}  className="actionCall__container--btn">Give Education</div>
-              <div onClick={this.handleTeam.bind(this)} className="actionCall__container--learn">Learn More &rarr;</div>
+              {/* <div onClick={this.handleTeam.bind(this)} className="actionCall__container--learn">Learn More &rarr;</div> */}
             </div>
         </section>
         <footer>

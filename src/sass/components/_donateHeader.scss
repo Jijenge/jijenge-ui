@@ -1,7 +1,10 @@
 .donate {
-  background-color: $color-pink; 
-  background: rgba(240,88,97, 0.8);
-  padding: 0 1rem;
+  // background-color: $color-pink; 
+  // background: rgba(240,88,97, 0.8);
+  background-image: url(./images/donateHeader.jpg);
+  background-position: bottom;
+  background-size: cover;
+  height: 60%;
   padding-top: 6rem;
   padding-bottom: 3rem;
   
