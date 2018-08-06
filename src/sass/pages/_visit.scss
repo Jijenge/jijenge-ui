@@ -2,7 +2,7 @@
   height: 95%;
   background-size: cover;
   background-position: center;
-  background-image: url(./images/masai.jpg);
+  background-image: url(./images/visitAfricaHeader-compressor.jpg);
   background-color: $color-yellow;
 }
 
@@ -60,7 +60,6 @@
 }
 
 .meet {
-  height: 100vh;
   margin-top: 5%;
   text-align: center;
 
@@ -70,29 +69,25 @@
     text-transform: lowercase;
     color: $color-yellow;
     opacity: .8;
+    margin-top: 4rem;
   }
 }
 
 .experience {
-  margin-top: -4rem;
-  height: 90vh;
   text-align: center;
-
+  margin-bottom: 4rem;
 }
 
 .slideshow-container {
   max-width: 110rem;
   position: relative;
   margin: 0 auto;
-  background-color: $purple;
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   margin-top: 2rem;
 }
 
 .image {
-  width: 70%;
+  height: 76%;
 }
 
 .prev, .next {
@@ -117,6 +112,7 @@
   width: 1.5rem;
   margin: 0 .2rem;
   margin-top: 1rem;
+  margin-bottom: 3rem;
   background-color: $color-yellow;
   opacity: .8;
   border-radius: 50%;
@@ -144,7 +140,7 @@
 
 .experienceAction {
   height: 100vh;
-  background-image: url(./images/relaxation.jpg);
+  background-image: url(./images/visitAfricaEndPageAction-compressor.jpg);
   background-size: cover;
   background-position: bottom;
   &__header {
@@ -185,6 +181,33 @@
       border-bottom-right-radius: 1rem;
       padding: 1rem 1rem;
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .visitBanner {
+    &__container {
+      &--email {
+        &-input {
+          width: 20rem;
+        }
+        &-btn {
+          font-size: 1rem;
+          padding: 1.15rem 1rem;
+        }
+      }
+    }
+  }
+  .experienceAction {
+    &__banner {
+      &--input {
+        margin-top: 2rem;
+        width: 20rem;
+      }
+      &--btn {
+        margin-top: 2rem;
+      }
     }
   }
 }

@@ -1,8 +1,8 @@
 // ANN
 
 .annHeader {
-  height: 40vh; 
-  background-image: url(./images/generic.jpg);
+  height: 43vh; 
+  background-image: url(./images/eachStudentBackground.jpg);
   background-size: cover;
   background-position: center;
 
@@ -32,6 +32,13 @@
     margin-bottom: 4rem;
     padding: 2rem 3rem;
     text-align: center;
+
+    &--myStory { 
+      color: $color-white;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
 
     &--text { 
       color: $color-white;
@@ -86,8 +93,8 @@
 // DANIEL
 
 .danielHeader {
-  height: 40vh; 
-  background-image: url(./images/generic.jpg);
+  height: 53vh; 
+  background-image: url(./images/eachStudentBackground.jpg);
   background-size: cover;
   background-position: center;
 
@@ -117,6 +124,13 @@
     margin-bottom: 4rem;
     padding: 2rem 3rem;
     text-align: center;
+
+    &--myStory { 
+      color: $color-white;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
 
     &--text { 
       color: $color-white;
@@ -175,7 +189,7 @@
 
 .kelvinHeader {
   height: 40vh; 
-  background-image: url(./images/generic.jpg);
+  background-image: url(./images/eachStudentBackground.jpg);
   background-size: cover;
   background-position: center;
 
@@ -205,6 +219,13 @@
     margin-bottom: 4rem;
     padding: 2rem 3rem;
     text-align: center;
+
+    &--myStory { 
+      color: $color-white;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
 
     &--text { 
       color: $color-white;
@@ -261,7 +282,7 @@
 
 .maryHeader {
   height: 40vh; 
-  background-image: url(./images/generic.jpg);
+  background-image: url(./images/eachStudentBackground.jpg);
   background-size: cover;
   background-position: center;
 
@@ -291,6 +312,13 @@
     margin-bottom: 4rem;
     padding: 2rem 3rem;
     text-align: center;
+
+    &--myStory { 
+      color: $color-white;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
 
     &--text { 
       color: $color-white;
@@ -344,8 +372,8 @@
 // ONESMUS
 
 .onesmusHeader {
-  height: 40vh; 
-  background-image: url(./images/generic.jpg);
+  height: 50vh; 
+  background-image: url(./images/eachStudentBackground.jpg);
   background-size: cover;
   background-position: center;
 
@@ -368,13 +396,20 @@
   max-width: 95rem;
   margin: 0 auto; 
   text-align: center;
-
+  
   &__container {
     background-color: rgba($pink, .7);
     margin-top: 2rem;
     margin-bottom: 4rem;
     padding: 2rem 3rem;
     text-align: center;
+
+    &--myStory { 
+      color: $color-white;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
 
     &--text { 
       color: $color-white;
@@ -421,7 +456,8 @@
   &__picture {
     width: 25rem;
     border: 1rem solid $color-pink;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    
   }
 }
 
@@ -429,7 +465,7 @@
 
 .samuelHeader {
   height: 40vh; 
-  background-image: url(./images/generic.jpg);
+  background-image: url(./images/eachStudentBackground.jpg);
   background-size: cover;
   background-position: center;
 
@@ -459,6 +495,13 @@
     margin-bottom: 4rem;
     padding: 2rem 3rem;
     text-align: center;
+
+    &--myStory { 
+      color: $color-white;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
 
     &--text { 
       color: $color-white;
@@ -513,7 +556,7 @@
 
 .vivianHeader {
   height: 40vh; 
-  background-image: url(./images/generic.jpg);
+  background-image: url(./images/eachStudentBackground.jpg);
   background-size: cover;
   background-position: center;
 
@@ -543,6 +586,13 @@
     margin-bottom: 4rem;
     padding: 2rem 3rem;
     text-align: center;
+
+    &--myStory { 
+      color: $color-white;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
 
     &--text { 
       color: $color-white;
@@ -601,7 +651,7 @@
 
 .winnieHeader {
   height: 40vh; 
-  background-image: url(./images/generic.jpg);
+  background-image: url(./images/eachStudentBackground.jpg);
   background-size: cover;
   background-position: center;
 
@@ -631,6 +681,13 @@
     margin-bottom: 4rem;
     padding: 2rem 3rem;
     text-align: center;
+
+    &--myStory { 
+      color: $color-white;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
 
     &--text { 
       color: $color-white;
@@ -685,7 +742,7 @@
 
 .yvonneHeader {
   height: 40vh; 
-  background-image: url(./images/generic.jpg);
+  background-image: url(./images/eachStudentBackground.jpg);
   background-size: cover;
   background-position: center;
 
@@ -715,6 +772,13 @@
     margin-bottom: 4rem;
     padding: 2rem 3rem;
     text-align: center;
+
+    &--myStory { 
+      color: $color-white;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
 
     &--text { 
       color: $color-white;

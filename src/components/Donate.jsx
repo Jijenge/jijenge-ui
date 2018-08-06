@@ -94,71 +94,26 @@ class Donate extends Component {
           <Navigation /> 
         </div>
         <main>
-          <div className="donate">
-            <div className="donate__left">
-
-            </div>
-            <div className="donate__right">
-              <div className="donate__right--form">
-                  {
-                    this.state.frequency === '' ? 
-                    (
-                      <div className="amount">
-                      <div className="amount__label">thank you for your donation!</div>
-                        <div className="amountContainer">
-                        <span className="amountContainer__spanInput">$</span>
-                        <input className="amountContainer__input" name="amount" onChange={this.handleStatePaymentInformation.bind(this)}  />
-                        <span className="amountContainer__spanInput">USD</span>
-                        </div> 
-                        <div className="frequency">
-                          <div onClick={this.handleFrequencyOnce.bind(this)} className="frequency__onceBtn">one time</div>
-                          <div onClick={this.handleFrequencyMonthly.bind(this)} className="frequency__monthlyBtn">monthly</div>
-                        </div>
-                      </div>
-                    ) 
-                    :
-                    this.state.frequency === 'one time' ? 
-                    (
-                    <div className="checkout">
-                      <div className="personalInformation" >
-                        <div className="personalInformation__header">personal information</div>
-                        <input className="personalInformation__info" name="firstName" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="first name" />
-                        <input className="personalInformation__info" name="lastName" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="last name" />
-                        <input className="personalInformation__info" name="email" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="email" />
-                      </div>
-                      {/* <p>Would you like to complete the purchase?</p> */}
-                      <CardElement />
-                      <div className="checkout__btn" onClick={this.submitOneTimeDonation.bind(this)}>donate</div>
-                    </div>
-                    )
-                    :
-                    this.state.frequency === 'monthly' ? 
-                    (
-                    <div className="checkout">
-                      <div className="personalInformation" >
-                        <div className="personalInformation__header">Donate ${this.state.amount} monthly<a href="/donate">(change amount)</a></div>
-                        <input className="personalInformation__info" name="firstName" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="first name" />
-                        <input className="personalInformation__info" name="lastName" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="last name" />
-                        <input className="personalInformation__info" name="email" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="email" />
-                        <input className="personalInformation__info" name="lastName" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="address" />
-                        <input className="personalInformation__info" name="email" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="state" />
-                        <input className="personalInformation__info" name="lastName" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="city" />
-                        <input className="personalInformation__info" name="email" onChange={this.handleStatePaymentInformation.bind(this)} placeholder="zip code" />
-                      </div>
-                      {/* <p>Would you like to complete the purchase?</p> */}
-                      <CardElement />
-                      <div className="checkout__btn" onClick={this.submitOneTimeDonation.bind(this)}>donate</div>
-                    </div>
-                    )
-                    :
-                    (
-                      <h1>Rendering else statement</h1>
-                    )
-                  }
+          <div className="wrapper"> 
+            <div className="wrapper__donate">
+              <div className="formContainer">
+                <div className="formContainer__frequency">
+                  <div className="formContainer__frequency--one" onClick={this.handleFrequencyOnce.bind(this)} className="formContainer__frequency--oneTime">one time</div>
+                  <div className="formContainer__frequency--monthly" onClick={this.handleFrequencyMonthly.bind(this)} className="fformContainer__requency--monthly">monthly</div>
+                </div>
+                <form className="formContainer__form" onSubmit={this.submitOneTimeDonation.bind(this)}>
+                  <input name="firstName" placeholder="First name" />
+                  <input name="lastName" placeholder="Last name"/>
+                  <input name="email" placeholder="Email" />
+                  <input name="amount"/>
+                  <CardElement />
+                  <input type="submit" value="donate" />
+                </form>
               </div>
             </div>
           </div>
       </main>
+      
       <footer>
         <Footer />
       </footer>

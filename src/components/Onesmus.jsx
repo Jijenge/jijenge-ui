@@ -1,6 +1,7 @@
 import React, { Component } from 'react'; 
 import Navigation from './NavigationBar.jsx';
 import Footer from './Footer.jsx';
+import onesmusStory from '../images/onesmusStory.jpg';
 
 class Onesmus extends Component {
   constructor(props) {
@@ -19,7 +20,7 @@ class Onesmus extends Component {
           </div>
         </div>
         <div className="onesmusStory">
-              {/* <img className="onesmusStory__picture" src={onesmusStory} /> */}
+              <img className="onesmusStory__picture" src={onesmusStory} />
           <div className="onesmusStory__containerQuestions">
             <div className="onesmusStory__containerQuestions--text1">
               How you got interested in computers?
@@ -37,6 +38,7 @@ class Onesmus extends Component {
 
           <div className="onesmusStory__container">
             <div className="onesmusStory__container--text">
+            <div className="annStory__container--myStory">This is my story </div>
             My name is Onesmus Nzilani. I was born on january 16 ,1994, in eastern province,the now machakos county. My parent is Rosemary Nzilani  and i have two older siblings, agnes and david. I attended matangini primary school from pre-school until third grade, later after coming to nairobi i joined mogra star academy in mathare valley. While there i participated in school scouting team, football team and maths club. I was on honor roll and received an academic achievement award. I finished my O level at mogra which was an honor to me and achieved great from the school.
             I joined The Kabete National Polytechnic where i pursued   my first diploma in civil engineering. While at Kabete i participated in football, peer club, basketball and club JOY. i was on honor roll every semester and received the presidential academic award.
             I also went through a three month intensive training at Tunapanda Institute. I was  involved in technology, design and business. I frequently go to the library, while there i have learned many coders that pertain to my future career in programming. This gives me a positive motive and first hand experience identifying the steps and understanding how to proceed in programming.

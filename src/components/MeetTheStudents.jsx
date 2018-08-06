@@ -5,6 +5,7 @@ import headshot from '../images/headshot.jpg';
 import kelvin from '../images/kelvin.jpg';
 import ann from '../images/ourAnn.jpg';
 import mary from '../images/ourMary.jpg';
+import onesmus from '../images/ourOnesmus.jpg';
 import samuel from '../images/samuel.jpg';
 import vivian from '../images/vivian.jpg';
 import yvonne from '../images/yvonne.jpg';
@@ -124,7 +125,7 @@ class MeetTheStudents extends Component {
             </div>
             <div className="studentsContainer__eachStudent">
               <div className="studentsContainer__eachStudent--picture">
-                <img src={headshot}/>
+                <img src={onesmus}/>
               </div>
               <div className="studentsContainer__eachStudent--info">
                 <div className="studentsContainer__eachStudent--info-title">{this.state.students[4]}</div>
