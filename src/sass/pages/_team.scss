@@ -29,6 +29,7 @@
   &__picture {
     &--img {
       width: 20rem;
+      border: solid $color-blue;
     }
   }
 
@@ -52,12 +53,11 @@
     margin-top: 1.5rem;
     font-size: 1.3rem;
     letter-spacing: 0; 
-    border: solid $color-pink thin; 
-    border-radius: .7rem;
-    padding: .5rem 2.5rem;
+    border-bottom: solid $color-pink thin;
+    padding: .5rem 1rem;
     display: inline-block;
     color: $color-pink;
-    text-transform: lowercase;
+    text-transform: to-upper-case($string: "");
   }
 }
 

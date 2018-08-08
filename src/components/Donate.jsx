@@ -29,7 +29,8 @@ class Donate extends Component {
       city: '', 
       state: '',
       zip: '',
-      coverFee: false 
+      coverFee: false,
+      dropMenu: 'notShow'
     }
   }
 
@@ -43,16 +44,23 @@ class Donate extends Component {
   }
 
   handleFrequencyOnce() {
-    this.setState({
-      frequency: 'one time'
-    });
-
+    if (this.state.amount < 500) {
+      return alert('Sorry the minimun amount is $5'); 
+    } else {
+      this.setState({
+        frequency: 'one time'
+      });
+    }
   }
 
   handleFrequencyMonthly() {
-    this.setState({
-      frequency: 'monthly'
-    })
+    if (this.state.amount < 500) {
+      return alert('Sorry the minimun amount is $5'); 
+    } else {
+      this.setState({
+        frequency: 'monthly'
+      });
+    }
   }
 
   handleAmount(e) {
@@ -103,6 +111,11 @@ class Donate extends Component {
     }
   }
 
+  handleDropToggle() {
+    this.setState({
+      dropMenu: 'show'
+    })
+  }
 
   render() {
     return (
@@ -114,6 +127,10 @@ class Donate extends Component {
         <main>
           <div className="wrapper"> 
             <div className="wrapper__donate">
+              <div className="donateHeaderContainer">
+                <div className="donateHeaderContainer__header">Thank you for your donation</div>
+                <div className="donateHeaderContainer__subheader">100% of your money brings education and empowers students</div>
+              </div>
               <div className="formContainer">
                 {
                   this.state.frequency === 'one time' ? 
@@ -121,9 +138,9 @@ class Donate extends Component {
                     <div>
                     <form className="formContainer__form">
                       <label className="formContainer__form--oneLabel">Name</label>
-                      <input className="formContainer__form--name" name="firstName"/>
+                      <input className="formContainer__form--name" name="firstName" required/>
                       <label className="formContainer__form--oneLabel">Last name</label>
-                      <input className="formContainer__form--name" name="lastName" />
+                      <input className="formContainer__form--name" name="lastName" required/>
                     </form>
                     <div className="stripeBtn"><StripeCheckout 
                     name="Jijenge Academy"
@@ -138,35 +155,107 @@ class Donate extends Component {
                   this.state.frequency === 'monthly' ? 
                   (
                     <form className="formContainer__monthlyForm" onSubmit={this.submitMonthlyDonation.bind(this)}>
-                      <div className="formContainer__monthlyForm--name">
-                      <label className="formContainer__monthlyForm--name-label">First name</label>
-                      <input className="formContainer__monthlyForm--name-input" name="firstName" />
-                      <label className="formContainer__monthlyForm--name-label">Last name</label>
-                      <input className="formContainer__monthlyForm--name-input" name="lastName" />
+                      <div className="formContainer__monthlyForm--namesLabel">
+                      <label className="formContainer__monthlyForm--namesLabel-first">First name</label>
+                      <label className="formContainer__monthlyForm--namesLabel-last">Last name</label>
+                      </div>
+                      <div className="formContainer__monthlyForm--namesInput">
+                      <input className="formContainer__monthlyForm--namesInput-each" name="firstName" required/>
+                      <input className="formContainer__monthlyForm--namesInput-each" name="lastName" required/>
                       </div>
 
-                      <label className="formContainer__monthlyForm--name-generalLabel">Email</label>
-                      <input className="formContainer__monthlyForm--name-generalInput" name="email"  />
+                      <div className="formContainer__monthlyForm--emailContainer">
+                      <label className="formContainer__monthlyForm--emailContainer-emailLabel">Email</label>
+                      <input className="formContainer__monthlyForm--emailContainer-emailInput" name="email"  required/>
+                      </div>
 
-                      <label className="formContainer__monthlyForm--name-generalLabel">Address</label>
-                      <input className="formContainer__monthlyForm--name-generalInput" name="address" />
-                      
+                      <div className="formContainer__monthlyForm--addressContainer">
+                      <label className="formContainer__monthlyForm--addressContainer-addressLabel">Address</label>
+                      <input className="formContainer__monthlyForm--addressContainer-addressInput" name="address" required/>
+                      </div>
+
+                      <div className="formContainer__monthlyForm--tripletLabel">
+                        <label className="formContainer__monthlyForm--tripletLabel-eachTripleLabelOne">City</label>
+                        <label className="formContainer__monthlyForm--tripletLabel-eachTripleLabelTwo">Zip code</label>
+                      </div>
+
                       {/* Make State a dropdown */}
-                      <label className="formContainer__form--twoLabel">State</label>
-                      <input className="formContainer__form--state" name="state" />
+                      {/* <label className="formContainer__form--twoLabel">State</label>
+                      <input className="formContainer__form--state" name="state" required/> */}
 
-                      <label className="formContainer__form--twoLabel">City</label>
-                      <input className="formContainer__form--city" name="city" />
+                      <div className="formContainer__monthlyForm--tripletBtn"> 
+                      <input className="formContainer__monthlyForm--tripletBtn-eachTripletInput" name="city" required/>
+                      <input className="formContainer__monthlyForm--tripletBtn-eachTripletInput" name="zipcode" required/>
 
-                      <label className="formContainer__form--twoLabel">Zip code</label>
-                      <input className="formContainer__form--zipcode" name="zipcode" />
+                      <div className="donateDropdown">
+                        <div onClick={this.handleDropToggle.bind(this)} className="donateDropbtn">State &darr;</div>
+                        <div className={this.state.dropMenu} className="donateDropdown-content">
+                          <div> AK </div>
+                          <div> AL </div>
+                          <div> AR </div>
+                          <div> AZ </div>
+                          <div> CA </div>
+                          <div> CO </div>
+                          <div> CT </div>
+                          <div> DC </div>
+                          <div> DE </div>
+                          <div> FL </div>
+                          <div> GA </div>
+                          <div> HI </div>
+                          <div> IA </div>
+                          <div> ID </div>
+                          <div> IL </div>
+                          <div> IN </div>
+                          <div> KS </div>
+                          <div> KY </div>
+                          <div> LA </div>
+                          <div> MA </div>
+                          <div> MD </div>
+                          <div> ME </div>
+                          <div> MI </div>
+                          <div> MN </div>
+                          <div> MO </div>
+                          <div> MS </div>
+                          <div> MT </div>
+                          <div> NC </div>
+                          <div> ND </div>
+                          <div> NE </div>
+                          <div> NH </div>
+                          <div> NJ </div>
+                          <div> NM </div>
+                          <div> NV </div>
+                          <div> NY </div>
+                          <div> OH </div>
+                          <div> OK </div>
+                          <div> OR </div>
+                          <div> PA </div>
+                          <div> PR </div>
+                          <div> RI </div>
+                          <div> SC </div>
+                          <div> SD </div>
+                          <div> TN </div>
+                          <div> TX </div>
+                          <div> UT </div>
+                          <div> VA </div>
+                          <div> VT </div>
+                          <div> WA </div>
+                          <div> WI </div>
+                          <div> WV </div>
+                          <div> WY </div>
+                        </div>
+                      </div>
 
+                      </div>
+                      
+                      <div className="cardContainerMonthly">
+                      <div className="cardContainerMonthly__labelHeader">Payment Information</div>
                       <div className="formContainer__form--cardNumber"><CardNumberElement /></div>
                       <div className="formContainer__form--cardNumber"><CardExpiryElement /></div>
                       <div className="formContainer__form--cardNumber"><CardCVCElement /></div>
+                      </div>
 
                       <div className="formContainer__form--terms">
-                        By clicking, you agree to <a href="#">our terms</a> and the <a href="/connect-account/legal">Stripe Connected Account Agreement</a>.
+                        By clicking, you agree to <a href="#">our terms</a> and the <a href="/connect-account/legal">Stripe Connected Account Agreement</a>
                       </div>
                       <input className="formContainer__form--btn" value="donate" type='submit' />
                     </form>
@@ -176,11 +265,11 @@ class Donate extends Component {
                     <form className="formContainer__form">
                     <div className="formContainer__form--amount">
                     <label className="formContainer__form--amount--label">$</label>
-                    <input onChange={this.handleAmount.bind(this)} className="formContainer__form--amount--input" name="amount" />
+                    <input onChange={this.handleAmount.bind(this)} className="formContainer__form--amount--input" name="amount" required/>
                     <label className="formContainer__form--amount--label">USD</label>
                     </div>
                     <div className="formContainer__frequency">
-                      <a className="formContainer__frequency--one" onClick={this.handleFrequencyOnce.bind(this)}>one time</a>
+                      <div className="formContainer__frequency--one" onClick={this.handleFrequencyOnce.bind(this)}>one time</div>
                       <div className="formContainer__frequency--monthly" onClick={this.handleFrequencyMonthly.bind(this)}>monthly</div>
                     </div>
                   </form>

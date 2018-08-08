@@ -2,29 +2,52 @@
   background-image: url(./images/donateHeader.jpg);
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  padding-bottom: 4rem;
+  // height: 110vh;
 
   &__donate {
-    background-color: rgba($blue, .7);
-    height: 100%;
+    // background-color: rgba($blue, .3);
+    // height: 100%;
     text-align: center;
+    // padding-bottom: 3rem;
+    // padding-top: 3rem;
+
     &--form {
       padding: 1rem;
       border: solid #ffff thin;
       border-radius: 1rem;
       width: 40%;
+      
     } 
   }
 }
 
+.donateHeaderContainer {
+  padding-top: 10rem;
+  color: $color-white;
+  padding-bottom: 4rem;
+  &__header {
+    font-size: 3.5rem;
+  }
+  &__subheader {
+    margin-top: 2rem;
+    font-size: 2.7rem;
+    font-weight: 300;
+  }
+}
+
 .formContainer {
+  background-color: rgba($blue, .8);
   position: relative;
-  top: 30%;
+  top: 2%;
   left: 30%;
   width: 40%;
   border: solid $color-white thin;
   border-radius: 1rem;
   padding: 1rem;
+  padding-top: 1.5rem;
+  // margin-bottom: 2rem;
+  
   &__frequency {
     margin-bottom: 1rem;
 
@@ -59,6 +82,7 @@
     }
   }
   &__form {
+    padding-top: 1rem;
     &--oneLabel {
       display: block;
       font-size: 1.5rem;
@@ -67,14 +91,14 @@
       margin-left: 6.5rem;
       margin-bottom: .5rem;
     }
-    &--twoLabel {
-      display: block;
-      font-size: 1.2rem;
-      color: $color-white;
-      text-align: left;
-      margin-left: 6.5rem;
-      margin-bottom: .5rem;
-    }
+    // &--twoLabel {
+    //   display: block;
+    //   font-size: 1.2rem;
+    //   color: $color-white;
+    //   text-align: left;
+    //   margin-left: 6.5rem;
+    //   margin-bottom: .5rem;
+    // }
     &--name {
       border: none;
       width: 35rem;
@@ -85,17 +109,7 @@
       font-family: 'Ubuntu';
       padding: 1rem;
     }
-    &--twoname {
-      border: none;
-      width: 35rem;
-      height: 2.5rem;
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-      margin-right: .5rem;
-      font-family: 'Ubuntu';
-      padding: 1rem;
-    }
-    
+
     &--email {
       border: none; 
       width: 41.5rem;
@@ -106,16 +120,16 @@
       font-family: 'Ubuntu';
       padding: 1rem;
     }
-    &--twoEmail {
-      border: none; 
-      width: 35rem;
-      height: 2.5rem;
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-      margin-right: .5rem;
-      font-family: 'Ubuntu';
-      padding: 1rem;
-    }
+    // &--twoEmail {
+    //   border: none; 
+    //   width: 35rem;
+    //   height: 2.5rem;
+    //   font-size: 1.2rem;
+    //   margin-bottom: 1rem;
+    //   margin-right: .5rem;
+    //   font-family: 'Ubuntu';
+    //   padding: 1rem;
+    // }
     &--amount {
       margin-bottom: 1rem;
       background-color: $color-white;
@@ -144,31 +158,202 @@
       margin-bottom: 1rem;
       padding-top: .5rem;
       padding-left: 1rem;
+      border-radius: .5rem;
+    }
+    &--terms {
+      font-size: 1.3rem;
+      color: $color-white;
+      margin-top: 2rem;
     }
     &--btn {
       background-color: $color-pink;
       color: $color-white;
       font-family: 'Ubuntu';
-      padding: 1rem 0;
+      padding: 1.2rem 3rem;
       border: solid $color-white thin; 
       border-radius: 1rem;
+      margin-top: 1.5rem;
       text-align: center;
+      text-transform: uppercase;
       letter-spacing: .2rem;
     }
   }
   &__monthlyForm {
-    &--name {
-      &-label {}
-      &-input {}
+
+    &--namesLabel {
+      color: $color-white;
+      font-size: 1.2rem;
+      padding-top: 1rem;
+      text-align: left;
+
+      &-first {
+        position: absolute;
+        left: 7%;
+        top: 1rem;
+      }
+      &-last {
+        position: absolute;
+        right: 35%; 
+        top: 1rem;
+      }
     }
-    &--email {}
-    
+    &--namesInput {
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      margin-top: .5rem;
+      text-align: left;
+
+      &-each {
+        border: none;
+        height: 2.5rem;
+        width: 20rem;
+        display: inline-block;
+        margin-right: 2rem;
+        margin-left: 1.5rem;
+        border-radius: .5rem;
+      }
+    }
+
+    &--emailContainer {
+      padding-left: .7rem;
+      margin-bottom: 1rem;
+      padding-top: 1rem;
+      text-align: left;
+
+      &-emailLabel {
+        color: $color-white;
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+        display: block;
+        margin-left: 2rem;
+      }
+      &-emailInput {
+        border: none;
+        height: 2.5rem;
+        width: 43rem;
+        display: inline-block;
+        margin-left: 2rem;
+        border-radius: .5rem;
+      }
+    }
+
+    &--addressContainer {
+      padding-left: .7rem;
+      margin-bottom: 1rem;
+      padding-top: 1rem;
+      text-align: left;
+
+      &-addressLabel {
+        color: $color-white;
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+        display: block;
+        margin-left: 2rem;
+      }
+      &-addressInput {
+        border: none;
+        height: 2.5rem;
+        width: 43rem;
+        display: inline-block;
+        margin-left: 2rem;
+        border-radius: .5rem;
+      }
+    }
+    &--tripletLabel {
+      color: $color-white;
+      font-size: 1.2rem;
+      padding-top: .5rem;
+      text-align: left;
+      &-eachTripleLabelOne {
+        margin-left: 3.3rem;
+      }
+      &-eachTripleLabelTwo {
+        margin-left: 14rem;
+      }
+    }
+    &--tripletBtn {
+      margin-bottom: 2rem;
+
+      &-eachTripletInput {
+        border: none; 
+        height: 2.5rem;
+        width: 15.3rem;
+        margin-right: 1rem;
+        border-radius: .5rem;
+      }
+    }
   }
 }
+
+
+
 
 .stripeBtn {
   background-color: $color-blue;
   padding: .5rem .5rem;
   display: inline-block;
   border-radius: 1rem;
+}
+
+/* Dropdown Button */
+.donateDropbtn {
+  background-color: $color-pink;
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  border-radius: .5rem;
+  border: solid $color-white thin;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Dropdown button on hover & focus */
+.donateDropbtn:hover, .donateDropbtn:focus {
+  background-color: $color-white;
+  color: $color-pink;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.donateDropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* donateDropdown Content (Hidden by Default) */
+.donateDropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the donateDropdown */
+.donateDropdown-content div {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of donateDropdown links on hover */
+.donateDropdown-content div:hover {
+  background-color: $color-pink;
+  color: $color-white;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.cardContainerMonthly {
+  border: solid $color-white thin;
+  padding-top: 1rem;
+  border-radius: .5rem;
+  padding-bottom: 1rem;
+  &__labelHeader {
+    margin-bottom: 1rem;
+    color: $color-white;
+    font-size: 1.5rem;
+  }
 }
