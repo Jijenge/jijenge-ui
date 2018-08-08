@@ -64,6 +64,11 @@
   display: none; 
 }
 
+@media screen and (max-width: 375px) {
+  .navigation {
+    height: 3vh; 
+  }
+}
 
 @media screen and (max-width: 920px) {
   .navigation {
@@ -115,3 +120,4 @@
     display: block;
   }
 }
+
