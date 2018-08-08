@@ -21,10 +21,10 @@ server.use(webpackHotMiddleware);
 const staticMiddleware = express.static('dist'); 
 server.use(staticMiddleware);
 
-server.get('*', (req, res) => res.sendFile(path.resolve(__dirname, '../index.html')));
+// server.get('*', (req, res) => res.sendFile(path.resolve(__dirname, '../index.html')));
 
 const PORT = process.env.PORT || 6060; 
 
-server.listen(6060, () => {
-  console.log('Successfully connected to port 6060'); 
+server.listen(PORT, () => {
+  console.log(`Server listening on http://localhost:${PORT}`); 
 }); 

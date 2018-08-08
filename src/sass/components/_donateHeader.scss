@@ -2,7 +2,7 @@
   background-image: url(./images/donateHeader.jpg);
   background-position: center;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
 
   &__donate {
     background-color: rgba($blue, .7);
@@ -26,12 +26,149 @@
   border-radius: 1rem;
   padding: 1rem;
   &__frequency {
+    margin-bottom: 1rem;
+
     &--one {
       display: inline-block;
-      background-color: aqua;
+      cursor: pointer;
+      background-color: $color-pink; 
+      padding: 1rem 4rem;
+      color: $color-white; 
+      font-size: 1.5rem;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      border: solid $color-white thin; 
+    }
+    &--one:active{
+      background-color: $color-white; 
+      color: $color-pink;
     }
     &--monthly {
       display: inline-block;
+      background-color: $color-pink; 
+      padding: 1rem 4rem;
+      color: $color-white; 
+      font-size: 1.5rem;
+      border-top-right-radius:1rem;
+      border-bottom-right-radius: 1rem;
+      border: solid $color-white thin; 
+    }
+    &--monthly:active{
+      background-color: $color-white; 
+      color: $color-pink;
     }
   }
+  &__form {
+    &--oneLabel {
+      display: block;
+      font-size: 1.5rem;
+      color: $color-white;
+      text-align: left;
+      margin-left: 6.5rem;
+      margin-bottom: .5rem;
+    }
+    &--twoLabel {
+      display: block;
+      font-size: 1.2rem;
+      color: $color-white;
+      text-align: left;
+      margin-left: 6.5rem;
+      margin-bottom: .5rem;
+    }
+    &--name {
+      border: none;
+      width: 35rem;
+      height: 2.5rem;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      margin-right: .5rem;
+      font-family: 'Ubuntu';
+      padding: 1rem;
+    }
+    &--twoname {
+      border: none;
+      width: 35rem;
+      height: 2.5rem;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      margin-right: .5rem;
+      font-family: 'Ubuntu';
+      padding: 1rem;
+    }
+    
+    &--email {
+      border: none; 
+      width: 41.5rem;
+      height: 2.5rem;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      margin-right: .5rem;
+      font-family: 'Ubuntu';
+      padding: 1rem;
+    }
+    &--twoEmail {
+      border: none; 
+      width: 35rem;
+      height: 2.5rem;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      margin-right: .5rem;
+      font-family: 'Ubuntu';
+      padding: 1rem;
+    }
+    &--amount {
+      margin-bottom: 1rem;
+      background-color: $color-white;
+      text-align: center;
+      display: inline-block;
+      padding: 0 1rem;
+      font-size: 1.2rem;
+      border-radius: .5rem;
+
+      &--input {
+      border: none; 
+      width: 25rem;
+      height: 3rem;
+      font-size: 1.2rem;
+      outline: none;
+      }
+      &--label {
+        padding: 0 .5rem;
+      }
+    }
+    &--cardNumber {
+      background-color: $color-white;
+      width: 41.5rem;
+      height: 2.5rem;
+      margin-left: 3.2rem;
+      margin-bottom: 1rem;
+      padding-top: .5rem;
+      padding-left: 1rem;
+    }
+    &--btn {
+      background-color: $color-pink;
+      color: $color-white;
+      font-family: 'Ubuntu';
+      padding: 1rem 0;
+      border: solid $color-white thin; 
+      border-radius: 1rem;
+      text-align: center;
+      letter-spacing: .2rem;
+    }
+  }
+  &__monthlyForm {
+    &--name {
+      &-label {}
+      &-input {}
+    }
+    &--email {}
+    
+  }
+}
+
+.stripeBtn {
+  background-color: $color-blue;
+  padding: .5rem .5rem;
+  display: inline-block;
+  border-radius: 1rem;
 }

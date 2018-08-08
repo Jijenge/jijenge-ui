@@ -1,0 +1,64 @@
+.modal {
+  color: $purple;
+  padding: 1rem 0;
+  background-color: $color-white;
+}
+
+.close {
+  position: absolute;
+  background-color: $purple;
+  color: $color-white;
+  padding: .1rem .5rem;
+  border-radius: 100%;
+  display: block;
+  right: -10px;
+  top: -10px;
+}
+
+.modalEmail {
+  color: $color-white;
+  background-color: rgba($color-purple, 1);
+  padding: 1rem 0;
+  
+
+  &__emailInput {
+    border: none;
+    width: 60%;
+    height: 2.5rem;
+    display: inline-block;
+    padding-left: 1rem;
+  }
+  &__emailForm {
+  }
+  &__emailForm label{
+    position: relative;
+    left: 20%;
+    display: block;
+    text-align: left;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+  }
+  &__emailInputMessage {
+    border: none;
+    width: 60%;
+    height: 8%;
+    display: inline-block;
+    padding-left: 1rem;
+  }
+  &__emailInputSubmit {
+    position: relative;
+    left: 45%;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: $color-white;
+    color: $color-purple;
+    border-radius: 1rem;
+    font-family: 'Ubuntu'; 
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 1rem;
+  }
+}
+

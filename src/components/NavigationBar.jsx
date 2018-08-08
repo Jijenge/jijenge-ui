@@ -16,20 +16,20 @@ class NavigationBar extends Component {
         <div className="dropbtn">
           <a className="dropbtnIcon"><FontAwesomeIcon icon='bars' size="4x" /></a>
           <div className="dropdownContent">
-            <Link to='/Donate'>Give monthly</Link>
+            {/* <Link to='/Donate'>Give monthly</Link> */}
             <Link to='/About'>Our students</Link>
             <Link to='/MeetTheStudents'>Team</Link>
             <Link to=''>Visit Africa</Link>
-            <Link to='/Donate'>Donate</Link>
+            {/* <Link to='/Donate'>Donate</Link> */}
           </div>
         </div>
         {/* WEB */}
         <div className="navigation__list">
-          <div className="navigation__item"><Link className="navigation__link" to='/Donate'>Give monthly</Link></div>
+          {/* <div className="navigation__item"><Link className="navigation__link" to='/Donate'>Give monthly</Link></div> */}
           <div className="navigation__item"><Link className="navigation__link" to='/MeetTheStudents'>Our students</Link></div>
           <div className="navigation__item"><Link className="navigation__link" to='/Team'>Team</Link></div>
           <div className="navigation__item"><Link className="navigation__link" to='/VisitAfrica'>Visit Africa</Link></div>
-          <div className="navigation__item"><Link className="navigation__linkDonate" to='/Donate'>Donate</Link></div>
+          {/* <div className="navigation__item"><Link className="navigation__linkDonate" to='/Donate'>Donate</Link></div> */}
         </div>  
       </div>
     )

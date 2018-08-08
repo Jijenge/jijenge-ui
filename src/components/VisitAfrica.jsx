@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import Navigation from './NavigationBar.jsx';
 import Footer from './Footer.jsx';
 import jake1 from '../images/jake1.jpg';
@@ -30,7 +31,8 @@ export default class VisitAfrica extends Component {
       meet: [jake1, jake2, jake3, jake4, jake5, jake6, jake7, jake8, jake9, jake10],
       meetCurrent: 0,
       africa: [africa1, africa2, africa3, africa4],
-      expAfrica: 0 
+      expAfrica: 0,
+      email: ''
     }
   }
 
@@ -141,6 +143,27 @@ export default class VisitAfrica extends Component {
     })
   }
 
+  handleInputChange(e) {
+    const { name, value } = e.target; 
+    this.setState({
+      [name]: value
+    })
+  }
+
+  handleRequestItenerary = async(e) => {
+    e.preventDefault();
+    const { email } = this.state;
+    try {
+      const body = {
+        email
+      }
+      const data = await axios.post('http://localhost:3000/api/request/itenerary', body); 
+      console.log('Success', data);
+    } catch(err) {
+      console.log('Error saving email requesting itenerary', err); 
+    }
+  }
+
 
   render() {
     return (
@@ -157,9 +180,9 @@ export default class VisitAfrica extends Component {
                 <div>Witness our impact first hand and while experiencing the world's best safari tours.</div>
               </div>
               <div className="visitBanner__container--email">
-                <form className="visitBanner__container--email-form">
-                  <input className="visitBanner__container--email-input" placeholder="Email" />
-                  <input className="visitBanner__container--email-btn" type="submit" value="Request Itinerary" />
+                <form className="visitBanner__container--email-form" onSubmit={this.handleRequestItenerary.bind(this)} >
+                  <input name="email" className="visitBanner__container--email-input" placeholder="Email" onChange={this.handleInputChange.bind(this)} />
+                  <input className="visitBanner__container--email-btn" type="submit" value="Tailor a trip to Kenya" />
                 </form>
               </div>
             </div>
@@ -215,9 +238,9 @@ export default class VisitAfrica extends Component {
       <section className="experienceAction">
         <div className="experienceAction__header">Experience the trip of a lifetime</div>
         <div className="experienceAction__banner">
-          <form className="experienceAction__banner--form">
-            <input className="experienceAction__banner--input" placeholder="Email" />
-            <input className="experienceAction__banner--btn" type="submit" value="Request Itinerary" />
+          <form className="experienceAction__banner--form" onSubmit={this.handleRequestItenerary.bind(this)}>
+            <input name="email" className="experienceAction__banner--input" placeholder="Email" onChange={this.handleInputChange.bind(this)}/>
+            <input className="experienceAction__banner--btn" type="submit" value="Tailor a trip to Kenya" />
           </form>
         </div>
       </section>
