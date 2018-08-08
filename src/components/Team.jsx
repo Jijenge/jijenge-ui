@@ -41,7 +41,7 @@ class Team extends Component {
                     <img  className="member__picture--img" src={john} />
                   </div>
                   <div className="member__information">
-                    <div className="member__information--name">Vassia Daskalakis</div>
+                    <div className="member__information--name">Vassiliki Daskalakis</div>
                     <div className="member__information--role">CEO</div>
                     <div className="member__information--jijenge">Jijenge</div>
                   </div>
