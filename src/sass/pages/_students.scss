@@ -84,9 +84,9 @@
     }
   }
   &__picture {
-    width: 25rem;
+    width: 32rem;
     border: 1rem solid $color-pink;
-    margin-top: 3rem;
+    margin-top: 6rem;
   }
 }
 
@@ -179,9 +179,9 @@
     }
   }
   &__picture {
-    width: 25rem;
+    width: 33rem;
     border: 1rem solid $color-blue;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 }
 
@@ -363,9 +363,9 @@
     }
   }
   &__picture {
-    width: 25rem;
+    width: 33rem;
     border: 1rem solid $color-yellow;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 }
 
@@ -546,7 +546,7 @@
     }
   }
   &__picture {
-    width: 25rem;
+    width: 30rem;
     border: 1rem solid $color-blue;
     margin-top: 2rem;
   }
@@ -698,7 +698,7 @@
   &__containerQuestions {
     margin: 0 auto;
     background-color: rgba($yellow, .9);
-    margin-top: 2rem;
+    margin-top: 2.2rem;
     margin-bottom: 2rem;
     margin-left: 1rem;
     padding: 2rem;
@@ -732,9 +732,10 @@
     }
   }
   &__picture {
-    width: 25rem;
+    width: 30rem;
     border: 1rem solid $color-yellow;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    vertical-align: top;
   }
 }
 

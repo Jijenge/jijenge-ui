@@ -42,7 +42,7 @@ class Home extends Component {
           <div className="headerBanner">
             <div className="headerBanner__header">Building dreams for those without means</div>
             <div className="headerBanner__subheader">100% of donations educate students</div>
-            {/* <div onClick={this.handleDonation.bind(this)} className="headerBanner__btn">Give Monthly</div> */}
+            <div onClick={this.handleDonation.bind(this)} className="headerBanner__btn">Give Monthly</div>
           </div>
           <section className="welcome">
             <div className="welcome__header">Welcome to Jijenge</div>
@@ -84,7 +84,7 @@ class Home extends Component {
           </div>
         </section>
         <section className="actionCall">
-            <div className="actionCall__header">Leaving the educational playing field</div>
+            <div className="actionCall__header">Leveling the educational playing field</div>
             <div className="actionCall__subheader">Education has the power to democratize opportunity.</div>
             <div className="actionCall__subheader">Education improves community health and reduces needless human suffering</div>
             <div className="actionCall__container">

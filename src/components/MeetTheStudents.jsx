@@ -4,10 +4,12 @@ import Footer from './Footer.jsx';
 import headshot from '../images/headshot.jpg';
 import kelvin from '../images/kelvin.jpg';
 import ann from '../images/ourAnn.jpg';
+import daniel from '../images/ourDaniel.jpg';
 import mary from '../images/ourMary.jpg';
 import onesmus from '../images/ourOnesmus.jpg';
 import samuel from '../images/samuel.jpg';
-import vivian from '../images/vivian.jpg';
+import vivian from '../images/ourVivian.jpg';
+import winnie from '../images/winnieStory.jpg';
 import yvonne from '../images/yvonne.jpg';
 
 class MeetTheStudents extends Component {
@@ -84,8 +86,8 @@ class MeetTheStudents extends Component {
               </div>
 
               <div className="studentsContainer__eachStudent">
-                <div className="studentsContainer__eachStudent--picture">
-                  <img src={headshot}/>
+                <div className="studentsContainer__eachStudent--pictureDaniel">
+                  <img src={daniel}/>
                 </div>
                 <div className="studentsContainer__eachStudent--info">
                   <div className="studentsContainer__eachStudent--info-title">{this.state.students[1]}</div>
@@ -152,7 +154,7 @@ class MeetTheStudents extends Component {
           <div className="studentsContainer">
           <div className="studentsContainer__eachStudent">
             <div className="studentsContainer__eachStudent--picture">
-              <img src={headshot}/>
+              <img src={vivian}/>
             </div>
             <div className="studentsContainer__eachStudent--info">
               <div className="studentsContainer__eachStudent--info-title">{this.state.students[6]}</div>
@@ -164,8 +166,8 @@ class MeetTheStudents extends Component {
           </div>
 
           <div className="studentsContainer__eachStudent">
-            <div className="studentsContainer__eachStudent--picture">
-              <img src={headshot}/>
+            <div className="studentsContainer__eachStudent--pictureDaniel">
+              <img src={winnie}/>
             </div>
             <div className="studentsContainer__eachStudent--info">
               <div className="studentsContainer__eachStudent--info-title">{this.state.students[7]}</div>
