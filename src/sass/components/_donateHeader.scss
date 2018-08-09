@@ -2,16 +2,10 @@
   background-image: url(./images/donateHeader.jpg);
   background-position: center;
   background-size: cover;
-  padding-bottom: 4rem;
-  // height: 110vh;
+  height: 115vh;
 
   &__donate {
-    // background-color: rgba($blue, .3);
-    // height: 100%;
     text-align: center;
-    // padding-bottom: 3rem;
-    // padding-top: 3rem;
-
     &--form {
       padding: 1rem;
       border: solid #ffff thin;
@@ -46,7 +40,6 @@
   border-radius: 1rem;
   padding: 1rem;
   padding-top: 1.5rem;
-  // margin-bottom: 2rem;
   
   &__frequency {
     margin-bottom: 1rem;
@@ -62,7 +55,7 @@
       border-bottom-left-radius: 1rem;
       border: solid $color-white thin; 
     }
-    &--one:active{
+    &--one:hover {
       background-color: $color-white; 
       color: $color-pink;
     }
@@ -76,7 +69,7 @@
       border-bottom-right-radius: 1rem;
       border: solid $color-white thin; 
     }
-    &--monthly:active{
+    &--monthly:hover {
       background-color: $color-white; 
       color: $color-pink;
     }
@@ -91,16 +84,9 @@
       margin-left: 6.5rem;
       margin-bottom: .5rem;
     }
-    // &--twoLabel {
-    //   display: block;
-    //   font-size: 1.2rem;
-    //   color: $color-white;
-    //   text-align: left;
-    //   margin-left: 6.5rem;
-    //   margin-bottom: .5rem;
-    // }
     &--name {
       border: none;
+      border-radius: .5rem;
       width: 35rem;
       height: 2.5rem;
       font-size: 1.2rem;
@@ -110,26 +96,6 @@
       padding: 1rem;
     }
 
-    &--email {
-      border: none; 
-      width: 41.5rem;
-      height: 2.5rem;
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-      margin-right: .5rem;
-      font-family: 'Ubuntu';
-      padding: 1rem;
-    }
-    // &--twoEmail {
-    //   border: none; 
-    //   width: 35rem;
-    //   height: 2.5rem;
-    //   font-size: 1.2rem;
-    //   margin-bottom: 1rem;
-    //   margin-right: .5rem;
-    //   font-family: 'Ubuntu';
-    //   padding: 1rem;
-    // }
     &--amount {
       margin-bottom: 1rem;
       background-color: $color-white;
@@ -150,6 +116,7 @@
         padding: 0 .5rem;
       }
     }
+
     &--cardNumber {
       background-color: $color-white;
       width: 41.5rem;

@@ -43,11 +43,22 @@
     letter-spacing: .5rem;
     cursor: pointer;
   }
+  &__btn:hover {
+    border: solid $color-white thin; 
+    color: $color-white;
+    background-color: $color-purple;
+    padding: 1rem 4rem;
+    display: inline-block;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    letter-spacing: .5rem;
+    cursor: pointer;
+  }
 }
 
 .welcome {
   text-align: center;
-  margin-top: 26rem;
+  margin-top: 21rem;
 
   &__header {
     font-size: 3.5rem;
@@ -243,6 +254,10 @@
       border: solid $color-pink thin;
       border-radius: 1rem;
       cursor: pointer;
+    }
+    &--btn:hover {
+      color: $color-white; 
+      background-color: $color-pink;
     }
   }
 }

@@ -58,6 +58,13 @@
     text-decoration: none;
     border-radius: 1rem;
   }
+
+  &__linkDonate:hover {
+    color: $color-white;
+    border: solid $color-white thin;
+    background-color: $color-purple;
+  }
+
 }
 
 .dropbtn {
