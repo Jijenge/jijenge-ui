@@ -130,11 +130,11 @@ module.exports = env => {
         }
       }),
       new webpack.NamedModulesPlugin(), 
-      // new HTMLWebpackPlugin({
-      //   template: "src/index.html",
-      //   inject: true, 
-      //   title: "Jijenge"
-      // }),
+      new HTMLWebpackPlugin({
+        template: "src/index.html",
+        inject: true, 
+        title: "Jijenge"
+      }),
       new MiniCssExtractPlugin({
         filename: "[name].css"
       }),

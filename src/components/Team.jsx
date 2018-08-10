@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navigation from './NavigationBar.jsx';
 import Footer from './Footer.jsx';
 import john from '../images/john.jpg';
+import Vassiliki from '../images/vassia.jpg';
 
 class Team extends Component {
   constructor() {
@@ -38,7 +39,7 @@ class Team extends Component {
               <div className="col-1-of-3">
                 <div className="member">
                   <div className="member__picture">
-                    <img  className="member__picture--img" src={john} />
+                    <img  className="member__picture--img" src={Vassiliki} />
                   </div>
                   <div className="member__information">
                     <div className="member__information--name">Vassiliki Daskalakis</div>

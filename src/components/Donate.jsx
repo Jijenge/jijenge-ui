@@ -129,7 +129,7 @@ class Donate extends Component {
             <div className="wrapper__donate">
               <div className="donateHeaderContainer">
                 <div className="donateHeaderContainer__header">Thank you for your donation</div>
-                <div className="donateHeaderContainer__subheader">100% of your money brings education and empowers students</div>
+                <div className="donateHeaderContainer__subheader">100% of your money empowers students through education</div>
               </div>
               <div className="formContainer">
                 {

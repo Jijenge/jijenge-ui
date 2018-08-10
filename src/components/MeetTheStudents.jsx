@@ -9,7 +9,7 @@ import mary from '../images/ourMary.jpg';
 import onesmus from '../images/ourOnesmus.jpg';
 import samuel from '../images/samuel.jpg';
 import vivian from '../images/ourVivian.jpg';
-import winnie from '../images/winnieStory.jpg';
+import winnie from '../images/ourWinnie.jpg';
 import yvonne from '../images/yvonne.jpg';
 
 class MeetTheStudents extends Component {
@@ -166,7 +166,7 @@ class MeetTheStudents extends Component {
           </div>
 
           <div className="studentsContainer__eachStudent">
-            <div className="studentsContainer__eachStudent--pictureDaniel">
+            <div className="studentsContainer__eachStudent--pictureWinnie">
               <img src={winnie}/>
             </div>
             <div className="studentsContainer__eachStudent--info">
