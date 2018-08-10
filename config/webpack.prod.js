@@ -141,8 +141,8 @@ module.exports = env => {
       new UglifyJSPlugin(),
       new CompressionPlugin({
         algorithm: "gzip"
-      }),
-      new BrotliPlugin() 
+      })
+      // new BrotliPlugin() 
     ]
   }
 }
