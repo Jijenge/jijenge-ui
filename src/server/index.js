@@ -18,8 +18,13 @@ server.use(webpackHotMiddleware);
 
 }
 
-const staticMiddleware = express.static('dist'); 
-server.use(staticMiddleware);
+// const staticMiddleware = express.static('dist'); 
+// server.use(staticMiddleware);
+
+const expressStaticGzip = require("express-static-gzip");
+server.use(expressStaticGzip("dist", {
+  enableBrotli: true
+}));
 
 server.get('*', (req, res) => res.sendFile(path.resolve(__dirname, '../index.html')));
 

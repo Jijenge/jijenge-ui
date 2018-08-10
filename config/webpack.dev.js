@@ -4,7 +4,11 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: ["./src/index.js"]
+    main: [
+      "babel-runtime/regenerator",
+      "webpack-hot-middleware/client?reload=true",
+      "./src/index.js"
+    ]
   },
   mode: "development", 
   output: {
@@ -79,7 +83,6 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              //Images folder in the src directory 
               name: "videos/[name].[ext]"
             }
           }
@@ -88,9 +91,17 @@ module.exports = {
     ]
   },
   plugins: [
-    // new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NamedModulesPlugin(),
+    new webpack.DefinePlugin({
+      "process.env": {
+        NODE_ENV: JSON.stringify("development")
+      }
+    }),
     new HTMLWebpackPlugin({
-      template: "src/index.html"
+      template: "./src/index.html",
+      inject: true,
+      title: "Jijenge"
     })
   ]
 }
