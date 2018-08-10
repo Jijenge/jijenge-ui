@@ -18,15 +18,32 @@ server.use(webpackHotMiddleware);
 
 }
 
-const staticMiddleware = express.static('dist'); 
-server.use(staticMiddleware);
+// const staticMiddleware = express.static('dist'); 
+// server.use(staticMiddleware);
 
-// const expressStaticGzip = require("express-static-gzip");
-// server.use(expressStaticGzip("dist", {
-//   enableBrotli: true
-// }));
+const expressStaticGzip = require("express-static-gzip");
+server.use(expressStaticGzip("dist", {
+  enableBrotli: true
+}));
 
-server.get('*', (req, res) => res.sendFile(path.resolve(__dirname, '../index.html')));
+// server.get('*', (req, res) => res.sendFile(path.resolve(__dirname, '../index.html')));
+server.get('*', (req, res) => res.send(
+`
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Jijenge</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script async src="/main-bundle.js"></script>
+    
+    <!-- <script src="https://js.stripe.com/v3/"></script> -->
+    <script id="stripe-js" async src="https://js.stripe.com/v3/" ></script>
+  </body>
+  </html>
+`
+));
 
 const PORT = process.env.PORT || 6060; 
 
