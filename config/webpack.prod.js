@@ -135,7 +135,9 @@ module.exports = env => {
         inject: true, 
         title: "Jijenge"
       }),
-      new MiniCssExtractPlugin(),
+      new MiniCssExtractPlugin({
+        filename: "[name].css"
+      }),
       new UglifyJSPlugin(),
       new CompressionPlugin({
         algorithm: "gzip"
