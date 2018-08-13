@@ -8,9 +8,9 @@ class NavigationBar extends Component {
   }
   render() {
     return (
-      <div className="navigation__container">
+      <div className="navigation">
         <div className="navigation__logo">
-          <div className="navigation__item"><Link className="navigation__linkMain" to='/'>Jijenge</Link></div>
+          <Link className="navigation__linkMain" to='/'>Jijenge</Link>
         </div>
         {/* MOBILE */}
         <div className="dropbtn">

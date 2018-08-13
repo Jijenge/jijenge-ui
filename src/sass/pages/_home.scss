@@ -1,397 +1,44 @@
-.headerContainer {
-}
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: .7;
-  overflow: hidden;
-
-  &__content {
-    height: 30%;
-    width: 100%;
-    object-fit: cover;
-  }
-}
-
-.headerBanner {
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 16rem;
+.section-meaning {
   text-align: center;
-  color: $color-purple;
-  @include respond(phone) {
-    color: white;
-  }
-  
+  background-color: rgba($pink, .9);
+  padding-bottom: 7rem;
   &__header {
-    font-size: 3.5rem;
-  }
-  &__subheader {
-    font-size: 2.7rem;
-    margin-top: 1rem;
-    font-weight: 300;
-  }
-  &__btn {
-    text-transform: uppercase; 
-    font-size: 2.7rem;
-    border: solid $color-white thin; 
-    padding: 1rem 4rem;
-    display: inline-block;
-    margin-top: 2rem;
-    border-radius: 1rem;
-    letter-spacing: .5rem;
-    cursor: pointer;
-  }
-  &__btn:hover {
-    border: solid $color-white thin; 
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     color: $color-white;
-    background-color: $color-purple;
-    padding: 1rem 4rem;
-    display: inline-block;
-    margin-top: 2rem;
-    border-radius: 1rem;
-    letter-spacing: .5rem;
-    cursor: pointer;
   }
 }
 
-.welcome {
-  text-align: center;
-  margin-top: 21rem;
-
-  &__header {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1rem;
-    color: $color-blue;
-    opacity: .8;
-    margin-bottom: 2rem;
-  }
-  &__subheader {
-    font-size: 2.7rem;
-    font-weight: 300;
-    color: $color-blue;
-    opacity: .8;
-  }
-  &__form {
-    margin-top: 3rem;
-    background-color: $color-blue;
-    height: 10rem;
-
-  }
-}
-
-.definition {
-  margin-top: 5rem;
-  background-color: rgba(240,88,97, .9);
-  color: $color-white;
-  padding-top: 2rem;
-  padding-bottom: 5rem;
-
-  &__word {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-
-    &--title {
-      font-size: 4rem;
-      letter-spacing: 1.5rem;
-      margin-bottom: 1.7rem;
-    }
-    &--subtitle {
-      font-size: 2rem;
-      letter-spacing: .5rem;
-      margin-bottom: 3rem;
-    }
-    &--secSubtitle {
-      font-size: 1.7rem;
-      margin-bottom: 1rem;
-      padding-right: 2rem;
-    }
-  }
-  &__work {
-    max-width: 90rem;
-    margin: 0 auto;
-    text-align: center;
-
-    &--card1 {
-      display: inline-block;
-      margin-right: 1.5rem;
-      margin-bottom: 1rem;
-      vertical-align: top;
-
-      &--picture {
-        height: 25rem;
-        width: 25rem;
-        border-top-right-radius: .4rem;
-        border-top-left-radius: .4rem;
-        border: solid $color-blue thin;
-        background-image: url(./images/basicEducation.jpg);
-        background-size: cover;
-      }
-      &--text {
-        width: 25rem;
-        background-color: $color-blue; 
-        border-bottom-right-radius: .4rem;
-        border-bottom-left-radius: .4rem;
-        padding: 1rem;
-        padding-bottom: 3.2rem;
-
-        &-title {
-          font-size: 2rem;
-          letter-spacing: .2rem;
-        }
-        &-subtitle {
-          font-size: 1.5rem;
-          font-weight: 300;
-          margin-top: 1.5rem;
-        }
-      }
-    }
-    &--card2 {
-      display: inline-block;
-      margin-right: 1.5rem;
-      vertical-align: top;
-      margin-bottom: 1rem;
-      
-      &--picture {
-        height: 25rem;
-        width: 25rem;
-        border-top-right-radius: .4rem;
-        border-top-left-radius: .4rem;
-        border: solid $color-blue thin;
-        background-image: url(./images/stemEducation.jpg);
-        background-size: cover;
-      }
-      &--text {
-        width: 25rem;
-        background-color: $color-blue; 
-        border-bottom-right-radius: .4rem;
-        border-bottom-left-radius: .4rem;
-        padding: 1rem;
-        padding-bottom: 3.2rem;
-
-        &-title {
-          font-size: 2rem;
-          letter-spacing: .2rem;
-        }
-        &-subtitle {
-          font-size: 1.5rem;
-          font-weight: 300;
-          margin-top: 1.5rem;
-        }
-      }
-    }
-    &--card3 {
-      display: inline-block;
-      margin-bottom: 1rem;
-
-      &--picture {
-        height: 25rem;
-        width: 25rem;
-        border: solid $color-blue thin;
-        background-image: url(./images/careerDev.jpg);
-        background-size: cover;
-        background-position: center;
-        border-top-right-radius: .4rem;
-        border-top-left-radius: .4rem;
-      }
-      &--text {
-        width: 25rem;
-        background-color: $color-blue; 
-        border-bottom-right-radius: .4rem;
-        border-bottom-left-radius: .4rem;
-        padding: 1rem;
-        padding-bottom: 2rem;
-
-        &-title {
-          font-size: 2rem;
-          letter-spacing: .2rem;
-        }
-        &-subtitle {
-          font-size: 1.5rem;
-          font-weight: 300;
-          margin-top: 1rem;
-        }
-      }
-    }
-
-  }
-}
-
-.actionCall {
-  margin-top: 6rem;
-  padding-top: 2rem;
+.section-action {
   text-align: center;
   color: $color-blue;
-  padding-bottom: 12rem;
+  padding-bottom: 7rem;
 
-  &__header {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1rem;
-    opacity: .8;
-    margin-bottom: 3rem;
-  }
-  &__subheader {
-    font-size: 2.7rem;
-    font-weight: 300;
-    opacity: .8;
-  }
-  &__container {
-    margin-top: 4rem;
-    color: $color-pink;
-
+  &__content {
+    margin-top: 7rem;
     &--btn {
-      margin-right: 4rem;
-      margin-bottom: 2rem;
-      font-size: 2.5rem;
-      text-transform: uppercase; 
-      letter-spacing: .3rem;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      margin-top: 2rem;
+      border: solid $color-blue thin;
       display: inline-block;
-      padding: 1rem 4rem;
-      border: solid $color-pink thin;
-      border-radius: 1rem;
+      padding: 1rem 2rem;
+      border-radius: .5rem;
       cursor: pointer;
-    }
-    &--btn:hover {
-      color: $color-white; 
-      background-color: $color-pink;
+      font-size: 1.7rem;
+      background-color: $color-blue;
+      color: $color-white;
+      transition: transform .4s;
+      box-shadow: 0 1rem 1rem rgba($dark-grey, .15);
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-blue;
+        transform: translateY(-1rem) scale(1.03);
+      }
+      &:active {
+        transform: translateY(.1rem) scale(1.03);
+      }
     }
   }
 }
-
-.footer {
-  background-color: $color-purple;
-  opacity: .8;
-  height: 20rem;
-  text-align: center;
-
-  &__logo {
-    color: $color-white;
-    padding-top: 2rem;
-    font-size: 3rem;
-    letter-spacing: .5rem;
-    margin-bottom: 1.7rem;
-  }
-  &__container {
-    margin: 0 auto;
-    width: 70%;
-    padding-top: 3.5rem;
-    border-top: .1rem solid $color-white;
-    font-size: 1.6rem;
-    color: $color-white;
-
-    &--form {
-      display: inline-block;
-      margin-right: 8rem;
-    }
-    &--social {
-      display: inline-block;
-      cursor: pointer;
-      
-      &-phone {
-        display: inline-block;
-        margin-right: 1rem;
-      }
-      &-email {
-        display: inline-block;
-        margin-right: 1rem;
-      }
-    }
-    &--address {
-      display: inline-block;
-      margin-left: 8rem;
-
-    }
-  }
-}
-
-// @media screen and (max-width: 950px) {
-//   .footer {
-//     height: 25rem;
-//     &__logo {
-//     }
-//     &__container {
-//       text-align: center;
-//       font-size: 1.2rem;
-      
-//       &--form {
-//         margin-right: 3.5rem;
-//       }
-//       &--social {
-
-//       }
-//       &--address {
-//         margin-left: 2.5rem;
-//       }
-//     }
-//   }
-//   .welcome {
-//     padding: 0 1rem;
-//   }
-
-// }
-
-// @media screen and (max-width: 768px) {
-//   .welcome {
-//     top: 10rem;
-//   }
-//   .header {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     height: 100%;
-//     width: 100%;
-//     z-index: -1;
-//     opacity: .7;
-//     overflow: hidden;
-  
-//     &__content {
-//       height: 60%;
-//       width: 100%;
-//       object-fit: cover;
-//     }
-//   }
-//   .definition {
-//     // margin-top: 6rem;
-//   }
-// }
-
-// @media screen and (max-width: 545px) {
-//   .footer {
-//     height: 25rem;
-//     &__logo {
-//     }
-//     &__container {
-//       padding-top: 2.5rem;
-//       text-align: center;
-//       font-size: 1.2rem;
-      
-//       &--form {
-//         margin-right: 0;
-//         display: block;
-//         margin-bottom: 1.5rem;
-//       }
-//       &--social {
-//         display: block;
-//         margin-bottom: 1.5rem;
-//         padding-left: 1rem;
-//       }
-//       &--social a{
-//         margin-right: 1rem;
-//       }
-//       &--address {
-//         display: block;
-//         margin-left: 0;
-//       }
-//     }
-//   }
-//   .definition {
-//     // margin-top: 10rem;
-//   }
-// }

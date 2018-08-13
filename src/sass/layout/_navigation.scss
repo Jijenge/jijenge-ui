@@ -7,34 +7,19 @@
   height: 8vh; 
   padding: .5rem;
   
-  &__container {
-    max-width: 114rem;
-    min-width: 35rem;
-    margin: 0 auto; 
-  }
-  
   &__logo {
     color: $color-purple; 
     display: inline-block;
     font-size: 2.5rem;
-    margin-left: 2rem;
+    margin-left: 6rem;
     letter-spacing: 1.5px;
     margin-top: .5rem;
-    @include respond(tab-port) {
-      // display: none;
-      background-color: aqua;
-    }
-
-  }
-
-  &__list {
-    float: right;
-    margin-top: 1.25rem;
-    margin-right: 4rem;
-    
   }
   &__item {
     display: inline-block;
+    &:hover {
+      border-bottom: solid $purple thin;
+    }
     &:not(:last-child) {
       margin-right: 4rem; 
     }
@@ -45,45 +30,112 @@
     font-size: 3rem;
     letter-spacing: .3rem;
   }
+  
+  &__list {
+    float: right;
+    margin-top: 1.25rem;
+    margin-right: 5rem;
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
   &__link {
     text-decoration: none;
     color: $color-purple; 
     font-size: 1.5rem;
     letter-spacing: .2rem;
     text-transform: uppercase;
+    
   }
   &__linkDonate {
     color: $color-purple;
     border: solid $color-purple thin;
     text-transform: uppercase;
     font-size: 1.5rem;
-    letter-spacing: .8rem;
-    padding: 1.2rem 3rem;
+    letter-spacing: .6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.1rem;
+    padding-left: 1.5rem;
     text-decoration: none;
     border-radius: 1rem;
   }
-
   &__linkDonate:hover {
     color: $color-white;
     border: solid $color-white thin;
     background-color: $color-purple;
   }
-
 }
 
 .dropbtn {
-  display: none; 
+  display: none;
 }
 
+// .dropbtn {
+//   display: none; 
+//   @include respond(tab-port) {
+//     position: relative; 
+//     display: inline-block; 
+//     float: right;
+//     margin-right: 1rem;
+//     cursor: pointer;
+//   }
+//   &:hover {
+//     @include respond(tab-port) {
+//       display: block;
+//     }
+//   }
+//   &__dropbtnIcon {
+//     @include respond(tab-port) {
+//       color: $color-purple;
+//     }
+//   }
+//   &__dropdownContent {
+//     @include respond(tab-port) {
+//       display: none; 
+//       position: absolute;
+//       min-width: 14rem;
+//       background-color: $color-purple; 
+//       z-index: 1;
+//       right: 1.5rem;
+//       text-align: center;
+//       border-top-left-radius: 1rem;
+//       border-bottom-left-radius: 1rem;
+//       border-bottom-right-radius: 1rem;
+//     }
+//     &:hover {
+//       @include respond(tab-port) {
+//         display: block;
+//       }
+//     }
+//   }
+//   &__dropdownContent a {
+//     @include respond(tab-port) {
+//       color: $color-white;
+//       padding: 1.2rem 1.6rem;
+//       text-decoration: none;
+//       display: block;
+//       font-size: 1.5rem;
+//       text-transform: uppercase;
+//     }
+//     &:hover {
+//       @include respond(tab-port) {
+//         background-color: $color-white; 
+//         color: $color-purple; 
+//       }
+//     }
+//   }
+
+// }
 
 
 
-// @include respond(tab-port) {
+
+
+// @media screen and (max-width: 900px) {
 //   .navigation {
-//     display: none !important;
-//     // position: relative;
 //     &__list {
-//       display: none !important;
+//       display: none;
 //     }
 //   }
 //   .dropbtn {
@@ -123,7 +175,6 @@
 //   .dropdownContent a:hover {
 //     background-color: $color-white; 
 //     color: $color-purple; 
-    
 //   }
   
 //   .dropbtn:hover .dropdownContent {

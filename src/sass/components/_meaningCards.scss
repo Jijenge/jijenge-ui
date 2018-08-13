@@ -1,0 +1,41 @@
+.meaning-cards {
+  height: 35rem;
+  width: 35rem;
+  background-color: $blue;
+  box-shadow: 0 1.5rem 2rem rgba($color-black, .15);
+
+  &__picture {
+  
+    &--1 {
+      height: 25rem;
+      width: 100%;
+      background-size: cover;
+      background-image: url(./images/basicEducation.jpg);
+    }
+    &--2 {
+      height: 25rem;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-image: url(./images/stemEducation.jpg);
+    }
+    &--3 {
+      height: 25rem;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-image: url(./images/careerDev.jpg);
+    }
+  }
+  &__content {
+    color: $color-white;
+    &--title {
+      font-size: 2rem;
+      padding-top: .5rem;
+    }
+    &--subtitle {
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+  }
+}
