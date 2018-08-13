@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
 @import "./sass/abstracts/mixins";
 @import "./sass/abstracts/variables";
+@import "./sass/base/typography"; 
+@import "./sass/base/base"; 
+@import "./sass/components/donateHeader"; 
+@import "./sass/components/popup"; 
 @import "./sass/layout/grid"; 
 @import "./sass/layout/navigation"; 
 @import "./sass/pages/home"; 
@@ -9,23 +11,3 @@
 @import "./sass/pages/ourStudents"; 
 @import "./sass/pages/students"; 
 @import "./sass/pages/visit"; 
-@import "./sass/components/donateHeader"; 
-@import "./sass/components/popup"; 
-
-
-*, 
-*::after, 
-*::before {
-  margin: 0; 
-  padding: 0; 
-  box-sizing: inherit; 
-}
-
-html {
-  font-size: 62.5%; 
-}
-
-body {
-  box-sizing: border-box; 
-  font-family: 'Ubuntu', sans-serif;
-}

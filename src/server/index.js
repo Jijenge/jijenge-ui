@@ -30,25 +30,6 @@ server.use(staticMiddleware);
 // }));
 
 server.get('*', (req, res) => res.sendFile(path.resolve(__dirname, '../index.html')));
-// server.get('*', (req, res) => res.send(
-// `
-//   <html>
-//   <head>
-//     <meta charset="UTF-8">
-//     <title>Jijenge</title>
-//   </head>
-//   <body>
-//     <div id="root">
-//       ${ReactDOMServer.renderToString(<App />)}
-//     </div>
-
-//     <script async src="/main-bundle.js"></script>
-//     <!-- <script src="https://js.stripe.com/v3/"></script> -->
-//     <script id="stripe-js" async src="https://js.stripe.com/v3/" ></script>
-//   </body>
-//   </html>
-// `
-// ));
 
 const PORT = process.env.PORT || 6060; 
 

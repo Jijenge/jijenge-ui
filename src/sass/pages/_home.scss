@@ -23,6 +23,9 @@
   padding-top: 16rem;
   text-align: center;
   color: $color-purple;
+  @include respond(phone) {
+    color: white;
+  }
   
   &__header {
     font-size: 3.5rem;
@@ -308,87 +311,87 @@
   }
 }
 
-@media screen and (max-width: 950px) {
-  .footer {
-    height: 25rem;
-    &__logo {
-    }
-    &__container {
-      text-align: center;
-      font-size: 1.2rem;
+// @media screen and (max-width: 950px) {
+//   .footer {
+//     height: 25rem;
+//     &__logo {
+//     }
+//     &__container {
+//       text-align: center;
+//       font-size: 1.2rem;
       
-      &--form {
-        margin-right: 3.5rem;
-      }
-      &--social {
+//       &--form {
+//         margin-right: 3.5rem;
+//       }
+//       &--social {
 
-      }
-      &--address {
-        margin-left: 2.5rem;
-      }
-    }
-  }
-  .welcome {
-    padding: 0 1rem;
-  }
+//       }
+//       &--address {
+//         margin-left: 2.5rem;
+//       }
+//     }
+//   }
+//   .welcome {
+//     padding: 0 1rem;
+//   }
 
-}
+// }
 
-@media screen and (max-width: 768px) {
-  .welcome {
-    top: 10rem;
-  }
-  .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: .7;
-    overflow: hidden;
+// @media screen and (max-width: 768px) {
+//   .welcome {
+//     top: 10rem;
+//   }
+//   .header {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     z-index: -1;
+//     opacity: .7;
+//     overflow: hidden;
   
-    &__content {
-      height: 60%;
-      width: 100%;
-      object-fit: cover;
-    }
-  }
-  .definition {
-    // margin-top: 6rem;
-  }
-}
+//     &__content {
+//       height: 60%;
+//       width: 100%;
+//       object-fit: cover;
+//     }
+//   }
+//   .definition {
+//     // margin-top: 6rem;
+//   }
+// }
 
-@media screen and (max-width: 545px) {
-  .footer {
-    height: 25rem;
-    &__logo {
-    }
-    &__container {
-      padding-top: 2.5rem;
-      text-align: center;
-      font-size: 1.2rem;
+// @media screen and (max-width: 545px) {
+//   .footer {
+//     height: 25rem;
+//     &__logo {
+//     }
+//     &__container {
+//       padding-top: 2.5rem;
+//       text-align: center;
+//       font-size: 1.2rem;
       
-      &--form {
-        margin-right: 0;
-        display: block;
-        margin-bottom: 1.5rem;
-      }
-      &--social {
-        display: block;
-        margin-bottom: 1.5rem;
-        padding-left: 1rem;
-      }
-      &--social a{
-        margin-right: 1rem;
-      }
-      &--address {
-        display: block;
-        margin-left: 0;
-      }
-    }
-  }
-  .definition {
-    // margin-top: 10rem;
-  }
-}
+//       &--form {
+//         margin-right: 0;
+//         display: block;
+//         margin-bottom: 1.5rem;
+//       }
+//       &--social {
+//         display: block;
+//         margin-bottom: 1.5rem;
+//         padding-left: 1rem;
+//       }
+//       &--social a{
+//         margin-right: 1rem;
+//       }
+//       &--address {
+//         display: block;
+//         margin-left: 0;
+//       }
+//     }
+//   }
+//   .definition {
+//     // margin-top: 10rem;
+//   }
+// }

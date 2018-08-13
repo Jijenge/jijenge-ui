@@ -3,6 +3,9 @@
   background-size: cover;
   background-position: center; 
   height: 50%;
+  @include respond(phone) {
+    height: 20%;
+  }
   &__text {
     padding-top: 12rem;
     text-align: center;
