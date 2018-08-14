@@ -26,13 +26,13 @@ class Onesmus extends Component {
               How you got interested in computers?
             </div>
             <div className="onesmusStory__containerQuestions--subtext1">
-            I like computers one because they make work more easier. It has made the world to be a global market and thus made everything to work out easier. I first got interested in computers when I was in form two. They were first introduced with a man called Carlos and his wife. I was among the first to join the computer class and thus my interest rose from there. 
+            I like computers simply because they give me world in my hands without limits.With computers i can do research of what kind i need, i can read, listen to music, Get news or updates around the world and many more. Am sorry to say so ,but am addicted to computers because everytime i think about my laptop. In grade 3, was my first time to use a computer and it was amazing and saw it as another world and this was just playing games. With time i came to learn that computers are great if you have the skills to use them and this made me even to increase my desire to know about them and today here i am with the skills.
             </div>
             <div className="onesmusStory__containerQuestions--text2">
               What projects are you proud of, or what projects are you currently working on?
             </div>
             <div className="onesmusStory__containerQuestions--subtext2">
-            The project I’m happy for is the one we did at Tunapanda involving blockchain technology. We were creating a website which would enable people to register their land using blockchain. Currently I am mentoring youngstars at Mogra on how to use computers.
+            Currently am doing soccer based projects at cloudfactory company and i enjoy doing this because am putting in use the skills that i have in work and its great for me. I also like engineering based projects more so on Autocad and Archicad drawings.
             </div>
           </div>
 

@@ -120,7 +120,9 @@ class MeetTheStudents extends Component {
               <div className="studentsContainer__eachStudent--info">
                 <div className="studentsContainer__eachStudent--info-title">{this.state.students[3]}</div>
                 <div className="studentsContainer__eachStudent--info-subtitle">
-                Currently, I am trying to help at least two kids at Mogra to know how to use a computer and know how to browse the internet. I am also trying to get my admission to college coming September.
+                Am trying my level best to work hard in my internship to get out with the best results ever. 
+                Trying to save as much as possible so that in future I won't have any problems and most probably for my school fees in college.
+                Trying to make the right choice in the career am choosing.
                 <div onClick={this.handleMary.bind(this)}>{`Hear ${this.state.students[3]}'s story`}&rarr;</div> 
                 </div>
               </div>
@@ -132,7 +134,7 @@ class MeetTheStudents extends Component {
               <div className="studentsContainer__eachStudent--info">
                 <div className="studentsContainer__eachStudent--info-title">{this.state.students[4]}</div>
                 <div className="studentsContainer__eachStudent--info-subtitle">
-                Currently, I am trying to help at least two kids at Mogra to know how to use a computer and know how to browse the internet. I am also trying to get my admission to college coming September.
+                As I have acquired a job recently am working hard to set a good and strong financial background that will enable me to enter into my goals. One thing i know is that for one to achieve his goals he has to focus and have passion of what he wants, and as for me to achieve my goals i have to get a well financial background of which am working on today.
                 <div onClick={this.handleOnesmus.bind(this)}>{`Hear ${this.state.students[4]}'s story`}&rarr;</div> 
                 </div>
               </div>

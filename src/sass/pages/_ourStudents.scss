@@ -3,9 +3,10 @@
   background-size: cover;
   background-position: center; 
   height: 50%;
-  @include respond(phone) {
-    height: 20%;
-  }
+  text-shadow: 1px 1px 1px $dark-grey;
+  // @include respond(phone) {
+  //   height: 20%;
+  // }
   &__text {
     padding-top: 12rem;
     text-align: center;
@@ -41,11 +42,13 @@
     background-color: $color-blue;
     display: inline-block;
     width: 30rem;
-    height: 45rem;
+    height: 50rem;
     text-align: center;
     padding: 1rem;
     margin-bottom: 3rem;
     vertical-align: top;
+    position: relative;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
     &:not(:last-child) {
       margin-right: 3rem;
@@ -79,7 +82,15 @@
         margin-top: 1rem;
         cursor: pointer;
         display: block;
-
+        position: relative;
+        bottom: 2rem;
+        left: 8rem;
+        position: absolute;
+        transition: transform .6s; 
+        &:hover {
+          text-decoration: underline;
+          transform: translateX(2rem) scale(1);
+        }
       }
     }
   }

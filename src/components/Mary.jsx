@@ -26,13 +26,14 @@ class Mary extends Component {
               How you got interested in computers?
             </div>
             <div className="maryStory__containerQuestions--subtext1">
-            I like computers one because they make work more easier. It has made the world to be a global market and thus made everything to work out easier. I first got interested in computers when I was in form two. They were first introduced with a man called Carlos and his wife. I was among the first to join the computer class and thus my interest rose from there. 
+            Computer is a device that makes work easier. I knew nothing about computers until when I finished form four and Vas and some donors contributed and I was able to receive a personal laptop. Since then I was have been able to access my computer everyday. Other than just giving us laptops they went ahead and organized three classes per week which has been helpful to us in many ways and we are very grateful. Thanks to them because today I wouldn't be interested in computers,i would also be knowing nothing about computers thanks for those who contributed to make work easy on us and now we are able to store information in our system. 
             </div>
             <div className="maryStory__containerQuestions--text2">
               What projects are you proud of, or what projects are you currently working on?
             </div>
             <div className="maryStory__containerQuestions--subtext2">
-            The project I’m happy for is the one we did at Tunapanda involving blockchain technology. We were creating a website which would enable people to register their land using blockchain. Currently I am mentoring youngstars at Mogra on how to use computers.
+            There is this project about climate smart agriculture. Trying to figure out what are the better practices to improve climate smart agriculture. 
+            Am also interested in a project dealing with beans and how we can add nutrients to beans when we cook.  
             </div>
           </div>
 
