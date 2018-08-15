@@ -1,7 +1,7 @@
 import React, { Component } from 'react'; 
 import Navigation from './NavigationBar.jsx';
 import Footer from './Footer.jsx';
-import john from '../images/john.jpg';
+import john from '../images/ian-schneider-66374-unsplash (1).jpg';
 import DrJohn from '../images/drjohn.jpg';
 import Sam from '../images/sam.jpg';
 import Vassiliki from '../images/vassia.jpg';
@@ -129,7 +129,7 @@ class Team extends Component {
               <div className="col-1-of-3">
                 <div className="member">
                   <div className="member__picture">
-                    <img  className="member__picture--img" src={Sam} />
+                    <img  className="member__picture--img" src={john} />
                   </div>
                   <div className="member__information">
                     <div className="member__information--name">Sam Langer</div>
@@ -151,8 +151,8 @@ class Team extends Component {
                     <img  className="member__picture--img" src={john} />
                   </div>
                   <div className="member__information">
-                    <div className="member__information--name">Jake Reisch</div>
-                    <div className="member__information--role">President</div>
+                    <div className="member__information--name">Daniel King</div>
+                    <div className="member__information--role">&nbsp;</div>
                     <div className="member__information--jijenge">Jijenge</div>
                   </div>
                 </div>

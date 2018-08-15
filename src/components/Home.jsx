@@ -33,14 +33,14 @@ class Home extends Component {
           <Navigation /> 
         </div>
         <header> 
-          <Header />
+          <Header history={this.props.history} />
         </header>
         <main>
           <section className="section-meaning">
             <Meaning />
           </section> 
           <section className="section-action">
-            <Action />
+            <Action history={this.props.history} />
           </section> 
         </main>
         <footer>
