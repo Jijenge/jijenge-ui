@@ -3,101 +3,80 @@
   background-size: cover;
   background-position: center;
   background-image: url(./images/visitAfricaHeader-compressor.jpg);
-  background-color: $color-yellow;
 }
 
 .visitBanner {
-  position: relative;
-  top: 10rem;
-  left: 3rem;
-  max-width: 90rem;
-
-  &__header {
-    color: $color-yellow;
-    font-size: 4rem;
-    letter-spacing: .5rem;
-  }
+  position: absolute;
+  top:30%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+  color: $color-pink;
+  text-shadow: 1px 1px 1px $light-grey;
 
   &__container {
-    position: relative;
-    top: 5rem;
-
-    &--text {
-      margin-bottom: 2rem;
-      font-size: 1.8rem;
-      color: $color-white;
-      letter-spacing: .1rem;
-    }
-
+    margin-top: 2rem;
+    display: inline-block;
     &--email {
-
-      &-input {
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 1.3rem;
-        padding: 1rem 1rem;
-        width: 30rem;
-        border:  solid $color-yellow thin;
-        border-top-left-radius: 1rem;
-        border-bottom-left-radius: 1rem;
-        vertical-align: top;
-      }
-      &-btn {
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        border: solid $color-yellow thin;
-        background-color: $color-yellow;
-        opacity: .8;
-        color: $color-white;
-        border-top-right-radius: 1rem;
-        border-bottom-right-radius: 1rem;
-        padding: 1rem 1rem;
-        cursor: pointer;
-      }
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.3rem;
+      padding: 1rem 1rem;
+      width: 20rem;
+      border:  solid $color-pink thin;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      vertical-align: top;
+      white-space: nowrap;
+    }
+    &--btn {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      border: solid $color-pink thin;
+      background-color: $color-pink;
+      opacity: .8;
+      color: $color-white;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      padding: 1rem 1rem;
+      cursor: pointer;
     }
   }
 }
 
-.meet {
-  margin-top: 5%;
+.section-slides {
+  margin-top: 5rem;
   text-align: center;
-
-  &__header {
-    font-size: 3rem;
-    letter-spacing: .7rem;
-    text-transform: lowercase;
-    color: $color-yellow;
-    opacity: .8;
-    margin-top: 4rem;
+  position: relative;
+  &__heading {
+    color: $color-yellow; 
+    position: absolute;
+    text-shadow: 1px 1px 1px $dark-grey;
+    left: 5rem;
+    top: 1rem;
   }
-}
-
-.experience {
-  text-align: center;
-  margin-bottom: 4rem;
 }
 
 .slideshow-container {
-  max-width: 110rem;
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
   margin-top: 2rem;
+  height: 90vh;
 }
 
 .image {
-  height: 76%;
+  height: 100%;
+  width: 95%;
 }
 
 .prev, .next {
   cursor: pointer;
   color: $color-yellow;
-  opacity: .8;
+  text-shadow: 1px 1px 1px $dark-grey;
   font-weight: bold;
   font-size: 4rem;
   transition: 0.6s ease;
-  padding: 3rem;
-  top: 35%; 
+  padding: 5rem;
+  top: 40%; 
   position: absolute;
 }
 
@@ -137,43 +116,43 @@
   to {opacity: 1}
 }
 
-.experienceAction {
-  height: 100vh;
-  background-image: url(./images/visitAfricaEndPageAction-compressor.jpg);
-  background-size: cover;
-  background-position: bottom;
-  &__header {
-    color: $color-white;
-    font-size: 3rem;
-    text-align: center;
-    padding-top: 6rem;
-    letter-spacing: .7rem;
+.section-experience {
+  margin-top: 5rem;
+  position: relative;
+  &__heading {
+    color: $color-pink; 
+    position: absolute;
+    top: 8%; 
+    left: 34%;
+    text-shadow: 1px 1px 1px $dark-grey;
   }
-  &__banner {
-    text-align: center;
-    margin-top: 2rem;
+  &__container {
+    height: 100vh;
+    background-image: url(./images/visitAfricaEndPageAction-compressor.jpg);
+    background-size: cover;
+    background-position: bottom;
 
     &--form {
-
+      position: absolute;
+      top: 16%;
+      left: 37%;
     }
     &--input {
-      border: solid $color-purple thin;
-      opacity: .8;
+      border: solid $color-pink thin;
       font-family: 'Ubuntu', sans-serif;
       font-size: 1.3rem;
       padding: 1rem 1rem;
-      width: 25rem;
+      width: 20rem;
       border-top-left-radius: 1rem;
       border-bottom-left-radius: 1rem;
-      vertical-align: top;
+      white-space: nowrap;
     }
     &--btn {
       font-family: 'Ubuntu', sans-serif;
       font-size: 1.3rem;
       text-transform: uppercase;
-      // letter-spacing: .2rem;
-      border: solid $color-purple thin;
-      background-color: $color-purple;
+      border: solid $color-pink thin;
+      background-color: $color-pink;
       opacity: .8;
       color: $color-white;
       border-top-right-radius: 1rem;

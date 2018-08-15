@@ -25,16 +25,8 @@
     &--social {
       display: inline-block;
       & a {
-        cursor: pointer;
-        color: $color-white;
-        display: inline-block;
-        transition: transform .4s;
-        &:not(:last-child) {
-          margin-right: 2rem;
-        }
-        &:hover {
-          transform: translateY(-1rem) scale(1);
-        }
+      color: $color-white;
+      display: inline-block;
       }
     }
   }

@@ -121,7 +121,7 @@ class Donate extends Component {
     return (
       <div>
         <script src="https://js.stripe.com/v3/"></script>
-        <div className="navigation">
+        <div>
           <Navigation /> 
         </div>
         <main>

@@ -55,6 +55,7 @@
     "react-dom": "^16.4.2",
     "react-fontawesome": "^1.6.1",
     "react-hot-loader": "^4.3.4",
+    "react-obfuscate": "^2.1.4",
     "react-router-dom": "^4.3.1",
     "react-stripe-checkout": "^2.6.3",
     "react-stripe-elements": "^2.0.1",

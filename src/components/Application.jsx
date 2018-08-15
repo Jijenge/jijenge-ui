@@ -11,7 +11,6 @@ import SettingUpStripe from './SettingUpStripe.jsx';
 import MeetTheStudents from './MeetTheStudents.jsx';
 import VisitAfrica from './VisitAfrica.jsx';
 import Team from './Team.jsx';
-import About from './About.jsx';
 import Ann from './Ann.jsx';
 import Daniel from './Daniel.jsx';
 import Kelvin from './Kelvin.jsx';
@@ -21,7 +20,6 @@ import Samuel from './Samuel.jsx';
 import Vivian from './Vivian.jsx';
 import Winnie from './Winnie.jsx';
 import Yvonne from './Yvonne.jsx';
-import Contact from './Contact.jsx';
 
 library.add(fab, faCheckSquare, faSearch, faBars, faEnvelope, faPhoneSquare );
 
@@ -45,7 +43,6 @@ export default class extends Component {
             </StripeProvider>
             )}/> 
         <Route exact path='/Team' component={Team} />
-        <Route exact path='/About' component={About} />
         <Route exact path='/Ann' component={Ann} />
         <Route exact path='/Daniel' component={Daniel} />
         <Route exact path='/Kelvin' component={Kelvin} />

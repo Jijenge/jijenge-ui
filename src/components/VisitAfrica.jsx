@@ -168,29 +168,28 @@ export default class VisitAfrica extends Component {
   render() {
     return (
       <div>
-        <div className="navigation">
+        <div>
           <Navigation /> 
         </div>
       <main>
         <div className="visitHeader">
           <div className="visitBanner">
-            <div className="visitBanner__header">An inspiration vacation</div>
+            <div className="primaryHeading">An inspiration vacation</div>
+            <div className="secondaryHeading">Book a life changing visit to the children at Jijenge @ Nairobi.</div>
+            <div className="secondaryHeading">Witness our impact first hand and while experiencing the world's best safari tours.</div>
             <div className="visitBanner__container">
-              <div className="visitBanner__container--text">Book a life changing visit to the children at Jijenge @ Nairobi.
-                <div>Witness our impact first hand and while experiencing the world's best safari tours.</div>
-              </div>
-              <div className="visitBanner__container--email">
-                <form className="visitBanner__container--email-form" onSubmit={this.handleRequestItenerary.bind(this)} >
-                  <input name="email" className="visitBanner__container--email-input" placeholder="Email" onChange={this.handleInputChange.bind(this)} />
-                  <input className="visitBanner__container--email-btn" type="submit" value="Tailor a trip to Kenya" />
-                </form>
-              </div>
+              <form  onSubmit={this.handleRequestItenerary.bind(this)} >
+                <input name="email" className="visitBanner__container--email" placeholder="Email" onChange={this.handleInputChange.bind(this)} />
+                <input className="visitBanner__container--btn" type="submit" value="Tailor a trip to Kenya" />
+              </form>
             </div>
           </div>
         </div>
       </main>
-      <section className="meet">
-      <div className="meet__header">Meet the children</div>
+      <section className="section-slides">
+        <div className="section-slides__heading">
+          <div className="primaryHeading">Meet the children</div>
+        </div>
         <div className="slideshow-container">
           <div className="mySlides fade">
             <img className="image" src={this.state.meet[this.state.meetCurrent]} />
@@ -198,22 +197,12 @@ export default class VisitAfrica extends Component {
           <div className="prev" onClick={this.handlePrevMeetArrow.bind(this)}>&#10094;</div>
           <div className="next" onClick={this.handleNextMeetArrow.bind(this)}>&#10095;</div>
         </div>
-        <div className="text-align:center">
-          <div className="dot" onClick={this.handlePictureOne.bind(this)}></div> 
-          <div className="dot" onClick={this.handlePictureTwo.bind(this)}></div> 
-          <div className="dot" onClick={this.handlePictureThree.bind(this)}></div> 
-          <div className="dot" onClick={this.handlePictureFour.bind(this)}></div>
-          <div className="dot" onClick={this.handlePictureFive.bind(this)}></div> 
-          <div className="dot" onClick={this.handlePictureSix.bind(this)}></div> 
-          <div className="dot" onClick={this.handlePictureSeven.bind(this)}></div> 
-          <div className="dot" onClick={this.handlePictureEight.bind(this)}></div> 
-          <div className="dot" onClick={this.handlePictureNine.bind(this)}></div> 
-          <div className="dot" onClick={this.handlePictureTen.bind(this)}></div> 
-        </div>
       </section>
 
-      <section className="experience">
-      <div className="meet__header">Experience Africa</div>
+      <section className="section-slides">
+        <div className="section-slides__heading">
+          <div className="primaryHeading">Experience Africa</div>
+        </div>
         <div className="slideshow-container">
           <div className="mySlides fade">
             <img className="image" src={this.state.africa[this.state.expAfrica]} />
@@ -221,26 +210,16 @@ export default class VisitAfrica extends Component {
           <div className="prev" onClick={this.handlePrevAfricaArrow.bind(this)}>&#10094;</div>
           <div className="next" onClick={this.handleNextAfricaArrow.bind(this)}>&#10095;</div>
         </div>
-        <div className="text-align:center">
-          <div className="dot" onClick={this.handlePictureOne.bind(this)}></div> 
-          <div className="dot" onClick={this.handlePictureTwo.bind(this)}></div> 
-          <div className="dot" onClick={this.handlePictureThree.bind(this)}></div> 
-          <div className="dot" onClick={this.handlePictureFour.bind(this)}></div>
-          {/* <div className="dot" onClick={this.handlePictureFive.bind(this)}></div> 
-          <div className="dot" onClick={this.handlePictureSix.bind(this)}></div> 
-          <div className="dot" onClick={this.handlePictureSeven.bind(this)}></div> 
-          <div className="dot" onClick={this.handlePictureEight.bind(this)}></div> 
-          <div className="dot" onClick={this.handlePictureNine.bind(this)}></div> 
-          <div className="dot" onClick={this.handlePictureTen.bind(this)}></div>  */}
-        </div>
       </section>
 
-      <section className="experienceAction">
-        <div className="experienceAction__header">Experience the trip of a lifetime</div>
-        <div className="experienceAction__banner">
-          <form className="experienceAction__banner--form" onSubmit={this.handleRequestItenerary.bind(this)}>
-            <input name="email" className="experienceAction__banner--input" placeholder="Email" onChange={this.handleInputChange.bind(this)}/>
-            <input className="experienceAction__banner--btn" type="submit" value="Tailor a trip to Kenya" />
+      <section className="section-experience">
+        <div className="section-experience__heading">
+          <div className="primaryHeading">Experience the trip of a lifetime</div>
+        </div>
+        <div className="section-experience__container">
+          <form className="section-experience__container--form" onSubmit={this.handleRequestItenerary.bind(this)}>
+            <input name="email" className="section-experience__container--input" placeholder="Email" onChange={this.handleInputChange.bind(this)}/>
+            <input className="section-experience__container--btn" type="submit" value="Tailor a trip to Kenya" />
           </form>
         </div>
       </section>
