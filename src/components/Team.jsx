@@ -74,7 +74,7 @@ class Team extends Component {
                   </figure>  
                   </div>
                   <div className="johnPopup__left">
-                    Jake Reisch is a Forbes 30 Under 30 entrepreneur and CEO of Eversound, a specialized audio technology for the 75+. Jake started building startups during his Junior year at Cornell University when he founded Party Headphones, an audio provider for the special events industry. Jake was selected as a Young Global Shaper by the World Economic Forum, was the 2016 SBA Young Entrepreneur of the Year for New England and is a member of Cornell University’s Entrepreneurship@Cornell Advisory Council.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium perferendis quos placeat iste dolorem corrupti eius sit similique, vel non quia, quibusdam culpa recusandae sint id dolor exercitationem! Blanditiis, aperiam odio tempore soluta incidunt ullam sunt obcaecati officiis fuga? Officia ipsum dolores quidem nam atque soluta aspernatur nostrum aut a.
                   </div>
                   </div>
                 </div>
@@ -224,7 +224,7 @@ class Team extends Component {
                   </figure>  
                   </div>
                   <div className="danielPopup__left">
-                    Jake Reisch is a Forbes 30 Under 30 entrepreneur and CEO of Eversound, a specialized audio technology for the 75+. Jake started building startups during his Junior year at Cornell University when he founded Party Headphones, an audio provider for the special events industry. Jake was selected as a Young Global Shaper by the World Economic Forum, was the 2016 SBA Young Entrepreneur of the Year for New England and is a member of Cornell University’s Entrepreneurship@Cornell Advisory Council.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae facilis excepturi temporibus ut architecto, tempora aspernatur totam delectus quis debitis officia tempore sit, a at nemo soluta! Nulla voluptatibus et distinctio quidem architecto vel quisquam debitis dignissimos, ducimus at dicta facilis ab suscipit. Placeat blanditiis eum quod odit deleniti voluptatibus!
                   </div>
                   </div>
                 </div>

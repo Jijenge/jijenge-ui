@@ -4,6 +4,7 @@
   background-size: cover;
   height: 115vh;
 
+
   &__donate {
     text-align: center;
     &--form {
@@ -17,24 +18,14 @@
 }
 
 .donateHeaderContainer {
-  padding-top: 10rem;
+  padding-top: 12rem;
   color: $color-white;
   padding-bottom: 4rem;
-  &__header {
-    font-size: 3.5rem;
-  }
-  &__subheader {
-    margin-top: 2rem;
-    font-size: 2.7rem;
-    font-weight: 300;
-  }
+  text-shadow: 1px 1px 1px $dark-grey;
 }
-.stripe-button-el span {
-  background-color: blueviolet;
-  color: black;
-}
+
 .formContainer {
-  background-color: rgba($blue, .8);
+  background-color: rgba($color-blue, .8);
   position: relative;
   top: 2%;
   left: 30%;
@@ -43,6 +34,7 @@
   border-radius: 1rem;
   padding: 1rem;
   padding-top: 1.5rem;
+  box-shadow: 0 2rem 4rem rgba($color-black, .8); 
   
   &__frequency {
     margin-bottom: 1rem;
@@ -50,7 +42,7 @@
     &--one {
       display: inline-block;
       cursor: pointer;
-      background-color: $color-pink; 
+      background-color: $color-blue; 
       padding: 1rem 4rem;
       color: $color-white; 
       font-size: 1.5rem;
@@ -64,7 +56,7 @@
     }
     &--monthly {
       display: inline-block;
-      background-color: $color-pink; 
+      background-color: $color-blue; 
       padding: 1rem 4rem;
       color: $color-white; 
       font-size: 1.5rem;
@@ -79,6 +71,7 @@
   }
   &__form {
     padding-top: 1rem;
+    
     &--oneLabel {
       display: block;
       font-size: 1.5rem;
@@ -111,12 +104,16 @@
       &--input {
       border: none; 
       width: 25rem;
-      height: 3rem;
-      font-size: 1.2rem;
+      height: 3.5rem;
+      font-size: 2rem;
       outline: none;
+      white-space: nowrap;
+      
       }
       &--label {
         padding: 0 .5rem;
+        font-size: 2rem;
+        color: $color-black;
       }
     }
 

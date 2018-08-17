@@ -120,7 +120,6 @@ class Donate extends Component {
   render() {
     return (
       <div>
-        <script src="https://js.stripe.com/v3/"></script>
         <div>
           <Navigation /> 
         </div>
@@ -128,8 +127,8 @@ class Donate extends Component {
           <div className="wrapper"> 
             <div className="wrapper__donate">
               <div className="donateHeaderContainer">
-                <div className="donateHeaderContainer__header">Thank you for your donation</div>
-                <div className="donateHeaderContainer__subheader">100% of your money empowers students through education</div>
+                <div className="primaryHeading">Thank you for your donation</div>
+                <div className="secondaryHeading">100% of your money empowers students through education</div>
               </div>
               <div className="formContainer">
                 {
@@ -179,8 +178,8 @@ class Donate extends Component {
                         <label className="formContainer__monthlyForm--tripletLabel-eachTripleLabelTwo">Zip code</label>
                       </div>
 
-                      {/* Make State a dropdown */}
-                      {/* <label className="formContainer__form--twoLabel">State</label>
+                      {/* Make State a dropdown
+                      <label className="formContainer__form--twoLabel">State</label>
                       <input className="formContainer__form--state" name="state" required/> */}
 
                       <div className="formContainer__monthlyForm--tripletBtn"> 
