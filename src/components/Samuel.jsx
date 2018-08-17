@@ -11,7 +11,7 @@ class Samuel extends Component {
   render() {
     return (
       <div>
-        <div className="navigation">
+        <div>
           <Navigation /> 
         </div>
         <div className="samuelHeader">
