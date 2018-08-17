@@ -21,6 +21,9 @@ server.use(webpackHotMiddleware);
 
 }
 
+const compression = require('compression');
+server.use(compression()); 
+
 const staticMiddleware = express.static('dist'); 
 server.use(staticMiddleware);
 
