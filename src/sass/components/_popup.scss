@@ -1,98 +1,419 @@
-.email { 
-  position: relative;
-  &__address {
-    position: absolute;
-    top: 1rem;
-    font-size: 3;
-    left: -.3rem;
-    opacity: .1;
+//DR. JOHN 
+.johnPopup {
+  height: 100vh; 
+  width: 100%; 
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background-color: rgba($color-black, .6);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; 
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close {
+    &:link, 
+    &:visited {
+      color: $dark-grey; 
+      position: absolute;
+      top: 1rem;
+      right: 2rem; 
+      font-size: 2.5rem; 
+      text-decoration: none;
+      display: inline-block;
+    }
+    &:hover {
+      color: $color-pink;
+    }
+  }
+
+  &__content {
+    @include absCenter; 
+    width: 50%; 
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+
+  }
+  &__right {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+
+    &--shape {
+      width: 20rem;
+      height: 20rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+    }
+    &--img {
+      height: 100%;
+      transform: translateY(5.5rem) translateX(.9rem) scale(1.7);
+      backface-visibility: hidden;
+    }
+  }
+  &__left {
+    color: $color-pink;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 2rem; 
+    padding-left: 2rem;
+    padding-bottom: 4rem;
   } 
 }
 
-// .modal {
-//   color: $purple;
-//   padding: 1rem 0;
-//   background-color: $color-white;
-// }
 
-// .close {
-//   position: absolute;
-//   background-color: $purple;
-//   color: $color-white;
-//   padding: .1rem .5rem;
-//   border-radius: 100%;
-//   display: block;
-//   right: -10px;
-//   top: -10px;
-// }
+// VASSILIKI DASKALAKIS
 
-// .modalEmail {
-//   color: $color-white;
-//   background-color: rgba($color-purple, 1);
-//   padding: 1rem 0;
-  
+.popup {
+  height: 100vh; 
+  width: 100%; 
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background-color: rgba($color-black, .6);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; 
 
-//   &__emailInput {
-//     border: none;
-//     width: 60%;
-//     height: 2.5rem;
-//     display: inline-block;
-//     padding-left: 1rem;
-//   }
-//   &__emailForm {
-//   }
-//   &__emailForm label{
-//     position: relative;
-//     left: 20%;
-//     display: block;
-//     text-align: left;
-//     padding: 1rem 0;
-//     font-size: 1.2rem;
-//   }
-//   &__emailInputMessage {
-//     border: none;
-//     width: 60%;
-//     height: 8%;
-//     display: inline-block;
-//     padding-left: 1rem;
-//   }
-//   &__emailInputSubmit {
-//     position: relative;
-//     left: 45%;
-//     cursor: pointer;
-//     border: none;
-//     text-align: center;
-//     padding: 1rem 2rem;
-//     background-color: $color-white;
-//     color: $color-purple;
-//     border-radius: 1rem;
-//     font-family: 'Ubuntu'; 
-//     font-size: 1.2rem;
-//     display: block;
-//     margin-top: 1rem;
-//   }
-// }
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
 
-// .popup {
-//   height: 100vh;
-//   width: 100%;
-//   top: 0; 
-//   left: 0; 
-//   position: fixed;
-//   z-index: 1000;
-//   background-color: rgba($black, .8);
-//   // visibility: hidden;
-//   transition: all .3s;
+  &__close {
+    &:link, 
+    &:visited {
+      color: $dark-grey; 
+      position: absolute;
+      top: 1rem;
+      right: 2rem; 
+      font-size: 2.5rem; 
+      text-decoration: none;
+      display: inline-block;
+    }
+    &:hover {
+      color: $color-pink;
+    }
+  }
 
-//   &:target {
-//     opacity: 1;
-//     visibility: visible;
-//   }
+  &__content {
+    @include absCenter; 
+    width: 50%; 
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
 
-//   &__content {
-//     @include absCenter; 
-//     width: 50%;
-//     background-color: $color-white;
-//     height: 50rem;
-//   }
-// }
+  }
+  &__right {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+
+    &--shape {
+      width: 20rem;
+      height: 20rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+    }
+    &--img {
+      height: 100%;
+      transform: translateY(2.5rem) translateX(-.5rem) scale(1.7);
+      backface-visibility: hidden;
+    }
+  }
+  &__left {
+    color: $color-pink;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 2rem; 
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+  } 
+}
+
+// JACOB REISCH 
+
+.jakePopup {
+  height: 100vh; 
+  width: 100%; 
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background-color: rgba($color-black, .6);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; 
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close {
+    &:link, 
+    &:visited {
+      color: $dark-grey; 
+      position: absolute;
+      top: 1rem;
+      right: 2rem; 
+      font-size: 2.5rem; 
+      text-decoration: none;
+      display: inline-block;
+    }
+    &:hover {
+      color: $color-pink;
+    }
+  }
+
+  &__content {
+    @include absCenter; 
+    width: 50%; 
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+
+  }
+  &__right {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+
+    &--shape {
+      width: 20rem;
+      height: 20rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+    }
+    &--img {
+      height: 100%;
+      transform: translateY(2.5rem) translateX(-.5rem) scale(1.7);
+      backface-visibility: hidden;
+    }
+  }
+  &__left {
+    color: $color-pink;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 2rem; 
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+  } 
+}
+
+//ISABELLA BELTRAN
+
+.isabellaPopup {
+  height: 100vh; 
+  width: 100%; 
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background-color: rgba($color-black, .6);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; 
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close {
+    &:link, 
+    &:visited {
+      color: $dark-grey; 
+      position: absolute;
+      top: 1rem;
+      right: 2rem; 
+      font-size: 2.5rem; 
+      text-decoration: none;
+      display: inline-block;
+    }
+    &:hover {
+      color: $color-pink;
+    }
+  }
+
+  &__content {
+    @include absCenter; 
+    width: 50%; 
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+
+  }
+  &__right {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+
+    &--shape {
+      width: 20rem;
+      height: 20rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+    }
+    &--img {
+      height: 100%;
+      transform: translateY(2.5rem) translateX(-.5rem) scale(1.7);
+      backface-visibility: hidden;
+    }
+  }
+  &__left {
+    color: $color-pink;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 2rem; 
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+  } 
+}
+
+//SAM LANGER
+
+.samPopup {
+  height: 100vh; 
+  width: 100%; 
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background-color: rgba($color-black, .6);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; 
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close {
+    &:link, 
+    &:visited {
+      color: $dark-grey; 
+      position: absolute;
+      top: 1rem;
+      right: 2rem; 
+      font-size: 2.5rem; 
+      text-decoration: none;
+      display: inline-block;
+    }
+    &:hover {
+      color: $color-pink;
+    }
+  }
+
+  &__content {
+    @include absCenter; 
+    width: 50%; 
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+
+  }
+  &__right {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+
+    &--shape {
+      width: 20rem;
+      height: 20rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+    }
+    &--img {
+      height: 100%;
+      transform: translateY(3.5rem) translateX(-.1rem) scale(1.7);
+      backface-visibility: hidden;
+    }
+  }
+  &__left {
+    color: $color-pink;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 2rem; 
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+  } 
+}
+
+//DANIEL KING
+
+.danielPopup {
+  height: 100vh; 
+  width: 100%; 
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background-color: rgba($color-black, .6);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; 
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close {
+    &:link, 
+    &:visited {
+      color: $dark-grey; 
+      position: absolute;
+      top: 1rem;
+      right: 2rem; 
+      font-size: 2.5rem; 
+      text-decoration: none;
+      display: inline-block;
+    }
+    &:hover {
+      color: $color-pink;
+    }
+  }
+
+  &__content {
+    @include absCenter; 
+    width: 50%; 
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+
+  }
+  &__right {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+
+    &--shape {
+      width: 20rem;
+      height: 20rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+    }
+    &--img {
+      height: 100%;
+      transform: translateY(2.5rem) translateX(-.5rem) scale(1.7);
+      backface-visibility: hidden;
+    }
+  }
+  &__left {
+    color: $color-pink;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 2rem; 
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+  } 
+}

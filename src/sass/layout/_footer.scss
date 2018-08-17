@@ -32,7 +32,16 @@
   }
 }
 
-
+.email { 
+  position: relative;
+  &__address {
+    position: absolute;
+    top: 1rem;
+    font-size: 3;
+    left: -.3rem;
+    opacity: .1;
+  } 
+}
 
 
 

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Popup from "reactjs-popup";
-import ControlledPopup from './PhonePopup.jsx';
 import ControlledEmailPopup from './EmailPopup.jsx';
 
 export default class Footer extends Component {
@@ -18,9 +17,7 @@ export default class Footer extends Component {
             <div>Certified Organization</div>
           </div>
           <div className="footer__container--social">
-            {/* <a className="footer__container--social-phone"><ControlledPopup  /></a> */}
-            <a className="footer__container--social-email"><ControlledEmailPopup  /></a>
-            {/* <a className="footer__container--social-youtube"><FontAwesomeIcon icon={['fab', 'youtube-square']} size="2x" /></a> */}
+            <div className="footer__container--social-email"><ControlledEmailPopup  /></div>
           </div>
           <div className="footer__container--form">
             <div>112 South St. Suite 106</div>

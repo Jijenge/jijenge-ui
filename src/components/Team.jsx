@@ -37,13 +37,19 @@ class Team extends Component {
         <div>
           <Navigation /> 
         </div>
-        <main>
+        <header>
           <div className="team">
           </div>
-          <div className="team__header">We believe everyone deserves a chance to learn</div>
-        </main>
-        <section id="section-team" className="teamDescription">
-          <div className="teamDescription__header">Team</div>
+          <div className="teamQuote">
+          <div className="primaryHeading">We believe everyone deserves a chance to learn</div>
+          </div>
+        </header>
+        <section id="section-team">
+          <div className="teamHeading">
+            <div className="primaryHeading">
+              Team
+            </div>
+          </div>
           <div className="row">
             <div className="col-1-of-3">
               <div className="member">
@@ -57,9 +63,19 @@ class Team extends Component {
                 </div>
               </div>
               <div className="member__bio">
-                  <div className="member__bio--link">Bio</div>
-                  <div className="member__bio--content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dicta et quo esse quia, iure corrupti unde amet accusamus est voluptates fugit illo architecto nihil vero vel pariatur laudantium mollitia sit alias, eius beatae. Numquam ducimus ab nihil praesentium enim veniam doloremque consequuntur rem, soluta quidem officia vero deserunt voluptatibus!
+                  <a href="#johnPopup" className="member__bio--link">Bio</a>
+                </div>
+                <div id="johnPopup" className="johnPopup">
+                  <div className="johnPopup__content">
+                  <div className="johnPopup__right">
+                  <a href="#section-team" className="johnPopup__close">&times;</a>
+                  <figure className="johnPopup__right--shape">
+                    <img className="johnPopup__right--img" src={DrJohn} alt="Vassiliki Daskalakis" />
+                  </figure>  
+                  </div>
+                  <div className="johnPopup__left">
+                    Jake Reisch is a Forbes 30 Under 30 entrepreneur and CEO of Eversound, a specialized audio technology for the 75+. Jake started building startups during his Junior year at Cornell University when he founded Party Headphones, an audio provider for the special events industry. Jake was selected as a Young Global Shaper by the World Economic Forum, was the 2016 SBA Young Entrepreneur of the Year for New England and is a member of Cornell University’s Entrepreneurship@Cornell Advisory Council.
+                  </div>
                   </div>
                 </div>
               </div>
@@ -76,9 +92,19 @@ class Team extends Component {
                   </div>
                 </div>
                 <div className="member__bio">
-                  <div className="member__bio--link">Bio</div>
-                  <div className="member__bio--content">
-                  My name is Vas, I'm a former JPM investment banker who moved from NY to Nairobi to raise Series A rounds for startups & SMEs across East Africa with I-Dev International. Jijenge Academy developed organically from our work with a local orphanage to stop Mogra's graduated high school students from returning back to the slums from which they were rescued. I've been on the ground in Nairobi for the past year, training students in employability and positioning Jijenge as a pipeline partner to feed our candidates to high growth Kenyan Tech Companies.
+                  <a href="#popup" className="member__bio--link">Bio</a>
+                </div>
+                <div id="popup" className="popup">
+                  <div className="popup__content">
+                  <div className="popup__right">
+                  <a href="#section-team" className="popup__close">&times;</a>
+                  <figure className="popup__right--shape">
+                    <img className="popup__right--img" src={Vassiliki} alt="Vassiliki Daskalakis" />
+                  </figure>  
+                  </div>
+                  <div className="popup__left">
+                    My name is Vas, I'm a former JPM investment banker who moved from NY to Nairobi to raise Series A rounds for startups & SMEs across East Africa with I-Dev International. Jijenge Academy developed organically from our work with a local orphanage to stop Mogra's graduated high school students from returning back to the slums from which they were rescued. I've been on the ground in Nairobi for the past year, training students in employability and positioning Jijenge as a pipeline partner to feed our candidates to high growth Kenyan Tech Companies.
+                  </div>
                   </div>
                 </div>
               </div>
@@ -95,9 +121,19 @@ class Team extends Component {
                   </div>
                 </div>
                 <div className="member__bio">
-                  <div className="member__bio--link">Bio</div>
-                  <div className="member__bio--content">
-                  Jake Reisch is a Forbes 30 Under 30 entrepreneur and CEO of Eversound, a specialized audio technology for the 75+. Jake started building startups during his Junior year at Cornell University when he founded Party Headphones, an audio provider for the special events industry. Jake was selected as a Young Global Shaper by the World Economic Forum, was the 2016 SBA Young Entrepreneur of the Year for New England and is a member of Cornell University’s Entrepreneurship@Cornell Advisory Council.
+                  <a href="#jakePopup" className="member__bio--link">Bio</a>
+                </div>
+                <div id="jakePopup" className="jakePopup">
+                  <div className="jakePopup__content">
+                  <div className="jakePopup__right">
+                  <a href="#section-team" className="jakePopup__close">&times;</a>
+                  <figure className="jakePopup__right--shape">
+                    <img className="jakePopup__right--img" src={john} alt="Vassiliki Daskalakis" />
+                  </figure>  
+                  </div>
+                  <div className="jakePopup__left">
+                    Jake Reisch is a Forbes 30 Under 30 entrepreneur and CEO of Eversound, a specialized audio technology for the 75+. Jake started building startups during his Junior year at Cornell University when he founded Party Headphones, an audio provider for the special events industry. Jake was selected as a Young Global Shaper by the World Economic Forum, was the 2016 SBA Young Entrepreneur of the Year for New England and is a member of Cornell University’s Entrepreneurship@Cornell Advisory Council.
+                  </div>
                   </div>
                 </div>
               </div>
@@ -119,9 +155,19 @@ class Team extends Component {
                 </div>
               </div>
               <div className="member__bio">
-                  <div className="member__bio--link">Bio</div>
-                  <div className="member__bio--content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aliquid cupiditate natus minima! Saepe, repudiandae, assumenda neque earum cupiditate aperiam laborum qui quia velit sunt enim ipsum cum unde officia!
+                  <a href="#isabellaPopup" className="member__bio--link">Bio</a>
+                </div>
+                <div id="isabellaPopup" className="isabellaPopup">
+                  <div className="isabellaPopup__content">
+                  <div className="isabellaPopup__right">
+                  <a href="#section-team" className="isabellaPopup__close">&times;</a>
+                  <figure className="isabellaPopup__right--shape">
+                    <img className="isabellaPopup__right--img" src={john} alt="Vassiliki Daskalakis" />
+                  </figure>  
+                  </div>
+                  <div className="isabellaPopup__left">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam nihil recusandae nulla tenetur aliquid ullam, natus dolorem laborum voluptate placeat quos, voluptatibus iste? Aperiam explicabo atque dolorem laudantium nihil quis, quos temporibus iusto mollitia culpa repudiandae incidunt cum sequi? Non sapiente atque nobis voluptatum repudiandae dolore, id optio rem voluptates.
+                  </div>
                   </div>
                 </div>
               </div>
@@ -129,7 +175,7 @@ class Team extends Component {
               <div className="col-1-of-3">
                 <div className="member">
                   <div className="member__picture">
-                    <img  className="member__picture--img" src={john} />
+                    <img  className="member__picture--img" src={Sam} />
                   </div>
                   <div className="member__information">
                     <div className="member__information--name">Sam Langer</div>
@@ -138,9 +184,19 @@ class Team extends Component {
                   </div>
                 </div>
                 <div className="member__bio">
-                  <div className="member__bio--link">Bio</div>
-                  <div className="member__bio--content">
-                  Sam Langer graduated from Cornell University with a degree in Psychology and Religious studies. Sam teachers meditation and is involved in organizing events in the New York area based around improving well being. Sam believes in a world where every human has the opportunity to live their highest dream.
+                  <a href="#samPopup" className="member__bio--link">Bio</a>
+                </div>
+                <div id="samPopup" className="samPopup">
+                  <div className="samPopup__content">
+                  <div className="samPopup__right">
+                  <a href="#section-team" className="samPopup__close">&times;</a>
+                  <figure className="samPopup__right--shape">
+                    <img className="samPopup__right--img" src={Sam} alt="Vassiliki Daskalakis" />
+                  </figure>  
+                  </div>
+                  <div className="samPopup__left">
+                  Sam Langer graduated from Cornell University with a degree in Psychology and Religious studies. Sam teaches meditation and is involved in organizing events in the New York area based around improving well being. Sam believes in a world where every human has the opportunity to live their highest dream. 
+                  </div>
                   </div>
                 </div>
               </div>
@@ -157,9 +213,19 @@ class Team extends Component {
                   </div>
                 </div>
                 <div className="member__bio">
-                  <div className="member__bio--link">Bio</div>
-                  <div className="member__bio--content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eius deserunt aliquid, non impedit aperiam ipsam dolorem tenetur recusandae laborum sapiente asperiores autem officiis incidunt doloribus natus ullam unde aut harum libero tempore numquam totam sint perferendis? Accusantium autem, necessitatibus id expedita minus veritatis voluptatum doloremque, reprehenderit, nostrum eius eveniet.
+                  <a href="#danielPopup" className="member__bio--link">Bio</a>
+                </div>
+                <div id="danielPopup" className="danielPopup">
+                  <div className="danielPopup__content">
+                  <div className="danielPopup__right">
+                  <a href="#section-team" className="danielPopup__close">&times;</a>
+                  <figure className="danielPopup__right--shape">
+                    <img className="danielPopup__right--img" src={john} alt="Vassiliki Daskalakis" />
+                  </figure>  
+                  </div>
+                  <div className="danielPopup__left">
+                    Jake Reisch is a Forbes 30 Under 30 entrepreneur and CEO of Eversound, a specialized audio technology for the 75+. Jake started building startups during his Junior year at Cornell University when he founded Party Headphones, an audio provider for the special events industry. Jake was selected as a Young Global Shaper by the World Economic Forum, was the 2016 SBA Young Entrepreneur of the Year for New England and is a member of Cornell University’s Entrepreneurship@Cornell Advisory Council.
+                  </div>
                   </div>
                 </div>
               </div>

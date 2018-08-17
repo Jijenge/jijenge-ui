@@ -17,10 +17,11 @@ class NavigationBar extends Component {
           <a className="dropbtnIcon"><FontAwesomeIcon icon='bars' size="4x" /></a>
           <div className="dropdownContent">
             <Link to='/Donate'>Give monthly</Link>
-            <Link to='/About'>Our students</Link>
-            <Link to='/MeetTheStudents'>Team</Link>
-            <Link to=''>Visit Africa</Link>
+            <Link to='/MeetTheStudents'>Our students</Link>
+            <Link to='/Team'>Team</Link>
+            <Link to='/VisitAfrica'>Visit Africa</Link>
             <Link to='/Donate'>Donate</Link>
+            <Link to='/'>Home</Link>
           </div>
         </div>
         {/* WEB */}

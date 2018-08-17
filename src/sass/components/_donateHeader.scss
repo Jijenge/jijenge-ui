@@ -29,7 +29,10 @@
     font-weight: 300;
   }
 }
-
+.stripe-button-el span {
+  background-color: blueviolet;
+  color: black;
+}
 .formContainer {
   background-color: rgba($blue, .8);
   position: relative;
