@@ -14,7 +14,7 @@ class NavigationBar extends Component {
         </div>
         {/* MOBILE */}
         <div className="dropbtn">
-          <a className="dropbtnIcon"><FontAwesomeIcon icon='bars' size="4x" /></a>
+          <a className="dropbtnIcon"><FontAwesomeIcon icon='bars' size="5x" /></a>
           <div className="dropdownContent">
             <Link to='/Donate'>Give monthly</Link>
             <Link to='/MeetTheStudents'>Our students</Link>

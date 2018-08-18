@@ -8,7 +8,14 @@
     height: 58%;
     z-index: -1;
     opacity: .6;
-    // overflow: hidden;
+    overflow: hidden;
+
+    @include respond(tab-port) {
+      height: 62%;
+    }
+    @include respond(phone) {
+      height: 60%;
+    }
 
     &--content {
       height: 100%;
@@ -23,6 +30,12 @@
     text-align: center;
     color: $color-purple;
     text-shadow: 1px 1px 1px $light-grey;
+    @include respond(tab-port) {
+      left: 26%; 
+    }
+    @include respond(phone) {
+      left: 22%;
+    }
 
     &--donate {
       text-transform: uppercase;
@@ -58,6 +71,14 @@
     & div:first-of-type {
       margin-bottom: 2rem;
       margin-top: 3rem;
+    }
+    @include respond(tab-port) {
+      top: 65%;
+      left: 19%; 
+    }
+    @include respond(phone) {
+      top: 65%;
+      left: 16%;
     }
   }
 }

@@ -1,9 +1,15 @@
 .primaryHeading {
   font-size: 3rem;
   margin-bottom: 1rem;
+  @include respond(phone) {
+    font-size: 4rem;
+  }
 }
 .secondaryHeading {
   font-size: 2.5rem;
   font-weight: 300;
   margin-bottom: .5rem;
+  @include respond(phone) {
+    font-size: 3rem;
+  }
 }

@@ -3,6 +3,12 @@
   width: 35rem;
   background-color: $blue;
   box-shadow: 0 1.5rem 2rem rgba($color-black, .15);
+  @include respond(tab-port) {
+    height: 36rem;
+  }
+  @include respond(phone) {
+height: 34rem;
+  }
 
   &__picture {
   
@@ -32,10 +38,22 @@
     &--title {
       font-size: 2rem;
       padding-top: .5rem;
+      @include respond(tab-port) {
+      padding-top: 1rem;
+      }
+      @include respond(phone) {
+        font-size: 3rem;
+      }
     }
     &--subtitle {
       font-size: 1.5rem;
       padding: 1rem;
+      @include respond(tab-port) {
+        font-size: 1.7rem;
+      }
+      @include respond(phone) {
+        font-size: 2.5rem;
+      }
     }
   }
 }
