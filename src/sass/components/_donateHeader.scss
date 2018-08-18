@@ -3,7 +3,9 @@
   background-position: center;
   background-size: cover;
   height: 115vh;
-
+  @include respond(phone) {
+    height: 130vh;
+  }
 
   &__donate {
     text-align: center;
@@ -34,7 +36,7 @@
   border-radius: 1rem;
   padding: 1rem;
   padding-top: 1.5rem;
-  box-shadow: 0 2rem 4rem rgba($color-black, .8); 
+  box-shadow: 0 2rem 4rem rgba($color-black, .8);
   
   &__frequency {
     margin-bottom: 1rem;
@@ -71,7 +73,6 @@
   }
   &__form {
     padding-top: 1rem;
-    
     &--oneLabel {
       display: block;
       font-size: 1.5rem;
@@ -79,6 +80,10 @@
       text-align: left;
       margin-left: 6.5rem;
       margin-bottom: .5rem;
+      @include respond(phone) {
+        margin-left: 2rem;
+        font-size: 2.5rem;
+      }
     }
     &--name {
       border: none;
@@ -90,6 +95,9 @@
       margin-right: .5rem;
       font-family: 'Ubuntu';
       padding: 1rem;
+      @include respond(phone) {
+        width: 20rem;
+      }
     }
 
     &--amount {
@@ -100,6 +108,9 @@
       padding: 0 1rem;
       font-size: 1.2rem;
       border-radius: .5rem;
+      @include respond(phone) {
+        
+      }
 
       &--input {
       border: none; 
@@ -108,6 +119,9 @@
       font-size: 2rem;
       outline: none;
       white-space: nowrap;
+      @include respond(phone) {
+        width: 18rem;
+      }
       
       }
       &--label {
@@ -126,6 +140,9 @@
       padding-top: .5rem;
       padding-left: 1rem;
       border-radius: .5rem;
+      @include respond(phone) {
+        width: 18rem;
+      }
     }
     &--terms {
       font-size: 1.3rem;
@@ -146,13 +163,21 @@
     }
   }
   &__monthlyForm {
+    @include respond(tab-port) {
+      display: none;
+    }
+    @include respond(phone) {
+      display: none;
+    }
 
     &--namesLabel {
       color: $color-white;
       font-size: 1.2rem;
       padding-top: 1rem;
       text-align: left;
-
+      @include respond(phone) {
+        // display: none;
+      }
       &-first {
         position: absolute;
         left: 7%;
@@ -178,6 +203,11 @@
         margin-right: 2rem;
         margin-left: 1.5rem;
         border-radius: .5rem;
+        @include respond(phone) {
+          width: 15rem;
+          margin-bottom: 1rem;
+        }
+  
       }
     }
 
@@ -186,6 +216,7 @@
       margin-bottom: 1rem;
       padding-top: 1rem;
       text-align: left;
+
 
       &-emailLabel {
         color: $color-white;
@@ -201,6 +232,9 @@
         display: inline-block;
         margin-left: 2rem;
         border-radius: .5rem;
+        @include respond(phone) {
+          width: 20rem;
+        }
       }
     }
 
@@ -224,6 +258,9 @@
         display: inline-block;
         margin-left: 2rem;
         border-radius: .5rem;
+        @include respond(phone) {
+          width: 20rem;
+        }
       }
     }
     &--tripletLabel {
@@ -233,13 +270,20 @@
       text-align: left;
       &-eachTripleLabelOne {
         margin-left: 3.3rem;
+        @include respond(phone) {
+          margin-left: 1.2rem;
+        }
       }
       &-eachTripleLabelTwo {
         margin-left: 14rem;
+        @include respond(phone) {
+          margin-left: 10rem;
+        }
       }
     }
     &--tripletBtn {
       margin-bottom: 2rem;
+
 
       &-eachTripletInput {
         border: none; 
@@ -247,6 +291,10 @@
         width: 15.3rem;
         margin-right: 1rem;
         border-radius: .5rem;
+        @include respond(phone) {
+          width: 10rem;
+          margin-bottom: 1rem;
+        }
       }
     }
   }

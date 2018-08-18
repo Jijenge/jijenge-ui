@@ -125,6 +125,10 @@
     top: 8%; 
     left: 34%;
     text-shadow: 1px 1px 1px $dark-grey;
+    @include respond(phone) {
+      top: 8%; 
+      left: 28%;
+    }
   }
   &__container {
     height: 100vh;
@@ -136,6 +140,10 @@
       position: absolute;
       top: 16%;
       left: 37%;
+      @include respond(phone) {
+        // top: 8%; 
+        left: 27%;
+      }
     }
     &--input {
       border: solid $color-pink thin;

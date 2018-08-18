@@ -98,9 +98,7 @@
         margin-top: 1rem;
         cursor: pointer;
         display: block;
-        position: relative;
         bottom: 2rem;
-        left: 8rem;
         position: absolute;
         transition: transform .6s; 
         &:hover {
@@ -111,7 +109,7 @@
           }
         }
         @include respond(phone){
-          left: 9.8rem;
+          left: 10.5rem;
           font-size: 2rem;
         }
       }
