@@ -11,6 +11,9 @@
     @include respond(phone) {
       font-size: 2.5rem;
     }
+    @include respond(small) {
+      font-size: 3rem;
+    }
   }
   &__container {
     border-top: solid $color-white thin;
@@ -22,6 +25,9 @@
     @include respond(phone) {
       padding-right: 3rem;
       padding-left: 3rem;
+    }
+    @include respond(small) {
+      
     }
     &--form {
       color: $color-white;
@@ -35,8 +41,11 @@
     &--social {
       display: inline-block;
       & a {
-      color: $color-white;
-      display: inline-block;
+        color: $color-white;
+      }
+      @include respond(small) {
+        display: block;
+        margin: 1rem 0;
       }
     }
   }
@@ -51,6 +60,7 @@
     @include respond(phone) {
       font-size: 1.7rem;
     }
+
   }
   &__address {
     position: absolute;
@@ -67,6 +77,9 @@
       top: 1rem;
       left: -.1rem;
       font-size: 2;
+    }
+    @include respond(small) {
+      left: 10.2rem;
     }
   } 
 }

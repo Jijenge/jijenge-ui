@@ -36,6 +36,9 @@
     @include respond(phone) {
       left: 22%;
     }
+    @include respond(small) {
+      left: 2%;
+    }
 
     &--donate {
       text-transform: uppercase;
@@ -79,6 +82,10 @@
     @include respond(phone) {
       top: 65%;
       left: 16%;
+    }
+    @include respond(small) {
+      left: 0;
+      padding: 0 6rem;
     }
   }
 }

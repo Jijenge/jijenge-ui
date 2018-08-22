@@ -25,9 +25,17 @@
       font-size: 2.5rem; 
       text-decoration: none;
       display: inline-block;
+      @include respond(small) {
+        font-size: 4rem;
+      }
     }
     &:hover {
       color: $color-pink;
+    }
+    &:active {
+      @include respond(small) {
+        color: $color-pink;
+      }
     }
   }
 
@@ -36,6 +44,9 @@
     width: 50%; 
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, .2);
+    @include respond(small) {
+      width: 65%; 
+    }
 
   }
   &__right {
@@ -64,6 +75,9 @@
     padding-right: 2rem; 
     padding-left: 2rem;
     padding-bottom: 4rem;
+    @include respond(small) {
+      font-size: 2.5em;
+    }
   } 
 }
 
@@ -96,9 +110,17 @@
       font-size: 2.5rem; 
       text-decoration: none;
       display: inline-block;
+      @include respond(small) {
+        font-size: 4rem;
+      }
     }
     &:hover {
       color: $color-pink;
+    }
+    &:active {
+      @include respond(small) {
+        color: $color-pink;
+      }
     }
   }
 
@@ -107,7 +129,9 @@
     width: 50%; 
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, .2);
-
+    @include respond(small) {
+      width: 65%; 
+    }
   }
   &__right {
     margin-top: 2rem;
@@ -135,6 +159,9 @@
     padding-right: 2rem; 
     padding-left: 2rem;
     padding-bottom: 4rem;
+    @include respond(small) {
+      font-size: 2.5em;
+    }
   } 
 }
 
@@ -166,9 +193,17 @@
       font-size: 2.5rem; 
       text-decoration: none;
       display: inline-block;
+      @include respond(small) {
+        font-size: 4rem;
+      }
     }
     &:hover {
       color: $color-pink;
+    }
+    &:active {
+      @include respond(small) {
+        color: $color-pink;
+      }
     }
   }
 
@@ -177,7 +212,9 @@
     width: 50%; 
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, .2);
-
+    @include respond(small) {
+      width: 65%; 
+    }
   }
   &__right {
     margin-top: 2rem;
@@ -205,6 +242,9 @@
     padding-right: 2rem; 
     padding-left: 2rem;
     padding-bottom: 4rem;
+    @include respond(small) {
+      font-size: 2.5em;
+    }
   } 
 }
 
@@ -236,9 +276,17 @@
       font-size: 2.5rem; 
       text-decoration: none;
       display: inline-block;
+      @include respond(small) {
+        font-size: 4rem;
+      }
     }
     &:hover {
       color: $color-pink;
+    }
+    &:active {
+      @include respond(small) {
+        color: $color-pink;
+      }
     }
   }
 
@@ -247,6 +295,9 @@
     width: 50%; 
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, .2);
+    @include respond(small) {
+      width: 65%; 
+    }
 
   }
   &__right {
@@ -275,6 +326,9 @@
     padding-right: 2rem; 
     padding-left: 2rem;
     padding-bottom: 4rem;
+    @include respond(small) {
+      font-size: 2.5em;
+    }
   } 
 }
 
@@ -306,9 +360,17 @@
       font-size: 2.5rem; 
       text-decoration: none;
       display: inline-block;
+      @include respond(small) {
+        font-size: 4rem;
+      }
     }
     &:hover {
       color: $color-pink;
+    }
+    &:active {
+      @include respond(small) {
+        color: $color-pink;
+      }
     }
   }
 
@@ -317,7 +379,9 @@
     width: 50%; 
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, .2);
-
+    @include respond(small) {
+      width: 65%; 
+    }
   }
   &__right {
     margin-top: 2rem;
@@ -345,6 +409,9 @@
     padding-right: 2rem; 
     padding-left: 2rem;
     padding-bottom: 4rem;
+    @include respond(small) {
+      font-size: 2.5em;
+    }
   } 
 }
 
@@ -376,9 +443,17 @@
       font-size: 2.5rem; 
       text-decoration: none;
       display: inline-block;
+      @include respond(small) {
+        font-size: 4rem;
+      }
     }
     &:hover {
       color: $color-pink;
+    }
+    &:active {
+      @include respond(small) {
+        color: $color-pink;
+      }
     }
   }
 
@@ -387,7 +462,9 @@
     width: 50%; 
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, .2);
-
+    @include respond(small) {
+      width: 65%; 
+    }
   }
   &__right {
     margin-top: 2rem;
@@ -415,5 +492,8 @@
     padding-right: 2rem; 
     padding-left: 2rem;
     padding-bottom: 4rem;
+    @include respond(small) {
+      font-size: 2.5em;
+    }
   } 
 }

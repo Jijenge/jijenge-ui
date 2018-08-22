@@ -4,6 +4,11 @@
   background-position: center; 
   height: 50%;
   text-shadow: 1px 1px 1px $dark-grey;
+  @include respond(small) {
+    height: 55%;  
+    background-position: top; 
+
+  }
   &__text {
     padding-top: 12rem;
     text-align: center;
@@ -61,7 +66,11 @@
       margin-right: 3rem;
       @include respond(phone){
         margin-right: 2rem;
+      }      
+      @include respond(small) {
+        margin-right: 1rem;
       }
+
     }
 
     &--picture img {
