@@ -65,8 +65,8 @@ class MeetTheStudents extends Component {
         </div>
         <main>
           <div className="ourStudentsHeader">
-            <div className="ourStudentsHeader__text">We are a technology education education organization</div>
-            <div className="ourStudentsHeader__subtext">We build post-secondary education programs in Sub-Saharan Africa</div>
+            <div className="ourStudentsHeader__text">We are a technology education organization</div>
+            <div className="ourStudentsHeader__subtext">We build post-secondary vocational training programs in East Africa</div>
           </div>
           <div className="ourStudents">
             <div className="ourStudents__header">Our Students</div>
