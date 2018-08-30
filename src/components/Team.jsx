@@ -224,7 +224,9 @@ class Team extends Component {
                   </figure>  
                   </div>
                   <div className="danielPopup__left">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae facilis excepturi temporibus ut architecto, tempora aspernatur totam delectus quis debitis officia tempore sit, a at nemo soluta! Nulla voluptatibus et distinctio quidem architecto vel quisquam debitis dignissimos, ducimus at dicta facilis ab suscipit. Placeat blanditiis eum quod odit deleniti voluptatibus!
+                  Daniel Mbogo is a community development professional with exceptional leadership skills and 10+ years of experience in implementing innovative community development programs. His commitment to a career in community development work has connected him to his passion—creating positive and meaningful change in people's lives. 
+                  Currently, he is working as the programmes manager for Village Voices—a community-based organization working to empower rural women in Kenya.Village Voices programmes are focused on providing women with the knowledge, skills, tools and resources necessary to not only actively participate in, but grow to lead community development projects. 
+                  Daniel is also the founder and director of FilmCity International, a nonprofit film organization dedicated to telling the stories of charitable and not-for-profit organizations, advocacy and educational groups, youth and women’s projects and other non-profit organizations in Kenya through film.
                   </div>
                   </div>
                 </div>
