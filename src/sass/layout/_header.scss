@@ -1,11 +1,11 @@
 .header {
   height: 100vh;
-  
+
   &__video {
     position: absolute;
     top: 0;
     left: 0;
-    height: 58%;
+    height: 67%;
     z-index: -1;
     opacity: .6;
     overflow: hidden;
@@ -25,7 +25,7 @@
   }
   &__heading {
     position: absolute;
-    top: 20%;
+    top: 27%;
     left: 28%;
     text-align: center;
     color: $color-purple;
@@ -67,13 +67,15 @@
   &__greeting {
     text-align: center;
     position: absolute;
-    left: 22%;
-    top: 62%;
-    height: 30rem;
+    left: 0;
+    top: 67%;
+    height: 23.2rem;
     color: $color-blue;
+    background-color: $color-purple;
+    width: 100%;
     & div:first-of-type {
       margin-bottom: 2rem;
-      margin-top: 3rem;
+      margin-top: 3.5rem;
     }
     @include respond(tab-port) {
       top: 65%;

@@ -25,9 +25,9 @@ export default class Header extends Component {
         </div>
         <div className="header__greeting">
           <div className="primaryHeading">Welcome to Jijenge</div>
-          <div className="secondaryHeading">We're an Africa-based STEM education program giving everyone</div>
-          <div className="secondaryHeading">the chance to achieve. We believe education empowers and </div>
-          <div className="secondaryHeading">creates lasting change to community health.</div>
+          <div className="secondaryHeading">We're an East Africa-focused, digital skills vocational program </div>
+          <div className="secondaryHeading">that trains students to achieve technology careers regardless of their background. </div>
+          <div className="secondaryHeading">We believe education empowers and creates lasting change within a community</div>
         </div>
       </div>
     )
