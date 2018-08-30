@@ -176,7 +176,7 @@ export default class VisitAfrica extends Component {
           <div className="visitBanner">
             <div className="primaryHeading">An inspiration vacation</div>
             <div className="secondaryHeading">Book a life changing visit to the children at Jijenge @ Nairobi.</div>
-            <div className="secondaryHeading">Witness our impact first hand and while experiencing the world's best safari tours.</div>
+            <div className="secondaryHeading">Meet the children yourself while experiencing the world's best Safari tours and beach vacations!</div>
             <div className="visitBanner__container">
               <form  onSubmit={this.handleRequestItenerary.bind(this)} >
                 <input name="email" className="visitBanner__container--email" placeholder="Email" onChange={this.handleInputChange.bind(this)} />
