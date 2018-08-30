@@ -208,7 +208,7 @@ class Team extends Component {
                   </div>
                   <div className="member__information">
                     <div className="member__information--name">Daniel King</div>
-                    <div className="member__information--role">&nbsp;</div>
+                    <div className="member__information--role">Director of Communications</div>
                     <div className="member__information--jijenge">Jijenge</div>
                   </div>
                 </div>
