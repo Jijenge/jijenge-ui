@@ -1,6 +1,7 @@
 import React, { Component } from 'react'; 
 import Navigation from './NavigationBar.jsx';
 import Footer from './Footer.jsx';
+import kelvinStory from '../images/kelvinStory.jpg';
 
 class Kelvin extends Component {
   constructor(props) {
@@ -15,11 +16,11 @@ class Kelvin extends Component {
         </div>
         <div className="kelvinHeader">
           <div className="kelvinHeader__background">
-            <div className="kelvinHeader__title">Hi, I'm Kelvin Achieng</div>
+            <div className="kelvinHeader__title">Hi, I'm Kelvin Voke</div>
           </div>
         </div>
         <div className="kelvinStory">
-              {/* <img className="kelvinStory__picture" src={kelvinStory} /> */}
+              <img className="kelvinStory__picture" src={kelvinStory} />
           <div className="kelvinStory__containerQuestions">
             <div className="kelvinStory__containerQuestions--text1">
               How you got interested in computers?

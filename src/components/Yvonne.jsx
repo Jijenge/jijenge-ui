@@ -1,6 +1,7 @@
 import React, { Component } from 'react'; 
 import Navigation from './NavigationBar.jsx';
 import Footer from './Footer.jsx';
+import yvonneStory from '../images/yvonne.jpg';
 
 class Yvonne extends Component {
   constructor(props) {
@@ -19,7 +20,7 @@ class Yvonne extends Component {
           </div>
         </div>
         <div className="yvonneStory">
-              {/* <img className="yvonneStory__picture" src={yvonneStory} /> */}
+              <img className="yvonneStory__picture" src={yvonneStory} />
           <div className="yvonneStory__containerQuestions">
             <div className="yvonneStory__containerQuestions--text1">
               How you got interested in computers?
