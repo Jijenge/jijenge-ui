@@ -6,6 +6,8 @@ import DrJohn from '../images/drjohn.jpg';
 import Sam from '../images/sam.jpg';
 import Vassiliki from '../images/vassia.jpg';
 import Isabella from '../images/isabellasPicture.jpg';
+import Jacob from '../images/Jacob.jpg';
+import Daniel from '../images/DanielMbogoh.jpg';
 import Popup from './Popup.jsx';
 
 class Team extends Component {
@@ -115,7 +117,7 @@ class Team extends Component {
                     <img  className="member__picture--img" src={john} />
                   </div>
                   <div className="member__information">
-                    <div className="member__information--name">Jake Reisch</div>
+                    <div className="member__information--name">Jacob Reisch</div>
                     <div className="member__information--role">President</div>
                     <div className="member__information--jijenge">Jijenge</div>
                   </div>
@@ -204,10 +206,10 @@ class Team extends Component {
               <div className="col-1-of-3">
                 <div className="member">
                   <div className="member__picture">
-                    <img  className="member__picture--img" src={john} />
+                    <img  className="member__picture--img" src={Daniel} />
                   </div>
                   <div className="member__information">
-                    <div className="member__information--name">Daniel King</div>
+                    <div className="member__information--name">Daniel Mbogoh</div>
                     <div className="member__information--role">Director of Communications</div>
                     <div className="member__information--jijenge">Jijenge</div>
                   </div>
@@ -220,11 +222,11 @@ class Team extends Component {
                   <div className="danielPopup__right">
                   <a href="#section-team" className="danielPopup__close">&times;</a>
                   <figure className="danielPopup__right--shape">
-                    <img className="danielPopup__right--img" src={john} alt="Vassiliki Daskalakis" />
+                    <img className="danielPopup__right--img" src={Daniel} alt="Vassiliki Daskalakis" />
                   </figure>  
                   </div>
                   <div className="danielPopup__left">
-                  Daniel Mbogo is a community development professional with exceptional leadership skills and 10+ years of experience in implementing innovative community development programs. His commitment to a career in community development work has connected him to his passion—creating positive and meaningful change in people's lives. 
+                  Daniel Mbogoh is a community development professional with exceptional leadership skills and 10+ years of experience in implementing innovative community development programs. His commitment to a career in community development work has connected him to his passion—creating positive and meaningful change in people's lives. 
                   Currently, he is working as the programmes manager for Village Voices—a community-based organization working to empower rural women in Kenya.Village Voices programmes are focused on providing women with the knowledge, skills, tools and resources necessary to not only actively participate in, but grow to lead community development projects. 
                   Daniel is also the founder and director of FilmCity International, a nonprofit film organization dedicated to telling the stories of charitable and not-for-profit organizations, advocacy and educational groups, youth and women’s projects and other non-profit organizations in Kenya through film.
                   </div>
