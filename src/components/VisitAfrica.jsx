@@ -85,7 +85,6 @@ export default class VisitAfrica extends Component {
   }
 
   handlePrevAfricaArrow() {
-    console.log(this.state.expAfrica);
     if (this.state.expAfrica === 0) {
       this.setState({
         expAfrica: this.state.africa.length - 1
