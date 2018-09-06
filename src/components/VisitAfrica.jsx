@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import LazyLoad from "react-lazyload";
 import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
 import jake1 from "../images/jake1.jpg";
@@ -84,7 +85,6 @@ export default class VisitAfrica extends Component {
   }
 
   handlePrevAfricaArrow() {
-    console.log(this.state.expAfrica);
     if (this.state.expAfrica === 0) {
       this.setState({
         expAfrica: this.state.africa.length - 1
@@ -220,10 +220,12 @@ export default class VisitAfrica extends Component {
           </div>
           <div className="slideshow-container">
             <div className="mySlides fade">
-              <img
-                className="image"
-                src={this.state.meet[this.state.meetCurrent]}
-              />
+              <LazyLoad throttle={200} height={300}>
+                <img
+                  className="image"
+                  src={this.state.meet[this.state.meetCurrent]}
+                />
+              </LazyLoad>
             </div>
             <div className="prev" onClick={this.handlePrevMeetArrow.bind(this)}>
               &#10094;
@@ -240,10 +242,12 @@ export default class VisitAfrica extends Component {
           </div>
           <div className="slideshow-container">
             <div className="mySlides fade">
-              <img
-                className="image"
-                src={this.state.africa[this.state.expAfrica]}
-              />
+              <LazyLoad throttle={200} height={300}>
+                <img
+                  className="image"
+                  src={this.state.africa[this.state.expAfrica]}
+                />
+              </LazyLoad>
             </div>
             <div
               className="prev"
@@ -259,32 +263,33 @@ export default class VisitAfrica extends Component {
             </div>
           </div>
         </section>
-
-        <section className="section-experience">
-          <div className="section-experience__heading">
-            <div className="primaryHeading">
-              Experience the trip of a lifetime
+        <LazyLoad height={200} offset={[-100, 0]}>
+          <section className="section-experience">
+            <div className="section-experience__heading">
+              <div className="primaryHeading">
+                Experience the trip of a lifetime
+              </div>
             </div>
-          </div>
-          <div className="section-experience__container">
-            <form
-              className="section-experience__container--form"
-              onSubmit={this.handleRequestItenerary.bind(this)}
-            >
-              <input
-                name="email"
-                className="section-experience__container--input"
-                placeholder="Email"
-                onChange={this.handleInputChange.bind(this)}
-              />
-              <input
-                className="section-experience__container--btn"
-                type="submit"
-                value="Tailor a trip to Kenya"
-              />
-            </form>
-          </div>
-        </section>
+            <div className="section-experience__container">
+              <form
+                className="section-experience__container--form"
+                onSubmit={this.handleRequestItenerary.bind(this)}
+              >
+                <input
+                  name="email"
+                  className="section-experience__container--input"
+                  placeholder="Email"
+                  onChange={this.handleInputChange.bind(this)}
+                />
+                <input
+                  className="section-experience__container--btn"
+                  type="submit"
+                  value="Tailor a trip to Kenya"
+                />
+              </form>
+            </div>
+          </section>
+        </LazyLoad>
         <footer>
           <Footer />
         </footer>
