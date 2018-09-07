@@ -9,7 +9,7 @@
   background-position: center;
   background-image: url(./images/teamHeader-compressor.jpg);
 }
-.teamQuote{
+.teamQuote {
   color: $color-pink;
   padding: 8rem 0;
   text-align: center;
@@ -24,6 +24,7 @@
 .member {
   &__picture {
     &--img {
+      object-fit: cover;
       height: 28rem;
       width: 20rem;
       border: solid $color-blue;
@@ -47,15 +48,15 @@
     }
   }
   &__bio {
-    position: relative; 
+    position: relative;
     display: inline-block;
 
     &--link {
       margin-top: 1.5rem;
       font-size: 1.3rem;
-      letter-spacing: 0; 
+      letter-spacing: 0;
       border-bottom: solid $color-pink thin;
-      padding: .5rem 1rem;
+      padding: 0.5rem 1rem;
       display: inline-block;
       color: $color-pink;
       cursor: pointer;
@@ -69,9 +70,9 @@
       transform: translate(-50%, -50%);
       min-width: 25rem;
       padding: 1rem;
-      letter-spacing: 0; 
+      letter-spacing: 0;
       color: $color-white;
-      background-color: $color-pink; 
+      background-color: $color-pink;
       z-index: 1;
       font-size: 1.5rem;
       font-weight: 300;
