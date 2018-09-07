@@ -26,13 +26,21 @@ class Daniel extends Component {
               How you got interested in computers?
             </div>
             <div className="danielStory__containerQuestions--subtext1">
-            I like computers one because they make work more easier. It has made the world to be a global market and thus made everything to work out easier. I first got interested in computers when I was in form two. They were first introduced with a man called Carlos and his wife. I was among the first to join the computer class and thus my interest rose from there. 
+            When i was in high school i inspired to do computer science , but it came a time when i
+            decided to change to interior design. What made me to love doing computer is that is a practical
+            science and that changes with time, i like to do something that will help me in the future and
+            that evolves by time. What has made me love computer is having teachers who are committed
+            on their lesson and share their skills free that has motivated me in loving and doing computer.
+            what i like about the laptop that i have is that i can be educated,see the trending news and read
+            articles written by people that inspire me.
             </div>
             <div className="danielStory__containerQuestions--text2">
               What projects are you proud of, or what projects are you currently working on?
             </div>
             <div className="danielStory__containerQuestions--subtext2">
-            The project I’m happy for is the one we did at Tunapanda involving blockchain technology. We were creating a website which would enable people to register their land using blockchain. Currently I am mentoring youngstars at Mogra on how to use computers.
+            Am currently in a project at Mogra Children’s Home of sharing and teaching kids ,one in
+            primary level and a secondary student on what i have been learning. Am so happy sharing the
+            skills that I have to others.
             </div>
           </div>
 

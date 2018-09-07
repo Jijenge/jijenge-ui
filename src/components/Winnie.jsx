@@ -26,13 +26,13 @@ class Winnie extends Component {
               How you got interested in computers?
             </div>
             <div className="winnieStory__containerQuestions--subtext1">
-            I like computers one because they make work more easier. It has made the world to be a global market and thus made everything to work out easier. I first got interested in computers when I was in form two. They were first introduced with a man called Carlos and his wife. I was among the first to join the computer class and thus my interest rose from there. 
+            My interest in computers developed when I learnt that technology is growing so fast and is helping in almost every sector of our day to day life.
             </div>
             <div className="winnieStory__containerQuestions--text2">
               What projects are you proud of, or what projects are you currently working on?
             </div>
             <div className="winnieStory__containerQuestions--subtext2">
-            The project I’m happy for is the one we did at Tunapanda involving blockchain technology. We were creating a website which would enable people to register their land using blockchain. Currently I am mentoring youngstars at Mogra on how to use computers.
+            I am currently teaching my two mentees about computers and all that I have learnt about them from my teachers.
             </div>
           </div>
 

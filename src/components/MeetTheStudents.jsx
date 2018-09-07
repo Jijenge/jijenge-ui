@@ -92,7 +92,9 @@ class MeetTheStudents extends Component {
                 <div className="studentsContainer__eachStudent--info">
                   <div className="studentsContainer__eachStudent--info-title">{this.state.students[1]}</div>
                   <div className="studentsContainer__eachStudent--info-subtitle">
-                  Currently, I am trying to help at least two kids at Mogra to know how to use a computer and know how to browse the internet. I am also trying to get my admission to college coming September.
+                  What i am trying to accomplish is to share the skills to others,am also trying to make
+                  them smart and convincing them the importances of having skills in computer. Not only having
+                  skills but also to love it with great interest.
                   <div onClick={this.handleDaniel.bind(this)}>{`Hear ${this.state.students[1]}'s story`}&rarr;</div> 
                   </div>
                 </div>
@@ -174,7 +176,7 @@ class MeetTheStudents extends Component {
             <div className="studentsContainer__eachStudent--info">
               <div className="studentsContainer__eachStudent--info-title">{this.state.students[7]}</div>
               <div className="studentsContainer__eachStudent--info-subtitle">
-              Currently, I am trying to help at least two kids at Mogra to know how to use a computer and know how to browse the internet. I am also trying to get my admission to college coming September.
+                I am currently working on equipping knowledge on my mentees.
               <div onClick={this.handleWinnie.bind(this)}>{`Hear ${this.state.students[7]}'s story`}&rarr;</div> 
               </div>
             </div>
@@ -187,7 +189,7 @@ class MeetTheStudents extends Component {
           <div className="studentsContainer__eachStudent--info">
             <div className="studentsContainer__eachStudent--info-title">{this.state.students[8]}</div>
             <div className="studentsContainer__eachStudent--info-subtitle">
-            Currently, I am trying to help at least two kids at Mogra to know how to use a computer and know how to browse the internet. I am also trying to get my admission to college coming September.
+              Am currently trying to give knowledge to my precious mentees who have really showed me there interest in computers and are really eagered to know how to connect to people through internet through using Google and how to be the best typers than me.
             <div onClick={this.handleYvonne.bind(this)}>{`Hear ${this.state.students[8]}'s story`}&rarr;</div> 
             </div>
           </div>

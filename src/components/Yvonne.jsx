@@ -26,13 +26,13 @@ class Yvonne extends Component {
               How you got interested in computers?
             </div>
             <div className="yvonneStory__containerQuestions--subtext1">
-            I like computers one because they make work more easier. It has made the world to be a global market and thus made everything to work out easier. I first got interested in computers when I was in form two. They were first introduced with a man called Carlos and his wife. I was among the first to join the computer class and thus my interest rose from there. 
+            My interest in computers is that,through computers have been made popular to worldwide network in that i can do emailing,keeping of my files safe such as my Resume and many other files.Am also been expose to worldwide views such that i can use google to find many things in reality and worldwide.
             </div>
             <div className="yvonneStory__containerQuestions--text2">
               What projects are you proud of, or what projects are you currently working on?
             </div>
             <div className="yvonneStory__containerQuestions--subtext2">
-            The project I’m happy for is the one we did at Tunapanda involving blockchain technology. We were creating a website which would enable people to register their land using blockchain. Currently I am mentoring youngstars at Mogra on how to use computers.
+            Am currently trying to give knowledge to my precious mentees who have really showed me there interest in computers and are really eagered to know how to connect to people through internet through using Google and how to be the best typers than me.
             </div>
           </div>
 
