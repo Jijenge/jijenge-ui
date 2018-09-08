@@ -220,7 +220,7 @@ export default class VisitAfrica extends Component {
           </div>
           <div className="slideshow-container">
             <div className="mySlides fade">
-              <LazyLoad throttle={200} height={300}>
+              <LazyLoad height={300} offset={100}>
                 <img
                   className="image"
                   src={this.state.meet[this.state.meetCurrent]}
@@ -242,7 +242,7 @@ export default class VisitAfrica extends Component {
           </div>
           <div className="slideshow-container">
             <div className="mySlides fade">
-              <LazyLoad throttle={200} height={300}>
+              <LazyLoad height={300} offset={100}>
                 <img
                   className="image"
                   src={this.state.africa[this.state.expAfrica]}
@@ -263,7 +263,7 @@ export default class VisitAfrica extends Component {
             </div>
           </div>
         </section>
-        <LazyLoad height={200} offset={[-100, 0]}>
+        <LazyLoad height={300} offset={100}>
           <section className="section-experience">
             <div className="section-experience__heading">
               <div className="primaryHeading">
