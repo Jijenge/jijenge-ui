@@ -120,9 +120,9 @@ class MeetTheStudents extends Component {
                     {this.state.students[1]}
                   </div>
                   <div className="studentsContainer__eachStudent--info-subtitle">
-                    What i am trying to accomplish is to share the skills to
-                    others,am also trying to make them smart and convincing them
-                    the importances of having skills in computer. Not only
+                    What I am trying to accomplish is to share the skills to
+                    others, am also trying to make them smart and convincing
+                    them the importances of having skills in computer. Not only
                     having skills but also to love it with great interest.
                     <div onClick={this.handleDaniel.bind(this)}>
                       {`Hear ${this.state.students[1]}'s story`}
@@ -193,9 +193,9 @@ class MeetTheStudents extends Component {
                   <div className="studentsContainer__eachStudent--info-subtitle">
                     As I have acquired a job recently am working hard to set a
                     good and strong financial background that will enable me to
-                    enter into my goals. One thing i know is that for one to
+                    enter into my goals. One thing I know is that for one to
                     achieve his goals he has to focus and have passion of what
-                    he wants, and as for me to achieve my goals i have to get a
+                    he wants, and as for me to achieve my goals I have to get a
                     well financial background of which am working on today.
                     <div onClick={this.handleOnesmus.bind(this)}>
                       {`Hear ${this.state.students[4]}'s story`}
