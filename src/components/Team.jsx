@@ -104,7 +104,7 @@ class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
-                  <LazyLoad throttle={200} height={300}>
+                  <LazyLoad height={300} offset={100}>
                     <img className="member__picture--img" src={Vassiliki} />
                   </LazyLoad>
                 </div>
@@ -154,7 +154,7 @@ class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
-                  <LazyLoad throttle={200} height={300}>
+                  <LazyLoad height={300} offset={100}>
                     <img className="member__picture--img" src={DrJohn} />
                   </LazyLoad>
                 </div>
@@ -205,7 +205,7 @@ class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
-                  <LazyLoad throttle={200} height={300}>
+                  <LazyLoad height={300} offset={100}>
                     <img className="member__picture--img" src={DrJohn} />
                   </LazyLoad>
                 </div>
@@ -254,7 +254,7 @@ class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
-                  <LazyLoad throttle={200} height={300}>
+                  <LazyLoad height={300} offset={100}>
                     <img className="member__picture--img" src={Sam} />
                   </LazyLoad>
                 </div>
@@ -298,7 +298,7 @@ class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
-                  <LazyLoad throttle={200} height={300}>
+                  <LazyLoad height={300} offset={100}>
                     <img className="member__picture--img" src={Daniel} />
                   </LazyLoad>
                 </div>
