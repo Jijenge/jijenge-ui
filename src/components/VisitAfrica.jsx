@@ -220,11 +220,7 @@ export default class VisitAfrica extends Component {
           </div>
           <div className="slideshow-container">
             <div className="mySlides fade">
-<<<<<<< HEAD
               <LazyLoad height={300} offset={100}>
-=======
-              <LazyLoad throttle={200} height={300}>
->>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
                 <img
                   className="image"
                   src={this.state.meet[this.state.meetCurrent]}
@@ -246,11 +242,7 @@ export default class VisitAfrica extends Component {
           </div>
           <div className="slideshow-container">
             <div className="mySlides fade">
-<<<<<<< HEAD
               <LazyLoad height={300} offset={100}>
-=======
-              <LazyLoad throttle={200} height={300}>
->>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
                 <img
                   className="image"
                   src={this.state.africa[this.state.expAfrica]}
@@ -271,11 +263,7 @@ export default class VisitAfrica extends Component {
             </div>
           </div>
         </section>
-<<<<<<< HEAD
         <LazyLoad height={300} offset={100}>
-=======
-        <LazyLoad height={200} offset={[-100, 0]}>
->>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
           <section className="section-experience">
             <div className="section-experience__heading">
               <div className="primaryHeading">
