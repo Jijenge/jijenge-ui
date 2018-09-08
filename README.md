@@ -1,6 +1,6 @@
 # jijenge-ui
 
-# Get started
+# Getting started:
 
 ### Start the site
 
