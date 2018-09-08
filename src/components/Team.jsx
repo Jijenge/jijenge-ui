@@ -104,7 +104,11 @@ class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
+<<<<<<< HEAD
                   <LazyLoad height={300} offset={100}>
+=======
+                  <LazyLoad throttle={200} height={300}>
+>>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
                     <img className="member__picture--img" src={Vassiliki} />
                   </LazyLoad>
                 </div>
@@ -154,7 +158,11 @@ class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
+<<<<<<< HEAD
                   <LazyLoad height={300} offset={100}>
+=======
+                  <LazyLoad throttle={200} height={300}>
+>>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
                     <img className="member__picture--img" src={DrJohn} />
                   </LazyLoad>
                 </div>
@@ -205,7 +213,11 @@ class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
+<<<<<<< HEAD
                   <LazyLoad height={300} offset={100}>
+=======
+                  <LazyLoad throttle={200} height={300}>
+>>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
                     <img className="member__picture--img" src={DrJohn} />
                   </LazyLoad>
                 </div>
@@ -254,7 +266,11 @@ class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
+<<<<<<< HEAD
                   <LazyLoad height={300} offset={100}>
+=======
+                  <LazyLoad throttle={200} height={300}>
+>>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
                     <img className="member__picture--img" src={Sam} />
                   </LazyLoad>
                 </div>
@@ -298,7 +314,11 @@ class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
+<<<<<<< HEAD
                   <LazyLoad height={300} offset={100}>
+=======
+                  <LazyLoad throttle={200} height={300}>
+>>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
                     <img className="member__picture--img" src={Daniel} />
                   </LazyLoad>
                 </div>

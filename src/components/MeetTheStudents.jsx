@@ -89,7 +89,11 @@ class MeetTheStudents extends Component {
             <div className="studentsContainer">
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--picture">
+<<<<<<< HEAD
                   <LazyLoad height={300} offset={100}>
+=======
+                  <LazyLoad throttle={200} height={300}>
+>>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
                     <img src={ann} />
                   </LazyLoad>
                 </div>
@@ -111,7 +115,11 @@ class MeetTheStudents extends Component {
 
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--pictureDaniel">
+<<<<<<< HEAD
                   <LazyLoad height={300} offset={100}>
+=======
+                  <LazyLoad throttle={200} height={300}>
+>>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
                     <img src={daniel} />
                   </LazyLoad>
                 </div>
@@ -134,7 +142,11 @@ class MeetTheStudents extends Component {
 
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--picture">
+<<<<<<< HEAD
                   <LazyLoad height={300} offset={100}>
+=======
+                  <LazyLoad throttle={200} height={300}>
+>>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
                     <img src={kelvin} />
                   </LazyLoad>
                 </div>
@@ -159,7 +171,11 @@ class MeetTheStudents extends Component {
             <div className="studentsContainer">
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--picture">
+<<<<<<< HEAD
                   <LazyLoad height={300} offset={100}>
+=======
+                  <LazyLoad throttle={200} height={300}>
+>>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
                     <img src={mary} />
                   </LazyLoad>
                 </div>
@@ -182,7 +198,11 @@ class MeetTheStudents extends Component {
               </div>
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--picture">
+<<<<<<< HEAD
                   <LazyLoad height={300} offset={100}>
+=======
+                  <LazyLoad throttle={200} height={300}>
+>>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
                     <img src={onesmus} />
                   </LazyLoad>
                 </div>
@@ -206,7 +226,11 @@ class MeetTheStudents extends Component {
               </div>
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--picture">
+<<<<<<< HEAD
                   <LazyLoad height={300} offset={100}>
+=======
+                  <LazyLoad throttle={200} height={300}>
+>>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
                     <img src={samuel} />
                   </LazyLoad>
                 </div>
@@ -229,7 +253,11 @@ class MeetTheStudents extends Component {
             <div className="studentsContainer">
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--picture">
+<<<<<<< HEAD
                   <LazyLoad height={300} offset={100}>
+=======
+                  <LazyLoad throttle={200} height={300}>
+>>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
                     <img src={vivian} />
                   </LazyLoad>
                 </div>
@@ -252,7 +280,11 @@ class MeetTheStudents extends Component {
 
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--pictureWinnie">
+<<<<<<< HEAD
                   <LazyLoad height={300} offset={100}>
+=======
+                  <LazyLoad throttle={200} height={300}>
+>>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
                     <img src={winnie} />
                   </LazyLoad>
                 </div>
@@ -275,7 +307,11 @@ class MeetTheStudents extends Component {
 
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--picture">
+<<<<<<< HEAD
                   <LazyLoad height={300} offset={100}>
+=======
+                  <LazyLoad throttle={200} height={300}>
+>>>>>>> 4901dc99af432c6fd07972bb661fc357bd69e4f7
                     <img src={yvonne} />
                   </LazyLoad>
                 </div>
