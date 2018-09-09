@@ -1,7 +1,7 @@
 {
   "presets": [
     [
-      "env", 
+      "env",
       {
         "targets": {
           "browsers": ["last 2 versions"]
@@ -11,5 +11,12 @@
     ],
     "babel-preset-react"
   ],
-  "plugins": ["transform-runtime", "react-hot-loader/babel", "transform-class-properties", "transform-es2015-arrow-functions", "async-to-promises"]
+  "plugins": [
+    "transform-runtime",
+    "react-hot-loader/babel",
+    "transform-class-properties",
+    "transform-es2015-arrow-functions",
+    "async-to-promises",
+    "syntax-dynamic-import"
+  ]
 }
