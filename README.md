@@ -4,7 +4,7 @@
 
 ### About Jijenge
 
-> Jijenge is a nonprofit African academy located in Kenya's capital of Nairobi. The academy exist as a means to offer opportunity to non-privileged student, offering them an education in the fundamentals of Computer Science.
+> Jijenge Academy is a non-profit organization dedicated to teaching Computer Science fundamentals to the non-priviledged in Nairobi, Kenya.
 
 ### About The Site
 
@@ -16,6 +16,7 @@
 - React Router
 - SASS
 - Express
+- Postgres
 
 ### To Start The Site
 
