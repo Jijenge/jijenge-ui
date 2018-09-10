@@ -3,7 +3,7 @@ import Navigation from "./NavigationBar.jsx";
 import AnnStory from "../images/annStory.jpg";
 import Footer from "./Footer.jsx";
 
-class Ann extends Component {
+export default class Ann extends Component {
   constructor(props) {
     super(props);
   }
@@ -107,5 +107,3 @@ class Ann extends Component {
     );
   }
 }
-
-export default Ann;

@@ -3,7 +3,7 @@ import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
 import samuelStory from "../images/samuelStory.jpg";
 
-class Samuel extends Component {
+export default class Samuel extends Component {
   constructor(props) {
     super(props);
   }
@@ -75,5 +75,3 @@ class Samuel extends Component {
     );
   }
 }
-
-export default Samuel;

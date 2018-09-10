@@ -11,7 +11,7 @@ import Jacob from "../images/Jacob.jpg";
 import Daniel from "../images/DanielMbogoh.jpg";
 import Popup from "./Popup.jsx";
 
-class Team extends Component {
+export default class Team extends Component {
   constructor() {
     super();
     this.state = {
@@ -360,5 +360,3 @@ class Team extends Component {
     );
   }
 }
-
-export default Team;

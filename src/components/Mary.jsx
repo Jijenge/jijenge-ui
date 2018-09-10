@@ -3,7 +3,7 @@ import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
 import maryStory from "../images/maryStory.jpg";
 
-class Mary extends Component {
+export default class Mary extends Component {
   constructor(props) {
     super(props);
   }
@@ -125,5 +125,3 @@ class Mary extends Component {
     );
   }
 }
-
-export default Mary;

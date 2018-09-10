@@ -3,7 +3,7 @@ import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
 import danielStory from "../images/danielStory.jpg";
 
-class Daniel extends Component {
+export default class Daniel extends Component {
   constructor(props) {
     super(props);
   }
@@ -111,5 +111,3 @@ class Daniel extends Component {
     );
   }
 }
-
-export default Daniel;

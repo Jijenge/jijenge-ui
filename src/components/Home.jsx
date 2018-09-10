@@ -8,7 +8,7 @@ import Action from "./Action.jsx";
 import Subscribe from "./Subscribe.jsx";
 import Footer from "./Footer.jsx";
 
-class Home extends Component {
+export default class Home extends Component {
   constructor() {
     super();
     this.state = {};
@@ -46,5 +46,3 @@ class Home extends Component {
     );
   }
 }
-
-export default Home;

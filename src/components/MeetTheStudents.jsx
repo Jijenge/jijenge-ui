@@ -13,7 +13,7 @@ import vivian from "../images/ourVivian.jpg";
 import winnie from "../images/ourWinnie.jpg";
 import yvonne from "../images/yvonne.jpg";
 
-class MeetTheStudents extends Component {
+export default class MeetTheStudents extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -303,5 +303,3 @@ class MeetTheStudents extends Component {
     );
   }
 }
-
-export default MeetTheStudents;

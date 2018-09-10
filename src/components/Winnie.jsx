@@ -3,7 +3,7 @@ import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
 import winnieStory from "../images/winnieStory.jpg";
 
-class Winnie extends Component {
+export default class Winnie extends Component {
   constructor(props) {
     super(props);
   }
@@ -140,5 +140,3 @@ class Winnie extends Component {
     );
   }
 }
-
-export default Winnie;

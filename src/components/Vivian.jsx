@@ -3,7 +3,7 @@ import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
 import vivianStory from "../images/vivian.jpg";
 
-class Vivian extends Component {
+export default class Vivian extends Component {
   constructor(props) {
     super(props);
   }
@@ -81,5 +81,3 @@ class Vivian extends Component {
     );
   }
 }
-
-export default Vivian;

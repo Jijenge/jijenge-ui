@@ -3,7 +3,7 @@ import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
 import onesmusStory from "../images/onesmusStory.jpg";
 
-class Onesmus extends Component {
+export default class Onesmus extends Component {
   constructor(props) {
     super(props);
   }
@@ -86,5 +86,3 @@ class Onesmus extends Component {
     );
   }
 }
-
-export default Onesmus;

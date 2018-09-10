@@ -3,7 +3,7 @@ import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
 import yvonneStory from "../images/yvonne.jpg";
 
-class Yvonne extends Component {
+export default class Yvonne extends Component {
   constructor(props) {
     super(props);
   }
@@ -86,5 +86,3 @@ class Yvonne extends Component {
     );
   }
 }
-
-export default Yvonne;

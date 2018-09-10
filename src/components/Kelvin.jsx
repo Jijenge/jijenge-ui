@@ -3,7 +3,7 @@ import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
 import kelvinStory from "../images/kelvinStory.jpg";
 
-class Kelvin extends Component {
+export default class Kelvin extends Component {
   constructor(props) {
     super(props);
   }
@@ -91,5 +91,3 @@ class Kelvin extends Component {
     );
   }
 }
-
-export default Kelvin;
