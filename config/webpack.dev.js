@@ -1,6 +1,6 @@
-const path = require('path');
-const webpack = require('webpack');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const webpack = require("webpack");
+const HTMLWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -10,16 +10,17 @@ module.exports = {
       "./src/index.js"
     ]
   },
-  mode: "development", 
+  mode: "development",
   output: {
     filename: "[name]-bundle.js",
-    path: path.resolve(__dirname, "../dist"), 
+    chunkFilename: "[name]-bundle.js",
+    path: path.resolve(__dirname, "../dist"),
     publicPath: "/"
   },
   devServer: {
     contentBase: "dist",
     overlay: true,
-    hot: true, 
+    hot: true,
     stats: {
       color: true
     }
@@ -49,9 +50,9 @@ module.exports = {
       {
         test: /\.(sass|scss)$/,
         use: [
-          {loader: "style-loader"},
-          {loader: "css-loader"},
-          {loader: "sass-loader"}
+          { loader: "style-loader" },
+          { loader: "css-loader" },
+          { loader: "sass-loader" }
         ]
       },
       {
@@ -71,7 +72,7 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              //Images folder in the src directory 
+              //Images folder in the src directory
               name: "images/[name].[ext]"
             }
           }
@@ -104,5 +105,4 @@ module.exports = {
       title: "Jijenge"
     })
   ]
-}
-
+};
