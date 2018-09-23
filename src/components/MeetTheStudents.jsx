@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import LazyLoad from "react-lazyload";
 import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
 import headshot from "../images/headshot.jpg";
@@ -89,9 +88,7 @@ export default class MeetTheStudents extends Component {
             <div className="studentsContainer">
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--picture">
-                  <LazyLoad height={300} offset={100}>
-                    <img src={ann} />
-                  </LazyLoad>
+                  <img src={ann} />
                 </div>
                 <div className="studentsContainer__eachStudent--info">
                   <div className="studentsContainer__eachStudent--info-title">
@@ -111,9 +108,7 @@ export default class MeetTheStudents extends Component {
 
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--pictureDaniel">
-                  <LazyLoad height={300} offset={100}>
-                    <img src={daniel} />
-                  </LazyLoad>
+                  <img src={daniel} />
                 </div>
                 <div className="studentsContainer__eachStudent--info">
                   <div className="studentsContainer__eachStudent--info-title">
@@ -134,9 +129,7 @@ export default class MeetTheStudents extends Component {
 
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--picture">
-                  <LazyLoad height={300} offset={100}>
-                    <img src={kelvin} />
-                  </LazyLoad>
+                  <img src={kelvin} />
                 </div>
                 <div className="studentsContainer__eachStudent--info">
                   <div className="studentsContainer__eachStudent--info-title">
@@ -159,9 +152,7 @@ export default class MeetTheStudents extends Component {
             <div className="studentsContainer">
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--picture">
-                  <LazyLoad height={300} offset={100}>
-                    <img src={mary} />
-                  </LazyLoad>
+                  <img src={mary} />
                 </div>
                 <div className="studentsContainer__eachStudent--info">
                   <div className="studentsContainer__eachStudent--info-title">
@@ -182,9 +173,7 @@ export default class MeetTheStudents extends Component {
               </div>
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--picture">
-                  <LazyLoad height={300} offset={100}>
-                    <img src={onesmus} />
-                  </LazyLoad>
+                  <img src={onesmus} />
                 </div>
                 <div className="studentsContainer__eachStudent--info">
                   <div className="studentsContainer__eachStudent--info-title">
@@ -206,9 +195,7 @@ export default class MeetTheStudents extends Component {
               </div>
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--picture">
-                  <LazyLoad height={300} offset={100}>
-                    <img src={samuel} />
-                  </LazyLoad>
+                  <img src={samuel} />
                 </div>
                 <div className="studentsContainer__eachStudent--info">
                   <div className="studentsContainer__eachStudent--info-title">
@@ -229,9 +216,7 @@ export default class MeetTheStudents extends Component {
             <div className="studentsContainer">
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--picture">
-                  <LazyLoad height={300} offset={100}>
-                    <img src={vivian} />
-                  </LazyLoad>
+                  <img src={vivian} />
                 </div>
                 <div className="studentsContainer__eachStudent--info">
                   <div className="studentsContainer__eachStudent--info-title">
@@ -252,9 +237,7 @@ export default class MeetTheStudents extends Component {
 
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--pictureWinnie">
-                  <LazyLoad height={300} offset={100}>
-                    <img src={winnie} />
-                  </LazyLoad>
+                  <img src={winnie} />
                 </div>
                 <div className="studentsContainer__eachStudent--info">
                   <div className="studentsContainer__eachStudent--info-title">
@@ -272,9 +255,7 @@ export default class MeetTheStudents extends Component {
 
               <div className="studentsContainer__eachStudent">
                 <div className="studentsContainer__eachStudent--picture">
-                  <LazyLoad height={300} offset={100}>
-                    <img src={yvonne} />
-                  </LazyLoad>
+                  <img src={yvonne} />
                 </div>
                 <div className="studentsContainer__eachStudent--info">
                   <div className="studentsContainer__eachStudent--info-title">
