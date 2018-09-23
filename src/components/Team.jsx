@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import LazyLoad from "react-lazyload";
 import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
 import john from "../images/ian-schneider-66374-unsplash (1).jpg";
@@ -8,7 +7,7 @@ import Sam from "../images/sam.jpg";
 import Vassiliki from "../images/vassia.jpg";
 import Isabella from "../images/isabellasPicture.jpg";
 import Jacob from "../images/Jacob.jpg";
-import Daniel from "../images/DanielMbogoh.jpg";
+import Daniel from "../images/DanielMbogoh.png";
 import Popup from "./Popup.jsx";
 
 export default class Team extends Component {
@@ -104,9 +103,7 @@ export default class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
-                  <LazyLoad height={300} offset={100}>
-                    <img className="member__picture--img" src={Vassiliki} />
-                  </LazyLoad>
+                  <img className="member__picture--img" src={Vassiliki} />
                 </div>
                 <div className="member__information">
                   <div className="member__information--name">
@@ -154,9 +151,7 @@ export default class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
-                  <LazyLoad height={300} offset={100}>
-                    <img className="member__picture--img" src={DrJohn} />
-                  </LazyLoad>
+                  <img className="member__picture--img" src={DrJohn} />
                 </div>
                 <div className="member__information">
                   <div className="member__information--name">Jacob Reisch</div>
@@ -205,9 +200,7 @@ export default class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
-                  <LazyLoad height={300} offset={100}>
-                    <img className="member__picture--img" src={DrJohn} />
-                  </LazyLoad>
+                  <img className="member__picture--img" src={DrJohn} />
                 </div>
                 <div className="member__information">
                   <div className="member__information--name">
@@ -254,9 +247,7 @@ export default class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
-                  <LazyLoad height={300} offset={100}>
-                    <img className="member__picture--img" src={Sam} />
-                  </LazyLoad>
+                  <img className="member__picture--img" src={Sam} />
                 </div>
                 <div className="member__information">
                   <div className="member__information--name">Sam Langer</div>
@@ -298,9 +289,7 @@ export default class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
-                  <LazyLoad height={300} offset={100}>
-                    <img className="member__picture--img" src={Daniel} />
-                  </LazyLoad>
+                  <img className="member__picture--img" src={Daniel} />
                 </div>
                 <div className="member__information">
                   <div className="member__information--name">Daniel Mbogoh</div>

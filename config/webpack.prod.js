@@ -56,11 +56,26 @@ module.exports = env => {
         //     }
         //   })
         // },
+        // {
+        //   test: /\.css$/,
+        //   use: [
+        //     {
+        //       loader: MiniCssExtractPlugin.loader
+        //     },
+        //     {
+        //       loader: "css-loader"
+        //     }
+        //   ]
+        // },
+        // {
+        //   test: /\.(sass|scss)$/,
+        //   use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+        // },
         {
           test: /\.css$/,
           use: [
             {
-              loader: MiniCssExtractPlugin.loader
+              loader: "style-loader"
             },
             {
               loader: "css-loader"
@@ -70,12 +85,9 @@ module.exports = env => {
         {
           test: /\.(sass|scss)$/,
           use: [
-            // fallback to style-loader in development
-            process.env.NODE_ENV !== "production"
-              ? "style-loader"
-              : MiniCssExtractPlugin.loader,
-            "css-loader",
-            "sass-loader"
+            { loader: "style-loader" },
+            { loader: "css-loader" },
+            { loader: "sass-loader" }
           ]
         },
         {
@@ -117,16 +129,16 @@ module.exports = env => {
     },
     plugins: [
       // new ExtractTextPlugin("[name].css"),
-      new OptimizeCSSAssetsPlugin({
-        assetNameRegExp: /\.css$/g,
-        cssProcessor: require("cssnano"),
-        cssProcessorOptions: {
-          discardComments: {
-            removeAll: true
-          }
-        },
-        canPrint: true
-      }),
+      // new OptimizeCSSAssetsPlugin({
+      //   assetNameRegExp: /\.css$/g,
+      //   cssProcessor: require("cssnano"),
+      //   cssProcessorOptions: {
+      //     discardComments: {
+      //       removeAll: true
+      //     }
+      //   },
+      //   canPrint: true
+      // }),
       new webpack.DefinePlugin({
         "process.env": {
           NODE_ENV: JSON.stringify(env.NODE_ENV)
@@ -138,14 +150,14 @@ module.exports = env => {
         inject: true,
         title: "Jijenge"
       }),
-      new MiniCssExtractPlugin({
-        filename: "[name].css"
-      }),
+      // new MiniCssExtractPlugin({
+      //   filename: "[name].css"
+      // }),
       new UglifyJSPlugin(),
       new CompressionPlugin({
         algorithm: "gzip"
-      }),
-      new BrotliPlugin()
+      })
+      // new BrotliPlugin()
     ]
   };
 };

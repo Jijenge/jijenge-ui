@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import LazyLoad from "react-lazyload";
 
 export default class Meaning extends Component {
   constructor(props) {
@@ -19,9 +18,7 @@ export default class Meaning extends Component {
         <div className="row">
           <div className="col-1-of-3">
             <div className="meaning-cards">
-              <LazyLoad height={300} offset={100}>
-                <div className="meaning-cards__picture--1" />
-              </LazyLoad>
+              <div className="meaning-cards__picture--1" />
               <div className="meaning-cards__content">
                 <div className="meaning-cards__content--title">
                   Basic Education
@@ -35,9 +32,7 @@ export default class Meaning extends Component {
           </div>
           <div className="col-1-of-3">
             <div className="meaning-cards">
-              <LazyLoad height={300} offset={100}>
-                <div className="meaning-cards__picture--2" />
-              </LazyLoad>
+              <div className="meaning-cards__picture--2" />
               <div className="meaning-cards__content">
                 <div className="meaning-cards__content--title">
                   STEM Education
@@ -51,9 +46,7 @@ export default class Meaning extends Component {
           </div>
           <div className="col-1-of-3">
             <div className="meaning-cards">
-              <LazyLoad height={300} offset={100}>
-                <div className="meaning-cards__picture--3" />
-              </LazyLoad>
+              <div className="meaning-cards__picture--3" />
               <div className="meaning-cards__content">
                 <div className="meaning-cards__content--title">
                   Career Development
