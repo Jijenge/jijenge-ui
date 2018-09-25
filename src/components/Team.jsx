@@ -151,7 +151,7 @@ export default class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
-                  <img className="member__picture--img" src={DrJohn} />
+                  <img className="member__picture--img" src={Jacob} />
                 </div>
                 <div className="member__information">
                   <div className="member__information--name">Jacob Reisch</div>
@@ -173,7 +173,7 @@ export default class Team extends Component {
                     <figure className="jakePopup__right--shape">
                       <img
                         className="jakePopup__right--img"
-                        src={john}
+                        src={Jacob}
                         alt="Vassiliki Daskalakis"
                       />
                     </figure>
@@ -200,7 +200,7 @@ export default class Team extends Component {
             <div className="col-1-of-3">
               <div className="member">
                 <div className="member__picture">
-                  <img className="member__picture--img" src={DrJohn} />
+                  <img className="member__picture--img" src={Isabella} />
                 </div>
                 <div className="member__information">
                   <div className="member__information--name">
@@ -226,7 +226,7 @@ export default class Team extends Component {
                     <figure className="isabellaPopup__right--shape">
                       <img
                         className="isabellaPopup__right--img"
-                        src={john}
+                        src={Isabella}
                         alt="Vassiliki Daskalakis"
                       />
                     </figure>

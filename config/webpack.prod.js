@@ -12,12 +12,12 @@ const BrotliPlugin = require("brotli-webpack-plugin");
 module.exports = env => {
   return {
     entry: {
-      index: ["./src/index.js"]
+      main: ["./src/index.js"]
     },
     mode: "production",
     output: {
       filename: "[name]-bundle.js",
-      chunkFilename: "[name]-chunk.js",
+      chunkFilename: "[name]-bundle.js",
       path: path.resolve(__dirname, "../dist"),
       publicPath: "/"
     },

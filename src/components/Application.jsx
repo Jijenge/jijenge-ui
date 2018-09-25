@@ -28,15 +28,8 @@ const LazyRoute = props => {
 export default class extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      stripe: null
-    };
   }
-  componentDidMount() {
-    this.setState({
-      stripe: window.Stripe("pk_test_tbFndORrRYzJjE2PVtiTnRRU")
-    });
-  }
+
   render() {
     return (
       <div>
@@ -61,8 +54,11 @@ export default class extends Component {
               exact
               path="/Donate"
               component={props => (
-                <StripeProvider stripe={this.state.stripe}>
-                  <SettingUpStripe {...this.state.stripe} />
+                <StripeProvider
+                  stripe={this.props.stripe}
+                  apiKey="pk_test_tbFndORrRYzJjE2PVtiTnRRU"
+                >
+                  <SettingUpStripe {...props} />
                 </StripeProvider>
               )}
             />

@@ -35,14 +35,15 @@
     "compression-webpack-plugin": "^1.1.11",
     "css-loader": "^0.28.11",
     "cssnano": "^4.0.5",
-    "dotenv": "^6.0.0",
     "extract-loader": "^2.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.1",
+    "nodemon": "^1.18.3",
     "optimize-css-assets-webpack-plugin": "^5.0.0",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "url-loader": "^1.0.1",
@@ -55,9 +56,10 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "dotenv": "^6.0.0",
     "express-static-gzip": "^1.1.1",
     "node-sass": "^4.9.2",
-    "nodemon": "^1.18.3",
+    "path": "^0.12.7",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-fontawesome": "^1.6.1",
@@ -68,7 +70,6 @@
     "react-stripe-checkout": "^2.6.3",
     "react-stripe-elements": "^2.0.1",
     "reactjs-popup": "^1.1.1",
-    "sass-loader": "^7.1.0",
     "stripe": "^6.5.0"
   }
 }
