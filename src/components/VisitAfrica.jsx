@@ -42,8 +42,7 @@ export default class VisitAfrica extends Component {
       ],
       meetCurrent: 0,
       africa: [africa1, africa2, africa3, africa4],
-      expAfrica: 0,
-      email: ""
+      expAfrica: 0
     };
   }
 
@@ -95,88 +94,22 @@ export default class VisitAfrica extends Component {
     }
   }
 
-  handlePictureOne() {
-    this.setState({
-      meetCurrent: 0
-    });
-  }
-
-  handlePictureTwo() {
-    this.setState({
-      meetCurrent: 1
-    });
-  }
-
-  handlePictureThree() {
-    this.setState({
-      meetCurrent: 2
-    });
-  }
-
-  handlePictureFour() {
-    this.setState({
-      meetCurrent: 3
-    });
-  }
-
-  handlePictureFive() {
-    this.setState({
-      meetCurrent: 4
-    });
-  }
-
-  handlePictureSix() {
-    this.setState({
-      meetCurrent: 5
-    });
-  }
-
-  handlePictureSeven() {
-    this.setState({
-      meetCurrent: 6
-    });
-  }
-
-  handlePictureEight() {
-    this.setState({
-      meetCurrent: 7
-    });
-  }
-  handlePictureNine() {
-    this.setState({
-      meetCurrent: 8
-    });
-  }
-
-  handlePictureTen() {
-    this.setState({
-      meetCurrent: 9
-    });
-  }
-
-  handleInputChange(e) {
-    const { name, value } = e.target;
-    this.setState({
-      [name]: value
-    });
-  }
-
-  handleRequestItenerary = async e => {
-    e.preventDefault();
-    const { email } = this.state;
-    try {
-      const body = {
-        email
-      };
-      const data = await axios.post(
-        "http://localhost:3000/api/request/itenerary",
-        body
-      );
-      console.log("Success", data);
-    } catch (err) {
-      console.log("Error saving email requesting itenerary", err);
-    }
-  };
+  // handleRequestItenerary = async e => {
+  //   e.preventDefault();
+  //   const { email } = this.state;
+  //   try {
+  //     const body = {
+  //       email
+  //     };
+  //     const data = await axios.post(
+  //       "http://localhost:3000/api/request/itenerary",
+  //       body
+  //     );
+  //     console.log("Success", data);
+  //   } catch (err) {
+  //     console.log("Error saving email requesting itenerary", err);
+  //   }
+  // };
 
   render() {
     return (
@@ -196,19 +129,14 @@ export default class VisitAfrica extends Component {
                 Safari tours and beach vacations!
               </div>
               <div className="visitBanner__container">
-                <form onSubmit={this.handleRequestItenerary.bind(this)}>
-                  <input
-                    name="email"
-                    className="visitBanner__container--email"
-                    placeholder="Email"
-                    onChange={this.handleInputChange.bind(this)}
-                  />
-                  <input
+                <div>
+                  <a
+                    href="http://eepurl.com/dH3L6b"
                     className="visitBanner__container--btn"
-                    type="submit"
-                    value="Tailor a trip to Kenya"
-                  />
-                </form>
+                  >
+                    Tailor a trip to Kenya
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -265,22 +193,14 @@ export default class VisitAfrica extends Component {
             </div>
           </div>
           <div className="section-experience__container">
-            <form
-              className="section-experience__container--form"
-              onSubmit={this.handleRequestItenerary.bind(this)}
-            >
-              <input
-                name="email"
-                className="section-experience__container--input"
-                placeholder="Email"
-                onChange={this.handleInputChange.bind(this)}
-              />
-              <input
+            <div className="section-experience__container--form">
+              <a
                 className="section-experience__container--btn"
-                type="submit"
-                value="Tailor a trip to Kenya"
-              />
-            </form>
+                href="http://eepurl.com/dH3L6b"
+              >
+                Tailor a trip to Kenya
+              </a>
+            </div>
           </div>
         </section>
         <footer>

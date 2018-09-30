@@ -13,22 +13,22 @@
   width: 90%;
   text-align: center;
   color: $color-pink;
-  text-shadow: 1px 1px 1px $light-grey;
+  // text-shadow: 1px 1px 1px $light-grey;
 
   &__container {
     margin-top: 2rem;
     display: inline-block;
-    &--email {
-      font-family: "Ubuntu", sans-serif;
-      font-size: 1.3rem;
-      padding: 1rem 1rem;
-      width: 20rem;
-      border: solid $color-pink thin;
-      border-top-left-radius: 1rem;
-      border-bottom-left-radius: 1rem;
-      vertical-align: top;
-      white-space: nowrap;
-    }
+    // &--email {
+    //   font-family: "Ubuntu", sans-serif;
+    //   font-size: 1.3rem;
+    //   padding: 1rem 1rem;
+    //   width: 20rem;
+    //   border: solid $color-pink thin;
+    //   border-top-left-radius: 1rem;
+    //   border-bottom-left-radius: 1rem;
+    //   vertical-align: top;
+    //   white-space: nowrap;
+    // }
     &--btn {
       font-family: "Ubuntu", sans-serif;
       font-size: 1.3rem;
@@ -37,8 +37,7 @@
       background-color: $color-pink;
       opacity: 0.8;
       color: $color-white;
-      border-top-right-radius: 1rem;
-      border-bottom-right-radius: 1rem;
+      border-radius: 1rem;
       padding: 1rem 1rem;
       cursor: pointer;
     }
@@ -151,25 +150,25 @@
     &--form {
       position: absolute;
       top: 16%;
-      left: 37%;
+      left: 44%;
       @include respond(phone) {
         // top: 8%;
         left: 27%;
       }
     }
-    &--input {
-      border: solid $color-pink thin;
-      font-family: "Ubuntu", sans-serif;
-      font-size: 1.3rem;
-      padding: 1rem 1rem;
-      width: 20rem;
-      border-top-left-radius: 1rem;
-      border-bottom-left-radius: 1rem;
-      white-space: nowrap;
-      @include respond(small) {
-        width: 10rem;
-      }
-    }
+    // &--input {
+    //   border: solid $color-pink thin;
+    //   font-family: "Ubuntu", sans-serif;
+    //   font-size: 1.3rem;
+    //   padding: 1rem 1rem;
+    //   width: 20rem;
+    //   border-top-left-radius: 1rem;
+    //   border-bottom-left-radius: 1rem;
+    //   white-space: nowrap;
+    //   @include respond(small) {
+    //     width: 10rem;
+    //   }
+    // }
     &--btn {
       font-family: "Ubuntu", sans-serif;
       font-size: 1.3rem;
@@ -178,8 +177,7 @@
       background-color: $color-pink;
       opacity: 0.8;
       color: $color-white;
-      border-top-right-radius: 1rem;
-      border-bottom-right-radius: 1rem;
+      border-radius: 1rem;
       padding: 1rem 1rem;
       cursor: pointer;
     }
