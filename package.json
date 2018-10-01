@@ -4,7 +4,8 @@
   "description": "A website for the kids of Mogra School",
   "main": "index.js",
   "engines": {
-    "node": "10.11.0"
+    "node": "10.9.0",
+    "npm": "6.4.1"
   },
   "scripts": {
     "build": "BABEL_ENV=production webpack --config=config/webpack.prod.js --env.NODE_ENV=production",
@@ -21,6 +22,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.1.0-11",
     "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
     "@fortawesome/react-fontawesome": "0.1.0-11",
+    "ajv": "^6.5.4",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
@@ -34,6 +36,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
     "brotli-webpack-plugin": "^1.0.0",
     "compression-webpack-plugin": "^1.1.11",
     "css-loader": "^0.28.11",
@@ -73,6 +76,7 @@
     "react-stripe-checkout": "^2.6.3",
     "react-stripe-elements": "^2.0.1",
     "reactjs-popup": "^1.1.1",
+    "remove": "^0.1.5",
     "stripe": "^6.5.0"
   }
 }
