@@ -54,10 +54,7 @@ export default class extends Component {
               exact
               path="/Donate"
               component={props => (
-                <StripeProvider
-                  stripe={this.props.stripe}
-                  apiKey="pk_test_tbFndORrRYzJjE2PVtiTnRRU"
-                >
+                <StripeProvider apiKey="pk_test_GI0SGBMNGvzWDTXJiQyY0lv1">
                   <SettingUpStripe {...props} />
                 </StripeProvider>
               )}
