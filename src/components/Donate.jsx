@@ -119,7 +119,7 @@ class Donate extends Component {
       let response = await fetch("/api/stripe/checkout", {
         method: "POST",
         headers: { "Content-Type": "text/plain" },
-        body: ev.id
+        body: JSON.stringify({ token: ev.id, amount: this.state.amount })
       });
       if (response.ok) {
         console.log("SUCCESS");
