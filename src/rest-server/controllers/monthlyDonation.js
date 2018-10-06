@@ -1,7 +1,7 @@
 const { stripe } = require("../config/stripe");
 const { success, error } = require("../lib/log");
 
-const oneTimeDonation = {
+const monthlyDonation = {
   post: async (req, res) => {
     const input = JSON.parse(req.body);
     console.log(typeof input, input);
@@ -23,4 +23,4 @@ const oneTimeDonation = {
   }
 };
 
-module.exports = oneTimeDonation;
+module.exports = monthlyDonation;
