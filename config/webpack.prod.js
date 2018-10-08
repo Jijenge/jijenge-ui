@@ -1,27 +1,28 @@
-const path = require('path');
-const webpack = require('webpack');
+const path = require("path");
+const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const HTMLWebpackPlugin = require('html-webpack-plugin');
+const HTMLWebpackPlugin = require("html-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const MinifyPlugin = require("babel-minify-webpack-plugin");
 const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const BrotliPlugin = require("brotli-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = env => {
   return {
     entry: {
       main: ["./src/index.js"]
     },
-    mode: "production", 
+    mode: "production",
     output: {
       filename: "[name]-bundle.js",
-      path: path.resolve(__dirname, "../dist"), 
+      path: path.resolve(__dirname, "../dist"),
       publicPath: "/"
     },
     module: {
-      rules: [ 
+      rules: [
         {
           test: /\.(js|jsx)$/,
           use: [
@@ -59,11 +60,10 @@ module.exports = env => {
           test: /\.css$/,
           use: [
             {
-              loader: MiniCssExtractPlugin.loader 
+              loader: MiniCssExtractPlugin.loader
             },
             {
-              loader: "css-loader", 
-            
+              loader: "css-loader"
             }
           ]
         },
@@ -71,7 +71,9 @@ module.exports = env => {
           test: /\.(sass|scss)$/,
           use: [
             // fallback to style-loader in development
-            process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
+            process.env.NODE_ENV !== "production"
+              ? "style-loader"
+              : MiniCssExtractPlugin.loader,
             "css-loader",
             "sass-loader"
           ]
@@ -93,7 +95,7 @@ module.exports = env => {
             {
               loader: "file-loader",
               options: {
-                //Images folder in the src directory 
+                //Images folder in the src directory
                 name: "images/[name].[ext]"
               }
             }
@@ -105,7 +107,7 @@ module.exports = env => {
             {
               loader: "file-loader",
               options: {
-                //Images folder in the src directory 
+                //Images folder in the src directory
                 name: "videos/[name].[ext]"
               }
             }
@@ -115,24 +117,26 @@ module.exports = env => {
     },
     plugins: [
       // new ExtractTextPlugin("[name].css"),
+      new CopyWebpackPlugin([{ from: "./src/favicon.ico" }]),
       new OptimizeCSSAssetsPlugin({
         assetNameRegExp: /\.css$/g,
         cssProcessor: require("cssnano"),
         cssProcessorOptions: {
           discardComments: {
-            removeAll: true } 
-          },
-            canPrint: true 
+            removeAll: true
+          }
+        },
+        canPrint: true
       }),
       new webpack.DefinePlugin({
         "process.env": {
           NODE_ENV: JSON.stringify(env.NODE_ENV)
         }
       }),
-      new webpack.NamedModulesPlugin(), 
+      new webpack.NamedModulesPlugin(),
       new HTMLWebpackPlugin({
         template: "src/index.html",
-        inject: true, 
+        inject: true,
         title: "Jijenge"
       }),
       new MiniCssExtractPlugin({
@@ -142,8 +146,7 @@ module.exports = env => {
       new CompressionPlugin({
         algorithm: "gzip"
       }),
-      new BrotliPlugin() 
+      new BrotliPlugin()
     ]
-  }
-}
-
+  };
+};
