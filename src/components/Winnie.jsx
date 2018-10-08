@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 import winnieStory from "../images/winnieStory.jpg";
 
 export default class Winnie extends Component {
@@ -15,6 +16,7 @@ export default class Winnie extends Component {
           <Navigation />
         </div>
         <div className="winnieHeader">
+          <ScrollToTop />
           <div className="winnieHeader__background">
             <div className="winnieHeader__title">Hi, I'm Winnie Achieng</div>
           </div>

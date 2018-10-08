@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 import samuelStory from "../images/samuelStory.jpg";
 
 export default class Samuel extends Component {
@@ -15,6 +16,7 @@ export default class Samuel extends Component {
           <Navigation />
         </div>
         <div className="samuelHeader">
+          <ScrollToTop />
           <div className="samuelHeader__background">
             <div className="samuelHeader__title">Hi, I'm Samuel Achieng</div>
           </div>

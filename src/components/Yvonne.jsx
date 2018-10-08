@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 import yvonneStory from "../images/yvonne.jpg";
 
 export default class Yvonne extends Component {
@@ -15,6 +16,7 @@ export default class Yvonne extends Component {
           <Navigation />
         </div>
         <div className="yvonneHeader">
+          <ScrollToTop />
           <div className="yvonneHeader__background">
             <div className="yvonneHeader__title">Hi, I'm Yvonne Achieng</div>
           </div>

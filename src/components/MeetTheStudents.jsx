@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 import headshot from "../images/headshot.jpg";
 import kelvin from "../images/kelvin.jpg";
 import ann from "../images/ourAnn.jpg";
@@ -74,6 +75,7 @@ export default class MeetTheStudents extends Component {
           <Navigation />
         </div>
         <main>
+          <ScrollToTop />
           <div className="ourStudentsHeader">
             <div className="ourStudentsHeader__text">
               We are a technology education organization

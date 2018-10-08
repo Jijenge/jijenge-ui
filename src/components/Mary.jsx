@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
 import maryStory from "../images/maryStory.jpg";
+import ScrollToTop from "./ScrollToTop.jsx";
 
 export default class Mary extends Component {
   constructor(props) {
@@ -15,6 +16,7 @@ export default class Mary extends Component {
           <Navigation />
         </div>
         <div className="maryHeader">
+          <ScrollToTop />
           <div className="maryHeader__background">
             <div className="maryHeader__title">Hi, I'm Mary Achieng</div>
           </div>

@@ -9,6 +9,7 @@ import Isabella from "../images/isabellasPicture.jpg";
 import Jacob from "../images/Jacob.jpg";
 import Daniel from "../images/DanielMbogoh.png";
 import Popup from "./Popup.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 
 export default class Team extends Component {
   constructor() {
@@ -39,6 +40,7 @@ export default class Team extends Component {
           <Navigation />
         </div>
         <header>
+          <ScrollToTop />
           <div className="team" />
           <div className="teamQuote">
             <div className="primaryHeading">

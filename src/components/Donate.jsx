@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { CardElement, injectStripe } from "react-stripe-elements";
 import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 // import donate2 from '../images/donate2.jpg';
 // import donate3 from '../images/donate3.jpg';
 

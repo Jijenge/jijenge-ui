@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 import jake1 from "../images/jake1.jpg";
 import jake2 from "../images/jake2.jpg";
 import jake3 from "../images/jake3.jpg";
@@ -118,6 +119,7 @@ export default class VisitAfrica extends Component {
           <Navigation />
         </div>
         <main>
+          <ScrollToTop />
           <div className="visitHeader">
             <div className="visitBanner">
               <div className="primaryHeading">An inspiration vacation</div>

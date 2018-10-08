@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 import onesmusStory from "../images/onesmusStory.jpg";
 
 export default class Onesmus extends Component {
@@ -15,6 +16,7 @@ export default class Onesmus extends Component {
           <Navigation />
         </div>
         <div className="onesmusHeader">
+          <ScrollToTop />
           <div className="onesmusHeader__background">
             <div className="onesmusHeader__title">Hi, I'm Onesmus Achieng</div>
           </div>

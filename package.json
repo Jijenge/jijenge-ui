@@ -6,7 +6,7 @@
   "scripts": {
     "build": "BABEL_ENV=production webpack --config=config/webpack.prod.js --env.NODE_ENV=production",
     "build:dev": "webpack --config=config/webpack.dev.js",
-    "dev": "nodemon --inspect --watch src/server --watch config src/server/main.js",
+    "dev": "nodemon --inspect --watch src/rest-server --watch config src/rest-server/main.js",
     "prod": "NODE_ENV=production nodemon src/rest-server/main.js"
   },
   "keywords": [],
@@ -52,6 +52,7 @@
     "node-sass": "^4.9.2",
     "nodemon": "^1.18.4",
     "optimize-css-assets-webpack-plugin": "^5.0.0",
+    "pg": "^7.5.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-fontawesome": "^1.6.1",
