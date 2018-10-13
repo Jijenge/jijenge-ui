@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 import Navigation from "./NavigationBar.jsx";
 import Footer from "./Footer.jsx";
 import ScrollToTop from "./ScrollToTop.jsx";
@@ -18,12 +17,6 @@ import africa1 from "../images/africa1.jpg";
 import africa2 from "../images/africa2.jpg";
 import africa3 from "../images/africa3.jpg";
 import africa4 from "../images/africa4.jpg";
-// import africa5 from '../images/africa5.jpg';
-// import africa6 from '../images/africa6.jpg';
-// import africa7 from '../images/africa7.jpg';
-// import africa8 from '../images/africa8.jpg';
-// import africa9 from '../images/africa9.jpg';
-// import africa10 from '../images/africa10.jpg';
 
 export default class VisitAfrica extends Component {
   constructor(props) {
